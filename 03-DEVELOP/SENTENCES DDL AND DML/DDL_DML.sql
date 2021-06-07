@@ -19,9 +19,10 @@ create table system_user
 );
 create table rol_user
 (
+    id serial not null,
     name_rol varchar(100) not null,
     user_id  int4         not null,
-    constraint pk_rol_user primary key (name_rol, user_id),
+    constraint pk_rol_user primary key (id),
     constraint fk_ros_rous foreign key (name_rol) references rol (name_rol),
     constraint fk_user_rous foreign key (user_id) references system_user (id)
 );
@@ -487,7 +488,106 @@ insert into rol_user (name_rol, user_id)
     values
         ('Estudiante', '1'),
         ('Estudiante', '2'),
+        ('Estudiante', '3'),
+        ('Estudiante', '4'),
+        ('Estudiante', '5'),
         ('Profesor', '6'),
+        ('Profesor', '7'),
+        ('Profesor', '8'),
+        ('Profesor', '9'),
+        ('Profesor', '10'),
+        ('Cordinador', '11'),
         ('Cordinador', '12'),
+        ('Cordinador', '13'),
+        ('Cordinador', '14'),
+        ('Cordinador', '15'),
+        ('Secretario', '16'),
+        ('Secretario', '17'),
         ('Secretario', '18');
         
+
+SET search_path = soe;
+
+--¿Se desea saber que materia dicta el profesor con cedula 75652165 y cual es su nombre?
+
+select p.document_number, p.first_name, p.first_last_name, m.name_matter
+    from teacher t
+        inner join person p on p.id = t.person_id
+        inner join matter m on m.id = t.matter_id
+    where p.document_number = 75652165;
+  
+--¿Se desea saber que coordinador dirige el ciclo 5? mostrando su tipo de documento, numero de documento y nombres
+
+select ty.abbreviation, p.document_number, p.first_name, p.first_last_name, cy.number_cycle
+    from  coordinator co
+        inner join cycle cy on cy.number_cycle = co.number_cycle
+        inner join person p on p.id = co.person_id
+        inner join type_document ty on ty.id = p.type_document_id
+    where cy.number_cycle = 5;
+
+--¿Se desea conocer que profesor tiene cedula de extranjeria y que materia dicta? 
+
+select td.abbreviation, p.document_number, p.first_name, p.first_last_name, m.name_matter
+    from teacher t
+        inner join person p on p.id = t.person_id
+        inner join type_document td on td.id = p.type_document_id 
+        inner join matter m on m.id = t.matter_id
+    where td.abbreviation = 'CE';
+
+--¿Se desea saber que estudiente cuenta con la eps Compensar?
+select p.document_number, p.first_name, p.first_last_name, ep.name_eps
+    from enrollment enr 
+        inner join student s on s.id = enr.student_id
+        inner join eps ep on ep.id = enr.id_eps
+        inner join person p on p.id = s.person_id
+    where ep.name_eps = 'Compensar';
+
+--¿Cual es el 10% de nota del estudiante con numero de documento 102505056, en que materia y en que trimestre se encuentra?
+
+select p.document_number, p.first_name, p.first_last_name, m.name_matter, fqg.ten_percentage, qu.number_quarter
+    from final_quarterly_grade fqg
+        inner join quarter qu on qu.number_quarter = fqg.number_quarter
+        inner join matter m on m.id = fqg.matter_id
+        inner join student st on st.id = fqg.student_id
+        inner join person p on p.id = st.person_id
+    where p.document_number = 102505056;
+
+--Se desea conocer la anotacion del observador del estudiante identificado con numero 102121562 y en que fecha se realizo dicha anotaciòn
+
+select td.document_name, p.document_number, p.first_name, p.first_last_name, sh.notation, sh.notation_date
+    from soe.student_history sh
+        inner join soe.person p ON p.id = sh.student_id
+        inner join soe.type_document td ON p.type_document_id = td.id
+    where p.document_number = 102121562;
+
+--¿En que area esta la materia ingles?
+select su.name_subject, m.name_matter
+    from matter m
+        inner join  subject su on su.name_subject = m.name_subject
+    where m.name_matter = 'Ingles';
+
+--¿Cuales son los datos del estudiante con numero de documento 103265844?
+
+select td.abbreviation, p.document_number, p.first_name, p.first_last_name
+    from student s 
+        inner join person p on p.id = s.person_id
+        inner join type_document td on td.id = p.type_document_id
+    where p.document_number = 103265844;
+
+--¿Cual es la nota final del trimestre del estudiante con numero de documento 102121562?
+
+select p.document_number, p.first_name, p.first_last_name, m.name_matter, fqg.final_grade
+    from final_quarterly_grade fqg
+        inner join quarter qu on qu.number_quarter = fqg.number_quarter
+        inner join matter m on m.id = fqg.matter_id
+        inner join student st on st.id = fqg.student_id
+        inner join person p on p.id = st.person_id
+    where p.document_number = 102121562;
+
+--¿Cual es el horario del curso 1104?
+
+select c.number_course, tt.archive_timetable 
+    from timetable tt
+        inner join course c on c.id = tt.course_id
+    where c.number_course = 1104;
+
