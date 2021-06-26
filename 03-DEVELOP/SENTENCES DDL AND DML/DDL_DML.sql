@@ -199,7 +199,7 @@ CREATE TABLE student_history_annotation(
     annotation_id INT,
     constraint pk_student_history_annotation PRIMARY KEY (id),
     constraint uk_student_history_annotation UNIQUE (student_history_id, annotation_id )  
-)
+);
 create table eps
 (
     id       serial       NOT NULL,
@@ -454,15 +454,29 @@ insert into tutor (person_id, number_tutor, address_tutor)
         ('21', '3159525482', 'Calle 52 sur #23-98'),
         ('22', '3102654822', 'Calle 11 sur #20d casa 102'),
         ('27', '3142506654', 'Carrera 25 #50-20');
-
-insert into student_history (student_id, notation, notation_date)
+insert into student_history (student_id)
     values
-        ('1', 'El estudiante se porto bien en clase', '20/07/2021'),
-        ('2', 'El estudiante se porto mal en clase', '20/08/2021'),
-        ('3', 'El estudiante se porto bien en clase', '11/07/2021'),
-        ('4', 'El estudiante se porto bien en clase', '15/08/2021'),
-        ('5', 'El estudiante reprobo 7 materias, se recomienda seguimiento', '25/07/2021');
-
+        ('1'),
+        ('2'),
+        ('3'),
+        ('4'),
+        ('5');
+insert into annotation (notation, notation_date) 
+    values 
+        ('El estudiante se porto bien en clase', '20/07/2021'),
+        ('El estudiante se porto mal en clase', '20/08/2021'),
+        ('El estudiante se porto bien en clase', '11/07/2021'),
+        ('El estudiante se porto bien en clase', '15/08/2021'),
+        ('El estudiante reprobo 7 materias, se recomienda seguimiento', '25/07/2021'),
+        ('El estudiante evadio clase para jugara football y rompio un vidrio', '26/08/2021');
+insert into student_history_annotation (student_history_id, annotation_id)
+    values 
+        ('1', '1'),
+        ('2', '3'),
+        ('3', '4'),
+        ('4', '2'),
+        ('5', '5'),
+        ('5', '6');
 insert into timetable (archive_timetable, course_id)
     values
         ('pdf', '1'),
@@ -563,12 +577,14 @@ select p.document_number, p.first_name, p.first_last_name, m.name_matter, fqg.te
         inner join person p on p.id = st.person_id
     where p.document_number = 102505056;
 
---Se desea conocer la anotacion del observador del estudiante identificado con numero 102121562 y en que fecha se realizo dicha anotaciòn
+--Se desea conocer las anotaciones del observador del estudiante identificado con numero 102121562 y en que fecha se realizo dicha anotaciòn
 
-select td.document_name, p.document_number, p.first_name, p.first_last_name, sh.notation, sh.notation_date
-    from soe.student_history sh
-        inner join soe.person p ON p.id = sh.student_id
-        inner join soe.type_document td ON p.type_document_id = td.id
+select p.document_number, p.first_name, p.first_last_name, a.notation, a.notation_date
+    from student_history_annotation sha
+        inner join  annotation a on a.id = sha.annotation_id
+        inner join student_history sh on sh.id = sha.student_history_id
+        inner join student s on s.id = sh.student_id
+        inner join person p on p.id = s.person_id
     where p.document_number = 102121562;
 
 --¿En que area esta la materia ingles?
@@ -601,4 +617,3 @@ select c.number_course, tt.archive_timetable
     from timetable tt
         inner join course c on c.id = tt.course_id
     where c.number_course = 1104;
-
