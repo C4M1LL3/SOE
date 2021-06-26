@@ -57,7 +57,7 @@ create table father
     number_father  bigint,
     address_father varchar(100),
     constraint pk_father primary key (id),
-    constraint uk_father unique (person_id, number_father),
+    constraint uk_father unique (person_id),
     constraint fk_pers_fath foreign key (person_id) references person (id)
 );
 create table mother
@@ -67,7 +67,7 @@ create table mother
     number_mother  bigint,
     address_mother varchar(100),
     constraint pk_mother primary key (id),
-    constraint uk_mother unique (person_id, number_mother),
+    constraint uk_mother unique (person_id),
     constraint fk_pers_moth foreign key (person_id) references person (id)
 );
 create table tutor
@@ -77,7 +77,7 @@ create table tutor
     number_tutor  bigint         not null,
     address_tutor varchar(100) not null,
     constraint pk_tutor primary key (id),
-    constraint uk_tutor unique (person_id, number_tutor),
+    constraint uk_tutor unique (person_id),
     constraint fk_pers_tuto foreign key (person_id) references person (id)
 );
 create table working_day
@@ -183,12 +183,23 @@ create table student_history
 (
     id            serial       NOT NULL,
     student_id    int          NOT NULL,
-    notation      varchar(500) NOT NULL,
-    notation_date date         NOT NULL,
     CONSTRAINT pk_student_history PRIMARY KEY (id),
     CONSTRAINT uk_stud_student_id UNIQUE (student_id),
     CONSTRAINT fk_stud_history FOREIGN KEY (student_id) REFERENCES student (id)
 );
+CREATE TABLE annotation(
+    id serial,
+    notation VARCHAR (500),
+    notation_date DATE,
+    constraint pk_annotation PRIMARY KEY (id)
+);
+CREATE TABLE student_history_annotation(
+    id serial,
+    student_history_id INT,
+    annotation_id INT,
+    constraint pk_student_history_annotation PRIMARY KEY (id),
+    constraint uk_student_history_annotation UNIQUE (student_history_id, annotation_id )  
+)
 create table eps
 (
     id       serial       NOT NULL,
@@ -208,7 +219,7 @@ create table enrollment
     mother_id   int         not null,
     tutor_id    int          not null,
     constraint pk_enrollment primary key (id),
-    constraint uk_enrollment unique (student_id, id_eps, father_id, mother_id, tutor_id),
+    constraint uk_enrollment unique (student_id, id_eps),
     constraint fk_stud_enro foreign key (student_id) references student (id),
     constraint fk_eps_enro foreign key (id_eps) references eps (id),
     constraint fk_fath_enro foreign key (father_id) references father (id),
