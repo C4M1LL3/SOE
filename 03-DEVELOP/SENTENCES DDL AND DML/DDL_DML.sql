@@ -57,7 +57,7 @@ create table father
     number_father  bigint,
     address_father varchar(100),
     constraint pk_father primary key (id),
-    constraint uk_father unique (person_id, number_father),
+    constraint uk_father unique (person_id),
     constraint fk_pers_fath foreign key (person_id) references person (id)
 );
 create table mother
@@ -67,7 +67,7 @@ create table mother
     number_mother  bigint,
     address_mother varchar(100),
     constraint pk_mother primary key (id),
-    constraint uk_mother unique (person_id, number_mother),
+    constraint uk_mother unique (person_id),
     constraint fk_pers_moth foreign key (person_id) references person (id)
 );
 create table tutor
@@ -77,7 +77,7 @@ create table tutor
     number_tutor  bigint         not null,
     address_tutor varchar(100) not null,
     constraint pk_tutor primary key (id),
-    constraint uk_tutor unique (person_id, number_tutor),
+    constraint uk_tutor unique (person_id),
     constraint fk_pers_tuto foreign key (person_id) references person (id)
 );
 create table working_day
@@ -183,11 +183,22 @@ create table student_history
 (
     id            serial       NOT NULL,
     student_id    int          NOT NULL,
-    notation      varchar(500) NOT NULL,
-    notation_date date         NOT NULL,
     CONSTRAINT pk_student_history PRIMARY KEY (id),
     CONSTRAINT uk_stud_student_id UNIQUE (student_id),
     CONSTRAINT fk_stud_history FOREIGN KEY (student_id) REFERENCES student (id)
+);
+CREATE TABLE annotation(
+    id serial,
+    notation VARCHAR (500),
+    notation_date DATE,
+    constraint pk_annotation PRIMARY KEY (id)
+);
+CREATE TABLE student_history_annotation(
+    id serial,
+    student_history_id INT,
+    annotation_id INT,
+    constraint pk_student_history_annotation PRIMARY KEY (id),
+    constraint uk_student_history_annotation UNIQUE (student_history_id, annotation_id )  
 );
 create table eps
 (
@@ -208,7 +219,7 @@ create table enrollment
     mother_id   int         not null,
     tutor_id    int          not null,
     constraint pk_enrollment primary key (id),
-    constraint uk_enrollment unique (student_id, id_eps, father_id, mother_id, tutor_id),
+    constraint uk_enrollment unique (student_id, id_eps),
     constraint fk_stud_enro foreign key (student_id) references student (id),
     constraint fk_eps_enro foreign key (id_eps) references eps (id),
     constraint fk_fath_enro foreign key (father_id) references father (id),
@@ -443,15 +454,29 @@ insert into tutor (person_id, number_tutor, address_tutor)
         ('21', '3159525482', 'Calle 52 sur #23-98'),
         ('22', '3102654822', 'Calle 11 sur #20d casa 102'),
         ('27', '3142506654', 'Carrera 25 #50-20');
-
-insert into student_history (student_id, notation, notation_date)
+insert into student_history (student_id)
     values
-        ('1', 'El estudiante se porto bien en clase', '20/07/2021'),
-        ('2', 'El estudiante se porto mal en clase', '20/08/2021'),
-        ('3', 'El estudiante se porto bien en clase', '11/07/2021'),
-        ('4', 'El estudiante se porto bien en clase', '15/08/2021'),
-        ('5', 'El estudiante reprobo 7 materias, se recomienda seguimiento', '25/07/2021');
-
+        ('1'),
+        ('2'),
+        ('3'),
+        ('4'),
+        ('5');
+insert into annotation (notation, notation_date) 
+    values 
+        ('El estudiante se porto bien en clase', '20/07/2021'),
+        ('El estudiante se porto mal en clase', '20/08/2021'),
+        ('El estudiante se porto bien en clase', '11/07/2021'),
+        ('El estudiante se porto bien en clase', '15/08/2021'),
+        ('El estudiante reprobo 7 materias, se recomienda seguimiento', '25/07/2021'),
+        ('El estudiante evadio clase para jugara football y rompio un vidrio', '26/08/2021');
+insert into student_history_annotation (student_history_id, annotation_id)
+    values 
+        ('1', '1'),
+        ('2', '3'),
+        ('3', '4'),
+        ('4', '2'),
+        ('5', '5'),
+        ('5', '6');
 insert into timetable (archive_timetable, course_id)
     values
         ('pdf', '1'),
@@ -552,12 +577,14 @@ select p.document_number, p.first_name, p.first_last_name, m.name_matter, fqg.te
         inner join person p on p.id = st.person_id
     where p.document_number = 102505056;
 
---Se desea conocer la anotacion del observador del estudiante identificado con numero 102121562 y en que fecha se realizo dicha anotaciòn
+--Se desea conocer las anotaciones del observador del estudiante identificado con numero 102121562 y en que fecha se realizo dicha anotaciòn
 
-select td.document_name, p.document_number, p.first_name, p.first_last_name, sh.notation, sh.notation_date
-    from soe.student_history sh
-        inner join soe.person p ON p.id = sh.student_id
-        inner join soe.type_document td ON p.type_document_id = td.id
+select p.document_number, p.first_name, p.first_last_name, a.notation, a.notation_date
+    from student_history_annotation sha
+        inner join  annotation a on a.id = sha.annotation_id
+        inner join student_history sh on sh.id = sha.student_history_id
+        inner join student s on s.id = sh.student_id
+        inner join person p on p.id = s.person_id
     where p.document_number = 102121562;
 
 --¿En que area esta la materia ingles?
@@ -590,4 +617,3 @@ select c.number_course, tt.archive_timetable
     from timetable tt
         inner join course c on c.id = tt.course_id
     where c.number_course = 1104;
-
