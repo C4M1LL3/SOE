@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/6015db8334.js"
       crossorigin="anonymous"
@@ -12,109 +14,115 @@
   </head>
   <body>
     <main>
-        <h1><a href="/HTML/prematricula.html"> Regresar </a></h1>
-        <h1> Prematricula </h1>
-        <form action="prematricula">
-            <div>
-                <label for="tp_documento"> Tipo de documento </label>
-                <select name="TP_DOCUMENTO" id="tp_documento" required>
-                    <option value="CC"> CC </option>
-                    <option value="CC"> TI </option>
-                    <option value="CC"> CE </option>
-                </select>
-                <label for="numero_documento"> Numero de documento </label>
-                <input type="number" id="numero_documento" required>
-                <label for="f_name"> Primer nombre </label>
-                <input type="text" id="f_name" required>
-                <label for="s_name"> Segundo nombre </label>
-                <input type="text" id="s_name" required>
-                <label for="fs_name"> Primer apellido </label>
-                <input type="text" id="fs_name" required>
-                <label for="ss_name"> Segundo apellido </label>
-                <input type="text" id="ss_name" required>
-                <label for="fecha_nacimiento"> fecha de nacimiento </label>
-                <input type="date" id="fecha_nacimiento" required>
-                <label for="direccion"> Dirección </label>
-                <input type="text" id="direccion" required>
-            </div>
-            
-            <div>
-                <label for="tp_documento_m"> Tipo de documento de la madre </label>
-                <select name="TP_DOCUMENTO_M" id="tp_documento_m" >
-                    <option value="CC"> CC </option>
-                    <option value="CC"> TI </option>
-                    <option value="CC"> CE </option>
-                </select>
-                <label for="numero_documento_madre"> Numero de documento de la madre </label>
-                <input type="number" id="numero_documento_madre" >
-                <label for="f_name_m"> Primer nombre </label>
-                <input type="text" id="f_name_m" >
-                <label for="s_name_m"> Segundo nombre </label>
-                <input type="text" id="s_name_m" >
-                <label for="fs_name_m"> Primer apellido </label>
-                <input type="text" id="fs_name_m" >
-                <label for="ss_name_m"> Segundo apellido </label>
-                <input type="text" id="ss_name_m" >
-                <label for="fecha_nacimiento_m"> fecha de nacimiento </label>
-                <input type="date" id="fecha_nacimiento_m" >
-                <label for="direccion_m"> Dirección </label>
-                <input type="text" id="direccion_m" >
-                <label for="tel_m"> Número de contacto </label>
-                <input type="tel" id="tel_m" >
-           </div>
+      <h1><a href="prematricula.html"> Regresar </a></h1>
+      <h1>Prematricula</h1>
+      <form action="prematricula">
+        <div>
+          <label for="tp_documento"> Tipo de documento </label>
+          <select name="TP_DOCUMENTO" id="tp_documento">
+            <option value="CC">CC</option>
+            <option value="TI">TI</option>
+            <option value="CE">CE</option>
+          </select>
+          <label for="numero_documento"> Numero de documento </label>
+          <input type="number" id="numero_documento" required />
+          <label for="f_name"> Primer nombre </label>
+          <input type="text" id="f_name" required />
+          <label for="s_name"> Segundo nombre </label>
+          <input type="text" id="s_name" required />
+          <label for="fs_name"> Primer apellido </label>
+          <input type="text" id="fs_name" required />
+          <label for="ss_name"> Segundo apellido </label>
+          <input type="text" id="ss_name" required />
+          <label for="fecha_nacimiento"> fecha de nacimiento </label>
+          <input type="date" id="fecha_nacimiento" required />
+          <label for="direccion"> Dirección </label>
+          <input type="text" id="direccion" required />
+        </div>
 
-           <div>
-                <label for="tp_documento_p"> Tipo de documento del padre </label>
-                <select name="TP_DOCUMENTO_P" id="tp_documento_p" >
-                    <option value="CC"> CC </option>
-                    <option value="CC"> TI </option>
-                    <option value="CC"> CE </option>
-                </select>
-                <label for="numero_documento_padre"> Numero de documento de la madre </label>
-                <input type="number" id="numero_documento_madre" >
-                <label for="f_name_p"> Primer nombre </label>
-                <input type="text" id="f_name_p" >
-                <label for="s_name_p"> Segundo nombre </label>
-                <input type="text" id="s_name_p" >
-                <label for="fs_name_p"> Primer apellido </label>
-                <input type="text" id="fs_name_p" >
-                <label for="ss_name_p"> Segundo apellido </label>
-                <input type="text" id="ss_name_p" >
-                <label for="fecha_nacimiento_p"> fecha de nacimiento </label>
-                <input type="date" id="fecha_nacimiento_p" >
-                <label for="direccion_p"> Dirección </label>
-                <input type="text" id="direccion_p" >
-                <label for="tel_p"> Número de contacto </label>
-                <input type="tel" id="tel_p" >
-           </div>  
+        <div>
+          <label for="tp_documento_m"> Tipo de documento de la madre </label>
+          <select name="TP_DOCUMENTO_M" id="tp_documento_m">
+            <option value="CC">CC</option>
+            <option value="TI">TI</option>
+            <option value="CE">CE</option>
+          </select>
+          <label for="numero_documento_madre">
+            Numero de documento de la madre
+          </label>
+          <input type="number" id="numero_documento_madre" />
+          <label for="f_name_m"> Primer nombre </label>
+          <input type="text" id="f_name_m" />
+          <label for="s_name_m"> Segundo nombre </label>
+          <input type="text" id="s_name_m" />
+          <label for="fs_name_m"> Primer apellido </label>
+          <input type="text" id="fs_name_m" />
+          <label for="ss_name_m"> Segundo apellido </label>
+          <input type="text" id="ss_name_m" />
+          <label for="fecha_nacimiento_m"> fecha de nacimiento </label>
+          <input type="date" id="fecha_nacimiento_m" />
+          <label for="direccion_m"> Dirección </label>
+          <input type="text" id="direccion_m" />
+          <label for="tel_m"> Número de contacto </label>
+          <input type="tel" id="tel_m" />
+        </div>
 
-           <div>
-                <label for="tp_documento_t"> Tipo de documento del tutor </label>
-                <select name="TP_DOCUMENTO_T" id="tp_documento_t" required>
-                    <option value="CC"> CC </option>
-                    <option value="CC"> TI </option>
-                    <option value="CC"> CE </option>
-                </select>
-                <label for="numero_documento_tutor"> Numero de documento del tutor </label>
-                <input type="number" id="numero_documento_tutor" required>
-                <label for="f_name_t"> Primer nombre </label>
-                <input type="text" id="f_name_t" required>
-                <label for="s_name_t"> Segundo nombre </label>
-                <input type="text" id="s_name_t" required>
-                <label for="fs_name_t"> Primer apellido </label>
-                <input type="text" id="fs_name_t" required>
-                <label for="ss_name_t"> Segundo apellido </label>
-                <input type="text" id="ss_name_t" required>
-                <label for="fecha_nacimiento_t"> fecha de nacimiento </label>
-                <input type="date" id="fecha_nacimiento_t" required>
-                <label for="direccion_t"> Dirección </label>
-                <input type="text" id="direccion_t" required>
-                <label for="tel_t"> Número de contacto </label>
-                <input type="tel" id="tel_t" required>
-            </div>
+        <div>
+          <label for="tp_documento_p"> Tipo de documento del padre </label>
+          <select name="TP_DOCUMENTO_P" id="tp_documento_p">
+            <option value="CC">CC</option>
+            <option value="TI">TI</option>
+            <option value="CE">CE</option>
+          </select>
+          <label for="numero_documento_padre">
+            Numero de documento de la madre
+          </label>
+          <input type="number" id="numero_documento_padre" />
+          <label for="f_name_p"> Primer nombre </label>
+          <input type="text" id="f_name_p" />
+          <label for="s_name_p"> Segundo nombre </label>
+          <input type="text" id="s_name_p" />
+          <label for="fs_name_p"> Primer apellido </label>
+          <input type="text" id="fs_name_p" />
+          <label for="ss_name_p"> Segundo apellido </label>
+          <input type="text" id="ss_name_p" />
+          <label for="fecha_nacimiento_p"> fecha de nacimiento </label>
+          <input type="date" id="fecha_nacimiento_p" />
+          <label for="direccion_p"> Dirección </label>
+          <input type="text" id="direccion_p" />
+          <label for="tel_p"> Número de contacto </label>
+          <input type="tel" id="tel_p" />
+        </div>
 
-            <input type="submit">
-        </form>
+        <div>
+          <label for="tp_documento_t"> Tipo de documento del tutor </label>
+          <select name="TP_DOCUMENTO_T" id="tp_documento_t">
+            <option value="CC">CC</option>
+            <option value="TI">TI</option>
+            <option value="CE">CE</option>
+          </select>
+          <label for="numero_documento_tutor">
+            Numero de documento del tutor
+          </label>
+          <input type="number" id="numero_documento_tutor" required />
+          <label for="f_name_t"> Primer nombre </label>
+          <input type="text" id="f_name_t" required />
+          <label for="s_name_t"> Segundo nombre </label>
+          <input type="text" id="s_name_t" required />
+          <label for="fs_name_t"> Primer apellido </label>
+          <input type="text" id="fs_name_t" required />
+          <label for="ss_name_t"> Segundo apellido </label>
+          <input type="text" id="ss_name_t" required />
+          <label for="fecha_nacimiento_t"> fecha de nacimiento </label>
+          <input type="date" id="fecha_nacimiento_t" required />
+          <label for="direccion_t"> Dirección </label>
+          <input type="text" id="direccion_t" required />
+          <label for="tel_t"> Número de contacto </label>
+          <input type="tel" id="tel_t" required />
+        </div>
+
+        <input type="submit" />
+      </form>
     </main>
   </body>
 </html>
