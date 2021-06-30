@@ -367,3 +367,59 @@ label #sidebar_btn:hover {
     font-size: 20px;
     color: rgb(255, 255, 255)
 }
+
+/* ---------------------------- */
+
+.fond_universal{
+  background-color: rgb(30, 30, 30);
+  padding-left: 180px;
+  padding-right: 230px;
+  padding-top: 150px;
+  text-decoration: none;
+  color: rgb(184, 137, 22);
+  text-align: center;
+}
+
+.fond_universal .cur_b{
+  text-align: center;
+  border: rgb(184, 137, 22) solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+}
+
+.grados{
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+.grados div{
+  text-decoration: none;
+  border: rgb(184, 137, 22) solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+  display: inline-block;
+  padding: 40px;
+  margin: 50px 100px 0px 100px;
+  color: rgb(255, 255, 255);
+}
+
+.grados div:hover{
+  color: rgb(180, 180, 180);
+}
+
+.horario_cur img{
+  width: 100%;
+  height: auto;
+}
+
+.horario_cur a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.horario_cur h1{
+  text-align: left;
+  padding: 2.5% 0px 2.5% 0px;
+}
+
+.horario_cur a:hover{
+  color: rgb(180, 180, 180);
+}
