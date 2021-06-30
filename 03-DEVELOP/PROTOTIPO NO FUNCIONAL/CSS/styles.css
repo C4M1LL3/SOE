@@ -27,6 +27,7 @@
   width: 100%;
   position: fixed;
   top: 0px;
+  z-index: 1001;
 }
 
 .nav_info ul li {
@@ -146,7 +147,7 @@ label #sidebar_btn:hover {
 
 .col {
   background-color: rgb(0, 0, 0);
-  color: #rgb(196, 152, 42);
+  color: rgb(196, 152, 42);
   margin-top: 0%;
   position: absolute;
   top: 600px;
@@ -380,13 +381,13 @@ label #sidebar_btn:hover {
   text-align: center;
 }
 
-.fond_universal .cur_b{
+.fond_universal .cur_b, .fond_universal .t_not_mat{
   text-align: center;
   border: rgb(184, 137, 22) solid;
   border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
 }
 
-.grados{
+.grados, .not_mat{
   padding-top: 5%;
   padding-bottom: 1%;
 }
@@ -401,7 +402,7 @@ label #sidebar_btn:hover {
   color: rgb(255, 255, 255);
 }
 
-.grados div:hover{
+.grados  div:hover{
   color: rgb(180, 180, 180);
 }
 
@@ -423,3 +424,307 @@ label #sidebar_btn:hover {
 .horario_cur a:hover{
   color: rgb(180, 180, 180);
 }
+
+.not_mat div{
+    border: rgb(184, 137, 22) solid;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+    display: inline-block;
+    margin: 50px 100px 0px 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 220px;
+  } 
+
+.not_mat, .not_mat a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.not_mat, .not_mat a:hover{
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+}
+
+.not_mat_nn{
+  border: rgb(184, 137, 22) solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+  display: inline-block;
+  margin: 30px 100px 30px 100px;
+  padding: 20px 0px 20px 0px;
+  width: 80%;
+}
+
+.ta_no{
+  background: rgb(0, 0, 0);
+  opacity: 70%;
+}
+
+
+.ta_no table{
+  border: rgb(184, 137, 22) solid;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ta_no caption{
+  border: rgb(184, 137, 22) solid;
+  height: 100px;
+  font-size: 70px;
+}
+
+.ta_no td, th{
+  border: rgb(184, 137, 22) solid;
+  height: 100px;
+  font-size: 35px;
+}
+
+.ta_no th{
+  color: rgb(184, 137, 22);
+}
+
+.ta_no td{
+  color: rgb(255, 255, 255);
+}
+
+.ta_no caption:hover{
+  color: rgb(180, 161, 112);
+}
+
+.ta_no th:hover{
+  color: rgb(180, 161, 112);
+}
+
+.ta_no td:hover{
+  color: rgb(180, 180, 180);
+}
+
+.ta_no_r{
+  display: inline-block;
+  background: rgb(28, 29, 29);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: rgb(184, 137, 22) solid;
+  margin: 2.5% 80% 2.5% 0%;
+}
+
+.ta_no_r a{
+  text-decoration: none;
+  color: rgb(184, 137, 22);
+  font-size: 50px;
+}
+
+.ta_no_r a:hover{
+  text-decoration: none;
+  color: rgb(196, 152, 42);
+  font-size: 50px;
+}
+
+/* --------------------------------- */
+
+.pre_matr{
+  padding-bottom: 30px;
+}
+
+.pre_matr h1{
+  font-size: 50px;
+}
+
+.pre_matr img{
+  width: 400px;
+  height: 300px;
+}
+
+.pre_matr_2{
+  padding-bottom: 30px;
+}
+
+.pre_matr_2 h1{
+  font-size: 50px;
+}
+
+.pre_matr_2 img{
+  width: 400px;
+  height: 170px;
+}
+
+.pre_matr_2 p{
+  padding: 50px 200px 0px 200px;
+  color: rgb(180, 180, 180);
+}
+
+.pre_matr_3{
+  padding-bottom: 30px;
+}
+
+.pre_matr_3 h2{
+  font-size: 50px;
+}
+
+.pre_matr_3 img{
+  width: 100%;
+  height: 320px;
+  padding-top: 30px;
+}
+
+/* ------------------------ */
+
+
+.encab_1 div{
+  display: inline-block;
+  font-size: 30px;
+  color: rgb(180, 180, 180);
+  position: relative;
+  bottom: 100px;
+}
+
+.encab_1 .esp_img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 50px;
+  position: relative;
+  top: 100px;
+}
+
+.encab_2 p{
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: justify;
+  padding-bottom: 150px;
+}
+
+/* ---------------------- */
+
+.observ_1 h1{
+  padding: 10px;
+  font-size: 50px;
+}
+
+.observ_1 img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  margin: 2% 40% 2% 40%;
+}
+
+.observ_1 div{
+  border: rgb(184, 137, 22) solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+  width: auto;
+}
+
+.matr_1 h1{
+  padding: 10px;
+  font-size: 50px;
+}
+
+.matr_1 img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  margin: 2% 40% 2% 40%;
+}
+
+.matr_1 div{
+  border: rgb(184, 137, 22) solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+  width: auto;
+}
+
+/* ---------------------------------------------- */
+
+.matr_2 h1{
+  padding: 10px;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+.matr_2 div{
+  border: rgb(184, 137, 22) solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+  width: auto;
+}
+
+.matr_3 h1{
+  padding: 10px;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+.matr_3 div{
+  border: rgb(184, 137, 22) solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+  width: auto;
+}
+
+.matr_4 h1{
+  padding: 10px;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+.matr_4 div{
+  border: rgb(184, 137, 22) solid;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem ;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+  width: auto;
+}
+
+#activo{
+  color: rgb(14, 155, 33);
+}
+
+/* ----------------- */
+
+.obser_2{
+
+}
+
+.obser_2 h1{
+  padding: 20px;
+}
+
+.observ_3 h2{
+  padding: 20px;
+  font-size: 50px;
+}
+
+.observ_3 div{
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: rgb(255, 255, 255);
+}
+
+.observ_4 h2{
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+  width: auto;
+}
+
+.observ_4 div{
+  border-bottom: rgba(184, 138, 22, 0.596) solid;
+  border-radius: 1.0rem 1.0rem 1.0rem 1.5rem ;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+  width: auto;
+}
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/styles_form.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/6015db8334.js"
@@ -14,15 +14,20 @@
   </head>
   <body>
     <main>
-      <h1> Iniciar Sesión </h1>
-      <form action="Iniciar_sesión">
-        <label for="n_document"> Numero de Documento </label>
-        <input type="number" id="n_document" required />
-        <label for="password"> Contraseña </label>
-        <input type="password" id="password" required />
-      </form>
-      <a href="index.html">Regresar</a>
-      <a href="pagina_principal.html">Ingresar</a>
+      <div class="fondof_img">
+        <img src="../assets/imagenes/ws_Old_office_1920x1200.jpg" alt="" />
+      </div>
+      <div class="f_log">
+        <h1> Iniciar Sesión </h1>
+        <form action="Iniciar_sesión">
+          <input type="number" id="n_document" required placeholder="Numero de documento" />
+          <input type="password" id="password" required placeholder="Contraseña" />
+        </form>
+        <div class="reg">
+        <a href="index.html">Regresar</a>
+        <a href="pagina_principal.html">Ingresar</a>
+      </div>
+    </div>
     </main>
   </body>
 </html>
