@@ -1,0 +1,204 @@
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.exe
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.deps.json
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.runtimeconfig.json
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.runtimeconfig.dev.json
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.pdb
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.AssemblyReference.cache
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.GenerateResource.cache
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.AssemblyInfoInputs.cache
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.AssemblyInfo.cs
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.CoreCompileInputs.cache
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.dll
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.pdb
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.genruntimeconfig.cache
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.Properties.Resources.resources
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.InicioSesion.resources
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.Index.resources
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.RegistrarUsuario.resources
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.RegistrarPersona.resources
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\linq2db.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\stypj\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.CopyComplete
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.PaginaPrincipal.resources
+C:\Users\stypj\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.ConsultarUsuarios.resources
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.exe
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.deps.json
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.runtimeconfig.json
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.runtimeconfig.dev.json
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\diseño.pdb
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\linq2db.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\anime\source\repos\diseño\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.AssemblyReference.cache
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.ConsultarUsuarios.resources
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.Index.resources
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.InicioSesion.resources
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.PaginaPrincipal.resources
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.Properties.Resources.resources
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.RegistrarPersona.resources
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.RegistrarUsuario.resources
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.GenerateResource.cache
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.AssemblyInfoInputs.cache
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.AssemblyInfo.cs
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.CoreCompileInputs.cache
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.CopyComplete
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.dll
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.pdb
+C:\Users\anime\source\repos\diseño\diseño\obj\Debug\netcoreapp3.1\diseño.genruntimeconfig.cache
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\diseño.exe
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\diseño.deps.json
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\diseño.runtimeconfig.json
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\diseño.runtimeconfig.dev.json
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\diseño.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\diseño.pdb
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\linq2db.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.AssemblyReference.cache
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.ConsultarUsuarios.resources
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.Index.resources
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.InicioSesion.resources
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.PaginaPrincipal.resources
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.Properties.Resources.resources
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.RegistrarPersona.resources
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.RegistrarUsuario.resources
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.GenerateResource.cache
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.AssemblyInfoInputs.cache
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.AssemblyInfo.cs
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.CoreCompileInputs.cache
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.csproj.CopyComplete
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.dll
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.pdb
+C:\Users\anime\OneDrive\Documentos\SOE\04-TEST\PRUEBAS UNITARIAS\SOE\diseño\obj\Debug\netcoreapp3.1\diseño.genruntimeconfig.cache

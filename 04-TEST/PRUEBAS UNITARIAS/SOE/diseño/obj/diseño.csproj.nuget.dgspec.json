@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\anime\\OneDrive\\Documentos\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\diseño.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\anime\\OneDrive\\Documentos\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\diseño.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anime\\OneDrive\\Documentos\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\diseño.csproj",
+        "projectName": "diseño",
+        "projectPath": "C:\\Users\\anime\\OneDrive\\Documentos\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\diseño.csproj",
+        "packagesPath": "C:\\Users\\anime\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anime\\OneDrive\\Documentos\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anime\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "NuGet.Frameworks": {
+              "target": "Package",
+              "version": "[5.11.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
