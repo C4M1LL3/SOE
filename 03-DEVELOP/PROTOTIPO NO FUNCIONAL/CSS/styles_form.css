@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+}
+.fondof_img {
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.f_log {
+  width: 40%;
+  height: 35%;
+  background-color: rgb(0, 0, 0, 0.85);
+  margin: 10% 20% 15% 20%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 13%;
+}
+h1 {
+  text-align: center;
+  color: chocolate;
+}
+label {
+  text-align: center;
+}
+
+input {
+  margin: 20px 23% 20px 23%;
+  width: 50%;
+  padding: 7px;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  background: transparent;
+  color: #fff;
+  text-align: center;
+}
+.reg {
+  text-align: center;
+}
+.reg a {
+  text-decoration: none;
+  margin: 100px;
+  color: chocolate;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/* ------------------------- */
+.fondof_img{
+  opacity: .7;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  text-align: center;
+}
+
+.f_log2{
+  width: 60%;
+  height: 120%;
+  background-color: rgb(0, 0, 0, .85);
+  margin: 10% 20% 15% 20%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
+ h1 {
+  text-align: center;
+  color: chocolate;
+}
+  label{
+  text-align: center;
+  color: chocolate;
+}
+input{
+  text-align: center;
+
+}
+select{
+  margin: 20px 13% 20px 13%;
+  color: chocolate;
+}
+input {
+  margin: 20px 13% 20px 13%;
+  width: 30%;
+  padding: 7px;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  background: transparent;
+  color:white;
+  text-align:center;
+}
+.reg{
+  text-align: left;
+  
+}
+.reg a{
+  text-decoration: none;
+  margin: 100px;
+  color: chocolate;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.form_center{
+  text-align: center;
+}

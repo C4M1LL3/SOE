@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/6015db8334.js"
       crossorigin="anonymous"
@@ -14,9 +17,19 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav_info">
+				<input type="checkbox" class="checkbox" id="check">
+				<label class="menu"for="check">
+				<i class="fas fa-bars" id=sidebar_btn></i>
+				<div class="sidebar" id="sidebar">		
+					<ul>
+            <li><a href="matricula.html" class="matr_1"> <span> Matricula </span> </a></li>
+            <li><a href="nota_materias.html" class="not_1"> <span> Notas</span> </a></li>
+            <li><a href="horario.html" class="hor_1"> <span> Horarios </span> </a></li>
+            <li><a href="observador.html" class="obs_1"> <span> Observador </span>  </a></li>
+					</ul>
+				</div>
         <ul>
-          <li><i class="fas fa-bars"></i></li>
           <li>
             <ul>
               <li><a href="matricula.html"> Matricula </a></li>
@@ -25,56 +38,61 @@
               <li><a href="observador.html"> Observador </a></li>
             </ul>
           </li>
-          <li><a href="pagina_principal.html"> Inicio </a></li>
+          <div class="menu_i">
+          <li id="munu_l"><a href="pagina_principal.html"> Inicio </a></li>
+        </div>
         </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Español</h1>
-      <section>
+      <div class="fond_universal">
+      <h1 >Español</h1>
+      <section class="not_mat_nn">
         <h2><a href="notas_trimestre1.html"> Trismestre 1 </a></h2>
       </section>
-      <section>
+      <section class="not_mat_nn">
         <h2><a href="notas_trimestre2.html"> Trismestre 2 </a></h2>
       </section>
-      <section>
+      <section class="not_mat_nn">
         <h2><a href="notas_trimestre3.html"> Trismestre 3 </a></h2>
       </section>
-      <section>
+      <section class="not_mat_nn">
         <h2><a href="notas_anual.html"> Nota anual </a></h2>
       </section>
+    </div>
     </main>
     <aside>
-      <a href="https://www.facebook.com/Ciudadela2021jm" target="_blank">
-        <i class="fab fa-facebook-square"></i
-      ></a>
+      <div class="bar_soc">
+      <a href="https://www.facebook.com/Ciudadela2021jm" target="_blank" class="icon_1 fab fa-facebook-f">
+       </a>
       <a
         href="https://www.youtube.com/channel/UCocZFTGF2fdIfugwHt_7AaQ/featured"
-        target="_blank"
-      >
-        <i class="fab fa-youtube"></i
-      ></a>
+        target="_blank" class="icon_2"> Y
+       </a>
+    </div>
     </aside>
     <footer>
-      <section>
-        <h3>Contactenos</h3>
-
-        <p>3215648585</p>
-        <p>lorem@lorem.com</p>
-      </section>
-      <section>
-        <h3>información</h3>
-        <p>Lorem Lorem Lorem Lorem</p>
-        <p>Lorem Lorem Lorem Lorem</p>
-        <p>Lorem Lorem Lorem Lorem</p>
-      </section>
-      <section>
-        <h3>Creadores</h3>
-        <p>name</p>
-        <p>name</p>
-        <p>name</p>
-        <p>name</p>
-      </section>
+      <div class="footer">
+        <section class="contacto">
+          <h2>Contactenos</h2>
+          <p>3215648585</p>
+          <p>lorem@lorem.com</p>
+        </section>
+        <section class="info">
+          <h2>información</h2>
+          <p>Lorem Lorem Lorem Lorem</p>
+          <p>Lorem Lorem Lorem Lorem</p>
+          <p>Lorem Lorem Lorem Lorem</p>
+        </section>
+        <section class="creadors">
+          <h2>Creadores</h2>
+          <p>name</p>
+          <p>name</p>
+          <p>name</p>
+          <p>name</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

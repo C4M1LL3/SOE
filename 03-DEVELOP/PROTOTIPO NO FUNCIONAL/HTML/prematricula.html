@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/6015db8334.js"
       crossorigin="anonymous"
@@ -13,27 +16,44 @@
     <title>SOE</title>
   </head>
   <body>
+    <div class="fondo_f">
+      <img src="../assets/imagenes/fondo.jpg" alt=" Fondo " />
+    </div>
+    <div class="fondo_n">.</div>
     <header>
-      <nav>
+      <nav class="nav_info">
+				<input type="checkbox" class="checkbox" id="check">
+				<label class="menu"for="check">
+				<i class="fas fa-bars" id=sidebar_btn></i>
+				<div class="sidebar" id="sidebar">		
+					<ul>
+						<li><a href="prematricula.html"><span> Prematricula </span></a></li>
+					</ul>
+				</div>
         <ul>
-          <li><i class="fas fa-bars"></i></li>
           <li>
             <ul>
               <li><a href="prematricula.html"> Prematricula </a></li>
             </ul>
           </li>
-          <li><a href="informacion.html"> Inicio </a></li>
+          <div class="menu_i">
+          <li id="munu_l"><a href="informacion.html"> Inicio </a></li>
           <li><a href="login.html"> Iniciar sesión </a></li>
+        </div>
         </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Proceso prematricula</h1>
-      <img
-        src="../assets/imagenes/prematricula.jpg"
-        alt=" Imagen prematricula "
-      />
-      <section>
+      <div class="fond_universal">
+        <div class="pre_matr">
+          <h1>Proceso prematricula</h1>
+          <img
+            src="../assets/imagenes/prematricula.jpg"
+            alt=" Imagen prematricula "
+          />
+        </div>
+      <section class="pre_matr_2">
         <h2>Información</h2>
         <img src="../assets/imagenes/proceso.png" alt="proceso prematricula" />
         <p>
@@ -43,43 +63,45 @@
           ratione.
         </p>
       </section>
-      <section>
+      <section class="pre_matr_3">
         <h2>Puedes realizar tu prematricula presionando esta imagen</h2>
         <a href="prematricula_form.html">
           <img src="../assets/imagenes/clic_aqui.jpg" alt=" clic aqui " />
         </a>
       </section>
+    </div>
     </main>
     <aside>
-      <a href="https://www.facebook.com/Ciudadela2021jm" target="_blank">
-        <i class="fab fa-facebook-square"></i
-      ></a>
+      <div class="bar_soc">
+      <a href="https://www.facebook.com/Ciudadela2021jm" target="_blank" class="icon_1 fab fa-facebook-f">
+       </a>
       <a
         href="https://www.youtube.com/channel/UCocZFTGF2fdIfugwHt_7AaQ/featured"
-        target="_blank"
-      >
-        <i class="fab fa-youtube"></i
-      ></a>
+        target="_blank" class="icon_2"> Y
+       </a>
+    </div>
     </aside>
     <footer>
-      <section>
-        <h2>Contactenos</h2>
-        <p>3215648585</p>
-        <p>lorem@lorem.com</p>
-      </section>
-      <section>
-        <h2>información</h2>
-        <p>Lorem Lorem Lorem Lorem</p>
-        <p>Lorem Lorem Lorem Lorem</p>
-        <p>Lorem Lorem Lorem Lorem</p>
-      </section>
-      <section>
-        <h2>Creadores</h2>
-        <p>name</p>
-        <p>name</p>
-        <p>name</p>
-        <p>name</p>
-      </section>
+      <div class="footer">
+        <section class="contacto">
+          <h2>Contactenos</h2>
+          <p>3215648585</p>
+          <p>lorem@lorem.com</p>
+        </section>
+        <section class="info">
+          <h2>información</h2>
+          <p>Lorem Lorem Lorem Lorem</p>
+          <p>Lorem Lorem Lorem Lorem</p>
+          <p>Lorem Lorem Lorem Lorem</p>
+        </section>
+        <section class="creadors">
+          <h2>Creadores</h2>
+          <p>name</p>
+          <p>name</p>
+          <p>name</p>
+          <p>name</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

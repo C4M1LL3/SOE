@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-  <html lang="es">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="/CSS/styles.css" />
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
-      <script
-        src="https://kit.fontawesome.com/6015db8334.js"
-        crossorigin="anonymous"
-      ></script>
-      <title>SOE</title>
-    </head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6015db8334.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SOE</title>
+  </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav_info">
+				<input type="checkbox" class="checkbox" id="check">
+				<label class="menu"for="check">
+				<i class="fas fa-bars" id=sidebar_btn></i>
+				<div class="sidebar" id="sidebar">		
+					<ul>
+            <li><a href="matricula.html" class="matr_1"> <span> Matricula </span> </a></li>
+            <li><a href="nota_materias.html" class="not_1"> <span> Notas</span> </a></li>
+            <li><a href="horario.html" class="hor_1"> <span> Horarios </span> </a></li>
+            <li><a href="observador.html" class="obs_1"> <span> Observador </span>  </a></li>
+					</ul>
+				</div>
         <ul>
-          <li><i class="fas fa-bars"></i></li>
           <li>
             <ul>
               <li><a href="matricula.html"> Matricula </a></li>
@@ -25,63 +38,74 @@
               <li><a href="observador.html"> Observador </a></li>
             </ul>
           </li>
-          <li><a href="pagina_principal.html"> Inicio </a></li>
+          <div class="menu_i">
+          <li id="munu_l"><a href="pagina_principal.html"> Inicio </a></li>
+        </div>
         </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <div>
-        <table>
-          <caption>
-            Español
-          </caption>
-          <tr>
-            <td>70%</td>
-            <td>20%</td>
-            <td>10%</td>
-            <td>Nota final</td>
-          </tr>
-          <tr>
-            <td>30</td>
-            <td>40</td>
-            <td>50</td>
-            <td>40</td>
-          </tr>
-        </table>
+      <div class="fond_universal">
+        <div class="ta_no">
+          <table>
+            <caption>
+              Español
+            </caption>
+            <thead>
+            <tr>
+              <th>70%</th>
+              <th>205</th>
+              <th>10%</th>
+              <th>Nota final</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>30</td>
+              <td>50</td>
+              <td>40</td>
+              <td>35</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="ta_no_r">
+        <a href="nota_notas.html"> Regresar </a>
       </div>
-      <a href="nota_notas.html"> Regresar </a>
+      </div>
     </main>
     <aside>
-      <a href="https://www.facebook.com/Ciudadela2021jm" target="_blank">
-        <i class="fab fa-facebook-square"></i
-      ></a>
+      <div class="bar_soc">
+      <a href="https://www.facebook.com/Ciudadela2021jm" target="_blank" class="icon_1 fab fa-facebook-f">
+       </a>
       <a
         href="https://www.youtube.com/channel/UCocZFTGF2fdIfugwHt_7AaQ/featured"
-        target="_blank"
-      >
-        <i class="fab fa-youtube"></i
-      ></a>
+        target="_blank" class="icon_2"> Y
+       </a>
+    </div>
     </aside>
     <footer>
-      <section>
-        <h3>Contactenos</h3>
-
-        <p>3215648585</p>
-        <p>lorem@lorem.com</p>
-      </section>
-      <section>
-        <h3>información</h3>
-        <p>Lorem Lorem Lorem Lorem</p>
-        <p>Lorem Lorem Lorem Lorem</p>
-        <p>Lorem Lorem Lorem Lorem</p>
-      </section>
-      <section>
-        <h3>Creadores</h3>
-        <p>name</p>
-        <p>name</p>
-        <p>name</p>
-        <p>name</p>
-      </section>
+      <div class="footer">
+        <section class="contacto">
+          <h2>Contactenos</h2>
+          <p>3215648585</p>
+          <p>lorem@lorem.com</p>
+        </section>
+        <section class="info">
+          <h2>información</h2>
+          <p>Lorem Lorem Lorem Lorem</p>
+          <p>Lorem Lorem Lorem Lorem</p>
+          <p>Lorem Lorem Lorem Lorem</p>
+        </section>
+        <section class="creadors">
+          <h2>Creadores</h2>
+          <p>name</p>
+          <p>name</p>
+          <p>name</p>
+          <p>name</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
