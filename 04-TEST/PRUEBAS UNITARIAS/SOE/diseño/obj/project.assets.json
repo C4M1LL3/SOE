@@ -5980,19 +5980,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anime\\.nuget\\packages\\": {}
+    "C:\\Users\\stypj\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anime\\OneDrive\\Documentos\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\diseño.csproj",
+      "projectUniqueName": "C:\\Users\\stypj\\Documents\\GitHub\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\diseño.csproj",
       "projectName": "diseño",
-      "projectPath": "C:\\Users\\anime\\OneDrive\\Documentos\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\diseño.csproj",
-      "packagesPath": "C:\\Users\\anime\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anime\\OneDrive\\Documentos\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\obj\\",
+      "projectPath": "C:\\Users\\stypj\\Documents\\GitHub\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\diseño.csproj",
+      "packagesPath": "C:\\Users\\stypj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\stypj\\Documents\\GitHub\\SOE\\04-TEST\\PRUEBAS UNITARIAS\\SOE\\diseño\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anime\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\stypj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6057,7 +6057,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
