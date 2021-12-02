@@ -68,21 +68,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\styles.css" />
-    <Content Include="html\executive\login.aspx" />
+    <Content Include="html\executive\indexd.aspx" />
+    <Content Include="html\executive\logind.aspx" />
     <Content Include="html\informacion\informacion.aspx" />
     <Content Include="html\informacion\matricula.aspx" />
-    <Content Include="html\student\login.aspx" />
-    <Content Include="html\teacher\login.aspx" />
+    <Content Include="html\student\indexe.aspx" />
+    <Content Include="html\student\logine.aspx" />
+    <Content Include="html\teacher\indexp.aspx" />
+    <Content Include="html\teacher\loginp.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="html\executive\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="html\executive\indexd.aspx.cs">
+      <DependentUpon>indexd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="html\executive\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="html\executive\indexd.aspx.designer.cs">
+      <DependentUpon>indexd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\logind.aspx.cs">
+      <DependentUpon>logind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\logind.aspx.designer.cs">
+      <DependentUpon>logind.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\informacion\informacion.aspx.cs">
       <DependentUpon>informacion.aspx</DependentUpon>
@@ -98,19 +108,33 @@
     <Compile Include="html\informacion\matricula.aspx.designer.cs">
       <DependentUpon>matricula.aspx</DependentUpon>
     </Compile>
-    <Compile Include="html\student\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="html\student\indexe.aspx.cs">
+      <DependentUpon>indexe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="html\student\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="html\student\indexe.aspx.designer.cs">
+      <DependentUpon>indexe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="html\teacher\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="html\student\logine.aspx.cs">
+      <DependentUpon>logine.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="html\teacher\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="html\student\logine.aspx.designer.cs">
+      <DependentUpon>logine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teacher\indexp.aspx.cs">
+      <DependentUpon>indexp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teacher\indexp.aspx.designer.cs">
+      <DependentUpon>indexp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teacher\loginp.aspx.cs">
+      <DependentUpon>loginp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teacher\loginp.aspx.designer.cs">
+      <DependentUpon>loginp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

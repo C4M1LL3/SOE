@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SOE_BETA_0_1.html.student
+namespace SOE_BETA_0_1.html.teacher
 {
-    public partial class login : System.Web.UI.Page
+    public partial class indexp : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

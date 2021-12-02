@@ -32,21 +32,21 @@
     <main class="main">
       <div class="login">
         <div class="login__cont login__cont--student">
-          <a href="html/student/login.html" class="login__link">
+          <a href="html/student/logine.aspx" class="login__link">
             <div class="login__hover">
               <h1 class="login__text">Estudiante</h1>
             </div>
           </a>
         </div>
         <div class="login__cont login__cont--teacher">
-          <a href="html/teacher/login.html" class="login__link">
+          <a href="html/teacher/loginp.aspx" class="login__link">
             <div class="login__hover">
               <h1 class="login__text">Profesor</h1>
             </div>
           </a>
         </div>
         <div class="login__cont login__cont--executive">
-          <a href="html/executive/login.html" class="login__link">
+          <a href="html/executive/logind.aspx" class="login__link">
             <div class="login__hover">
               <h1 class="login__text">Directivo</h1>
             </div>

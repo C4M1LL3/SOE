@@ -7,11 +7,20 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SOE_BETA_0_1.html.teacher
+namespace SOE_BETA_0_1.html.student
 {
 
 
-    public partial class login
+    public partial class indexe
     {
+
+        /// <summary>
+        /// Control form1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
     }
 }

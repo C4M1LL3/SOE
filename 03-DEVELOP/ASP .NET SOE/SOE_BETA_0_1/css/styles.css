@@ -154,6 +154,10 @@ body {
     font-size: 3em;
 }
 
+.form__cont {
+    position: relative;
+}
+
 .label {
     color: var(--color-terciario);
     font-size: 1.2em;
@@ -203,6 +207,14 @@ body {
 
 
 .help__link {
+    position: absolute;
+    bottom: 3.7rem;
+    right: 1.5rem;
+    font-size: .6em;
+    color: rgb(128 128 128);
+}
+
+.help__link--sp {
     font-size: .8em;
     text-decoration: none;
     color: var(--color-principal);
