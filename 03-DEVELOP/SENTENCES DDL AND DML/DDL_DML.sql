@@ -256,6 +256,15 @@ create table annual_final_grade
     constraint uk_annual_final_grade unique (final_quarterly_grade_id),
     constraint fk_finquar_finannual foreign key (final_quarterly_grade_id) references final_quarterly_grade (id)
 );
+create table news (
+ id serial,
+ id_user int4 NOT NULL ,
+ text varchar(225)NOT NULL ,
+ image varbinary(2000)NOT NULL ,
+ constraint pk_news primary key (id),
+ CONSTRAINT fk_news_user foreign key (id_user) references system_user(id),
+ constraint uk_news_user unique (id)
+);
 
 SET search_path = soe;
 insert into type_document (abbreviation, document_name, document_status)

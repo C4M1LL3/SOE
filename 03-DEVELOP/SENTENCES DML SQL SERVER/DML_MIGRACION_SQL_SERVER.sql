@@ -256,4 +256,14 @@ create table annual_final_grade
     constraint uk_annual_final_grade unique (final_quarterly_grade_id),
     constraint fk_finquar_finannual foreign key (final_quarterly_grade_id) references final_quarterly_grade (id)
 );
+create table news 
+(
+ id int IDENTITY(1,1) NOT NULL ,
+ id_user int NOT NULL,
+ text varchar(225) NOT NULL ,
+ image varbinary(2000) NOT NULL,
+ constraint pk_news primary key (id),
+ constraint fk_user_news foreign key (id_user) references system_userr(id),
+ constraint uk_user_news unique (id_user)
+);
 GO
