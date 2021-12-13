@@ -33,20 +33,16 @@
       <main class="main">
           <div class="matr">
               <div class="matr__cont"> 
-                  <img src="#" alt="" class="matr__img">
-                  <h2 class="matr__title"> Algo :) </h2>
-                  <p class="matr__text"> A través de ocho (8) talleres o sesiones de trabajo en línea (Programas Jóvenes en Acción y Familias en Acción) o presencial (Programa Familias en Acción) bajo una metodología de aprendizaje experiencial, los cuales se realizan uno (1) cada semana para un total de 8 semanas de formación. En cada taller se exploran las Habilidades para la Vida como un insumo que impulsa el desarrollo de tu trayectoria de vida </p>
+                  <img src="../../assets/images/img5.jpg" alt="Imagen matricula 1" class="matr__img">
+                  <p class="matr__text">Ya estan abiertas las matriculas para el año 2022. Mediante el formulario podras aplicar a la prematricula, sin filas, de manera directa con la instituciòn, por este formulario podra enviar los documentos necesarios y de esta manera evaluar si el estudiante sera admitido en la institucion.  </p>
               </div>
               <div class="matr__cont"> 
-                <img src="#" alt="" class="matr__img">
-                <h2 class="matr__title"> Algo :) </h2>
-                <p class="matr__text"> El segundo periodo de atención del Módulo de Habilidades para la Vida: Construyendo mi camino, se realizará entre el 13 de septiembre y el 12 de noviembre de 2021, bajo la modalidad en línea para el Programa Jóvenes en Acción y en las modalidades en línea y presencial para el Programa Familias en Acción en las Instituciones Educativas aliadas en los municipios definidos hasta el 20 de noviembre de 2021. </p>
+                <img src="../../assets/images/img6.jpg" alt="Imagen matricula 2" class="matr__img">
+                <p class="matr__text"> Esta plataforma solo estara habilitada para los jovenes pertenecientes a los grados de educacion bachillero y media de la jornada mañana, si usted o su hijo son pertenecientes a primaria jornada mañana o directamente son de jornada tarde, tendra que asistir  directamente a la instituciòn para realizar los tramites de su matricula.  </p>
             </div>
             <div class="matr__cont"> 
-                <img src="#" alt="" class="matr__img">
-                <h2 class="matr__title"> Algo :) </h2>
-                <p class="matr__text"> Regístrate, completa el formulario y selecciona un grupo con el lugar y horario de prefencia
-                    Los participantes de los programas Jóvenes en Acción y Familias en Acción pueden conectarse a los talleres a través del Módulo en línea, desde cualquier lugar del país, solo se requiere que los jóvenes tengan un computador o dispositivo con cámara, micrófono y acceso a internet, a través del cual podrán unirse e interactuar con su grupo una vez a la semana en tiempo real. </p>
+                <img src="../../assets/images/img7.jpg" alt="Imagen matricula 2" class="matr__img">
+                <p class="matr__text"> El manejo de toda informacion personal y documentos se realizara mediante esta plataforma, una vez haya rellenado el formulario de prematricula y usted haya sido aceptado en la institucion se le habilitare un usuario, con el cual podra acceder a la plataforma, ver sus horarios de clases, notas, y cualquier publicacion realizada por los administrativos. </p>
             </div>
           </div>
 
