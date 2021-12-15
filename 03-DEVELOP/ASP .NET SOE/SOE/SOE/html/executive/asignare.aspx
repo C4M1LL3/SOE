@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="usuariose.aspx.cs" Inherits="SOE.html.executive.usuariose" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="asignare.aspx.cs" Inherits="SOE.html.executive.asignare" %>
 
 <!DOCTYPE html>
 
@@ -71,13 +71,28 @@
         <div class="userss">
             <div class="userss__cont">
                 <div class="userss__buton">
-                    <a href="AgUser.aspx" class="userss__link"> Registrar usuarios</a>
+                    <a href="AgStudent.aspx" class="userss__link"> Registrar estudiante</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar usuarios</a>
+                    <a href="" class="userss__link"> Consultar estudiante</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="asignare.aspx" class="userss__link"> Asignar usuarios</a>
+                    <a href="AgTeacher.aspx" class="userss__link"> Registrar profesor</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="" class="userss__link"> Consultar profesor</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="AgCoordinator.aspx" class="userss__link"> Registrar coordinador</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="" class="userss__link"> Consultar coordinador</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="AgSecretary.aspx" class="userss__link"> Registrar secretario</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="" class="userss__link"> Consultar secretario</a>
                 </div>
             </div>
         </div>
@@ -112,7 +127,6 @@
                 <img src="../../assets/images/Jairo.jpeg" alt="Imagen Jairo" class="footer__imgeq">
                 <p class="footer__text"> Jairo Styp Rodriguez Patiño </p>
               </div>
-              <div class="footer__equipo">
                 <img src="" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan David Mercadoo Torres </p>
               </div>

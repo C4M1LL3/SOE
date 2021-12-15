@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SOE.html.executive
 {
-    public partial class registrarUs : System.Web.UI.Page
+    public partial class asignare : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

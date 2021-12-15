@@ -167,5 +167,66 @@ namespace datos
             return agrega;
         }
 
+        public bool agregarCoordinator(coordinator unCoordinator)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into coordinator values(@person_id, @number_cycle)";
+            comando.Parameters.AddWithValue("@number_course", unCoordinator.Number_cycle);
+            comando.Parameters.AddWithValue("@number_year", unCoordinator.Person_id);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+        }
+
+        public bool agregarSecretary(secretary unSecretary)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into secretary values(@person_id, @name_working_day)";
+            comando.Parameters.AddWithValue("@person_id", unSecretary.Person_id);
+            comando.Parameters.AddWithValue("@name_working_day", unSecretary.Name_working_day);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+        }
+        public bool agregarStudent(student unStudent)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into student values(@person_id, @birth_date, @birth_place, @course_id )";
+            comando.Parameters.AddWithValue("@person_id", unStudent.Person_id);
+            comando.Parameters.AddWithValue("@Birth_date", unStudent.Birth_date);
+            comando.Parameters.AddWithValue("@Birth_place", unStudent.Birth_place);
+            comando.Parameters.AddWithValue("@Course_id", unStudent.Course_id);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+
+        }
     }
 }

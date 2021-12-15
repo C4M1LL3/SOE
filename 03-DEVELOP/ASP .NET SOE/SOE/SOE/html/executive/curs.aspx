@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="usuariose.aspx.cs" Inherits="SOE.html.executive.usuariose" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="curs.aspx.cs" Inherits="SOE.html.executive.curs" %>
 
 <!DOCTYPE html>
 
@@ -71,13 +71,10 @@
         <div class="userss">
             <div class="userss__cont">
                 <div class="userss__buton">
-                    <a href="AgUser.aspx" class="userss__link"> Registrar usuarios</a>
+                    <a href="AgCourse.aspx" class="userss__link"> Registrar Curso</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar usuarios</a>
-                </div>
-                <div class="userss__buton">
-                    <a href="asignare.aspx" class="userss__link"> Asignar usuarios</a>
+                    <a href="" class="userss__link"> Consultar Curso</a>
                 </div>
             </div>
         </div>
@@ -112,7 +109,6 @@
                 <img src="../../assets/images/Jairo.jpeg" alt="Imagen Jairo" class="footer__imgeq">
                 <p class="footer__text"> Jairo Styp Rodriguez Patiño </p>
               </div>
-              <div class="footer__equipo">
                 <img src="" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan David Mercadoo Torres </p>
               </div>

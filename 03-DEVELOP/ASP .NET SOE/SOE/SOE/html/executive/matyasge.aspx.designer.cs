@@ -11,7 +11,7 @@ namespace SOE.html.executive
 {
 
 
-    public partial class usuariose
+    public partial class matyasge
     {
     }
 }

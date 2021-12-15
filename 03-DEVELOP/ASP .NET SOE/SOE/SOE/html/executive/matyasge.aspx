@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="usuariose.aspx.cs" Inherits="SOE.html.executive.usuariose" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="matyasge.aspx.cs" Inherits="SOE.html.executive.matyasge" %>
 
 <!DOCTYPE html>
 
@@ -71,13 +71,16 @@
         <div class="userss">
             <div class="userss__cont">
                 <div class="userss__buton">
-                    <a href="AgUser.aspx" class="userss__link"> Registrar usuarios</a>
+                    <a href="AgSubject.aspx" class="userss__link"> Registrar Areas </a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar usuarios</a>
+                    <a href="" class="userss__link"> Consultar Areas </a>
                 </div>
                 <div class="userss__buton">
-                    <a href="asignare.aspx" class="userss__link"> Asignar usuarios</a>
+                    <a href="AgMatter.aspx" class="userss__link"> Registrar Materias </a>
+                </div>
+                <div class="userss__buton">
+                    <a href="" class="userss__link"> Consultar Materias </a>
                 </div>
             </div>
         </div>

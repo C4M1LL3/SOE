@@ -385,10 +385,11 @@ body {
 
 
 .button {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
     width: 12rem;
-    height: 2.5rem;
     background-color: var(--color-principal);
-    border: none;
     border-radius: 2.5rem;
     cursor: pointer;
     -webkit-border-radius: 2.5rem;
@@ -732,6 +733,50 @@ body {
 
 .fa-youtube {
     color: rgb(216, 11, 11);
+}
+
+
+/* .................................................................................. */
+
+.userss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+}
+
+.userss__cont {
+    width: 80vw;
+    height: 70vh;
+}
+
+.userss__buton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    top: 20vh;
+    width: 30rem;
+    height: 4rem;
+    background-color: var(--color-secundario);
+    border: .1rem solid var(--color-principal);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.userss__link {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size: 1.2em;
+}
+
+.userss__link:hover {
+    color: rgb(216, 147, 18);
 }
 
 

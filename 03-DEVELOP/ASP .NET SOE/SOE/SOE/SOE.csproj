@@ -68,18 +68,34 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\styles.css" />
+    <Content Include="html\executive\AgCoordinator.aspx" />
     <Content Include="html\executive\AgCourse.aspx" />
     <Content Include="html\executive\AgMatter.aspx" />
+    <Content Include="html\executive\AgSecretary.aspx" />
+    <Content Include="html\executive\AgStudent.aspx" />
     <Content Include="html\executive\AgSubject.aspx" />
     <Content Include="html\executive\AgTeacher.aspx" />
     <Content Include="html\executive\AgUser.aspx" />
+    <Content Include="html\executive\asignare.aspx" />
+    <Content Include="html\executive\curs.aspx" />
+    <Content Include="html\executive\enrollment.aspx" />
     <Content Include="html\executive\homee.aspx" />
     <Content Include="html\executive\logine.aspx" />
+    <Content Include="html\executive\matyasge.aspx" />
+    <Content Include="html\executive\usuariose.aspx" />
+    <Content Include="html\information\information.aspx" />
     <Content Include="index.aspx" />
     <Content Include="js\app.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="html\executive\AgCoordinator.aspx.cs">
+      <DependentUpon>AgCoordinator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\AgCoordinator.aspx.designer.cs">
+      <DependentUpon>AgCoordinator.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\executive\AgCourse.aspx.cs">
       <DependentUpon>AgCourse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,6 +109,20 @@
     </Compile>
     <Compile Include="html\executive\AgMatter.aspx.designer.cs">
       <DependentUpon>AgMatter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\AgSecretary.aspx.cs">
+      <DependentUpon>AgSecretary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\AgSecretary.aspx.designer.cs">
+      <DependentUpon>AgSecretary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\AgStudent.aspx.cs">
+      <DependentUpon>AgStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\AgStudent.aspx.designer.cs">
+      <DependentUpon>AgStudent.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\executive\AgSubject.aspx.cs">
       <DependentUpon>AgSubject.aspx</DependentUpon>
@@ -115,6 +145,27 @@
     <Compile Include="html\executive\AgUser.aspx.designer.cs">
       <DependentUpon>AgUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\executive\asignare.aspx.cs">
+      <DependentUpon>asignare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\asignare.aspx.designer.cs">
+      <DependentUpon>asignare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\curs.aspx.cs">
+      <DependentUpon>curs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\curs.aspx.designer.cs">
+      <DependentUpon>curs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\enrollment.aspx.cs">
+      <DependentUpon>enrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\enrollment.aspx.designer.cs">
+      <DependentUpon>enrollment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\executive\homee.aspx.cs">
       <DependentUpon>homee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,6 +179,27 @@
     </Compile>
     <Compile Include="html\executive\logine.aspx.designer.cs">
       <DependentUpon>logine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\matyasge.aspx.cs">
+      <DependentUpon>matyasge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\matyasge.aspx.designer.cs">
+      <DependentUpon>matyasge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\usuariose.aspx.cs">
+      <DependentUpon>usuariose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\usuariose.aspx.designer.cs">
+      <DependentUpon>usuariose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\information\information.aspx.cs">
+      <DependentUpon>information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\information\information.aspx.designer.cs">
+      <DependentUpon>information.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -149,7 +221,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
-    <Folder Include="html\information\" />
     <Folder Include="html\student\" />
     <Folder Include="html\teacher\" />
   </ItemGroup>

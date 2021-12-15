@@ -1,9 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="usuariose.aspx.cs" Inherits="SOE.html.executive.usuariose" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="enrollment.aspx.cs" Inherits="SOE.html.executive.enrollment" %>
 
 <!DOCTYPE html>
-
 <html lang="es">
-<head renaut="server">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,69 +19,44 @@
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="shortcut icon" href="../../assets/images/Montaña login (1).png">
     <title>SOE</title>
-</head>
 <body>
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar__toggle">
-            <i class="fas fa-bars sidebar__icon"></i>
-        </div>
-        <nav class="nav">
-            <ul class="nav__ul">
-                <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> usuarios </a> </li>
-                <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materias y asignaturas </a> </li>
-                <li class="nav__li"> <a href="curs.aspx" class="nav__link"> Cursos </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Matriculas </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Notas </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Horario </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Observador </a> </li>
-            </ul>
-        </nav>
-    </div>
     <header class="header">
-        <a href="homee.aspx" class="header__link--s">
-          <img
-          src="../../assets/images/Montaña login (1).png"
-          alt="Logo SOE"
-          class="header__img"
-        />
-        </a>
-    </header>
-    <div class="hac__header">
-      <img src="" alt="" class="hac__img">
-      <div class="hac__toggle">
-          <i class="fas fa-sort-down hac__icon"></i>
-      </div>
-  </div>
-    <div id="hac" class="hac">
-        <div class="hac__main">
-            <div class="hac__top">
-                <img src="" alt="" class="hac__img hac__img--sp">
-                <h2 class="hac__title"> Jario </h2>
-                <h3 class="hac__email"> jairo@jairo.com </h3>
-                <button class="hac__button"> Gestionar perfil </button>
-            </div>
-            <div class="hac__down">
-                <button class="hac__button"> Cerrar sesión </button>
-            </div>
-        </div>
-    </div>
+      <a href="../../index.aspx" class="header__link--s">
+        <img
+        src="../../assets/images/Montaña login (1).png"
+        alt="Logo SOE"
+        class="header__img"
+      />
+      </a>
+      </header>
 
-    <main class="main">
-        <div class="userss">
-            <div class="userss__cont">
-                <div class="userss__buton">
-                    <a href="AgUser.aspx" class="userss__link"> Registrar usuarios</a>
-                </div>
-                <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar usuarios</a>
-                </div>
-                <div class="userss__buton">
-                    <a href="asignare.aspx" class="userss__link"> Asignar usuarios</a>
-                </div>
+      <main class="main">
+          <div class="matr">
+              <div class="matr__cont"> 
+                  <img src="../../assets/images/ni" alt="" class="matr__img">
+                  <h2 class="matr__title"> Algo :) </h2>
+                  <p class="matr__text"> A través de ocho (8) talleres o sesiones de trabajo en línea (Programas Jóvenes en Acción y Familias en Acción) o presencial (Programa Familias en Acción) bajo una metodología de aprendizaje experiencial, los cuales se realizan uno (1) cada semana para un total de 8 semanas de formación. En cada taller se exploran las Habilidades para la Vida como un insumo que impulsa el desarrollo de tu trayectoria de vida </p>
+              </div>
+              <div class="matr__cont"> 
+                <img src="../../ass" alt="" class="matr__img">
+                <h2 class="matr__title"> Algo :) </h2>
+                <p class="matr__text"> El segundo periodo de atención del Módulo de Habilidades para la Vida: Construyendo mi camino, se realizará entre el 13 de septiembre y el 12 de noviembre de 2021, bajo la modalidad en línea para el Programa Jóvenes en Acción y en las modalidades en línea y presencial para el Programa Familias en Acción en las Instituciones Educativas aliadas en los municipios definidos hasta el 20 de noviembre de 2021. </p>
             </div>
-        </div>
-    </main>
-    <footer class="footer">
+            <div class="matr__cont"> 
+                <img src="#" alt="" class="matr__img">
+                <h2 class="matr__title"> Algo :) </h2>
+                <p class="matr__text"> Regístrate, completa el formulario y selecciona un grupo con el lugar y horario de prefencia
+                    Los participantes de los programas Jóvenes en Acción y Familias en Acción pueden conectarse a los talleres a través del Módulo en línea, desde cualquier lugar del país, solo se requiere que los jóvenes tengan un computador o dispositivo con cámara, micrófono y acceso a internet, a través del cual podrán unirse e interactuar con su grupo una vez a la semana en tiempo real. </p>
+            </div>
+          </div>
+
+          <div class="prematr">
+              
+          </div>
+        
+      </main>
+
+      <footer class="footer">
         <div class="footer__conter">
           <div class="footer__element">
             <div class="footer__contact">
@@ -109,11 +83,11 @@
             <div class="footer__contact">
               <h2 class="footer__title"> Nuestro equipo </h2>
               <div class="footer__equipo">
-                <img src="../../assets/images/Jairo.jpeg" alt="Imagen Jairo" class="footer__imgeq">
+                <img src="" alt="" class="footer__imgeq">
                 <p class="footer__text"> Jairo Styp Rodriguez Patiño </p>
               </div>
               <div class="footer__equipo">
-                <img src="" alt="" class="footer__imgeq">
+                <img src="../../assets/images/mercado.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan David Mercadoo Torres </p>
               </div>
               <div class="footer__equipo">
@@ -121,15 +95,13 @@
                 <p class="footer__text"> Juan Camilo Rojas Rojas </p>
               </div>
                             <div class="footer__equipo">
-                <img src="" alt="" class="footer__imgeq">
+                <img src="../../assets/images/justin.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Justin Jarno Garzon Cardenas </p>
               </div>
             </div>
           </div>
         </div>
       </footer>
-
-    <script src="../../js/app.js"></script>
 
 </body>
 </html>

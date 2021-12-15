@@ -1,8 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homee.aspx.cs" Inherits="SOE.html.executive.homee" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="information.aspx.cs" Inherits="SOE.html.information.information" %>
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,55 +19,18 @@
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="shortcut icon" href="../../assets/images/Montaña login (1).png">
     <title>SOE</title>
-</head>
 <body>
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar__toggle">
-            <i class="fas fa-bars sidebar__icon"></i>
-        </div>
-        <nav class="nav">
-            <ul class="nav__ul">
-                <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> Usuarios </a> </li>
-                <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materia y Asignatura </a> </li>
-                <li class="nav__li"> <a href="curs.aspx" class="nav__link"> Cursos </a> </li>
-                <li class="nav__li"> <a href="registrar.aspx" class="nav__link"> Matriculas </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Notas </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Horario </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Observador </a> </li>
-            </ul>
-        </nav>
-    </div>
     <header class="header">
-        <a href="homee.aspx" class="header__link--s">
-          <img
-          src="../../assets/images/Montaña login (1).png"
-          alt="Logo SOE"
-          class="header__img"
-        />
-        </a>
-    </header>
-    <div class="hac__header">
-      <img src="" alt="" class="hac__img">
-      <div class="hac__toggle">
-          <i class="fas fa-sort-down hac__icon"></i>
-      </div>
-  </div>
-    <div id="hac" class="hac">
-        <div class="hac__main">
-            <div class="hac__top">
-                <img src="" alt="" class="hac__img hac__img--sp">
-                <h2 class="hac__title"> Jario </h2>
-                <h3 class="hac__email"> jairo@jairo.com </h3>
-                <button class="hac__button"> Gestionar perfil </button>
-            </div>
-            <div class="hac__down">
-                <button class="hac__button"> Cerrar sesión </button>
-            </div>
-        </div>
-    </div>
-
-    <main class="main">
-        <div class="carrusel">
+      <a href="../../index.aspx" class="header__link--s">
+        <img
+        src="../../assets/images/Montaña login (1).png"
+        alt="Logo SOE"
+        class="header__img"
+      />
+      </a>
+      </header>
+      <main>
+          <div class="carrusel">
             <div class="carrusels">
               <input type="radio" name="radio-btn" class="carrusels__radio carrusels__radio--1" id="radio1">
               <input type="radio" name="radio-btn" class="carrusels__radio carrusels__radio--2" id="radio2">
@@ -94,30 +57,39 @@
               <label for="radio4" class="carrusels__label"></label>
             </div>
           </div>
-          
+
           <div style="height: 150px; overflow: hidden;" class="wave"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.97,68.59 C176.35,-75.47 319.13,193.92 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(31, 31, 31);"></path></svg></div>
 
-          <div class="news">
-            <section class="publication">
-              <h1 class="publication__title">
-                Publicaciónes
-              </h1>
-              <div class="publication__cont">
-                <div class="publication__up">
-                  <button class="publication__button"> Sube los archivos </button>
-                </div>
+          <div class="inform">
+            <div class="inform__header">
+              <img src="../../assets/images/escudo decolegio.png" alt="Escudo del colegio" class="inform__escud">
+              <h1 class="inform__title"> Colegio ciudadela educativa de Bosa </h1>
+            </div>
+            <div class="inform__main">
+              <p class="inform__p">
+                El colegio Ciudadela Educativa de Bosa, es una institución de carácter oficial ubicada en la localidad séptima de la ciudad de Bogotá; que ofrece los niveles de formación del preescolar, básica y media con énfasis en TIC, propendiendo por una formación integral, inclusiva y transformadora de la problemática social, económica, política y ambiental que contribuye al plan de desarrollo de la nación.
+              </p>
+              <img src="../../assets/images/undraw_book_lover_re_rwjy.svg" alt="expreción" class="inform__imginf">
+            </div>
+          </div>
+          <div class="contactinf">
+            <div class="contactinf__imgage">
+              <img src="../../assets/images/undraw_begin_chat_re_v0lw.svg" alt="" class="contactinf__img">
+            </div>
+            <div class="contactinf__content">
+              <div class="cantactinf__div cantactinf__div--dirrec">
+                <h3 class="cantactinf__text"> Dirección </h3>
+                <p class="contactinf__p"> Cl. 52 Sur #97C - 35, Bogotá </p>
               </div>
-            </section>
-            <div class="networks">
-              <div class="networks__cont"> 
-                <a href="" class="networks__link"> <i class="fab fa-facebook networks__i"></i> </a>
-                <a href="" class="networks__link"> <i class="fab fa-youtube networks__i"></i> </a> 
+              <div class="cantactinf__div cantactinf__div--contact">
+                <h3 class="cantactinf__text"> Contacto </h3>
+                <p class="contactinf__p"> colciudadelabosa@educacionbogota.edu.co </p>
               </div>
             </div>
           </div>
+      </main>
 
-    </main>
-    <footer class="footer">
+      <footer class="footer">
         <div class="footer__conter">
           <div class="footer__element">
             <div class="footer__contact">
@@ -144,7 +116,7 @@
             <div class="footer__contact">
               <h2 class="footer__title"> Nuestro equipo </h2>
               <div class="footer__equipo">
-                <img src="../../assets/images/Jairo.jpeg" alt="Imagen Jairo" class="footer__imgeq">
+                <img src="" alt="" class="footer__imgeq">
                 <p class="footer__text"> Jairo Styp Rodriguez Patiño </p>
               </div>
               <div class="footer__equipo">
@@ -163,8 +135,6 @@
           </div>
         </div>
       </footer>
-
-    <script src="../../js/app.js"></script>
 
 </body>
 </html>

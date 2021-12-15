@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SOE.html.executive
+namespace SOE.html.information
 {
 
 
-    public partial class usuariose
+    public partial class information
     {
     }
 }
