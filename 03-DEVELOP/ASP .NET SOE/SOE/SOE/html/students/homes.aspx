@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homee.aspx.cs" Inherits="SOE.html.executive.homee" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homes.aspx.cs" Inherits="SOE.html.students.homes" %>
 
 <!DOCTYPE html>
 <html lang="es">

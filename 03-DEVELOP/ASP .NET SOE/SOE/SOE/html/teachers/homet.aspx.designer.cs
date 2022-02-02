@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SOE.html.executive
+namespace SOE.html.teachers
 {
 
 
-    public partial class homee
+    public partial class homet
     {
 
         /// <summary>

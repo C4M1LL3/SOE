@@ -94,6 +94,24 @@
                 <div class="userss__buton">
                     <a href="" class="userss__link"> Consultar secretario</a>
                 </div>
+                <div class="userss__buton">
+                    <a href="AgFather.aspx" class="userss__link"> Registrar padre</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="" class="userss__link"> Consultar padre</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="AgSecretary.aspx" class="userss__link"> Registrar madre </a>
+                </div>
+                <div class="userss__buton">
+                    <a href="" class="userss__link"> Consultar madre</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="AgSecretary.aspx" class="userss__link"> Registrar tutor</a>
+                </div>
+                <div class="userss__buton">
+                    <a href="" class="userss__link"> Consultar tutor</a>
+                </div>
             </div>
         </div>
     </main>

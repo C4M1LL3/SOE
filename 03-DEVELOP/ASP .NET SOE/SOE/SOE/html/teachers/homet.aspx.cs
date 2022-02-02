@@ -6,16 +6,16 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using datos;
 
-namespace SOE.html.executive
+namespace SOE.html.teachers
 {
-    public partial class homee : System.Web.UI.Page
+    public partial class homet : System.Web.UI.Page
     {
 
         GestionarDatos objGestionDatos = new GestionarDatos();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["usuariologueado"] != null)
+            if (Session["usuariologueado"] != null)
             {
                 string usuariologueado = Session["usuariologueado"].ToString();
                 string document_number = usuariologueado;
@@ -40,6 +40,7 @@ namespace SOE.html.executive
             {
                 Response.Redirect("../../index.aspx");
             }
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)

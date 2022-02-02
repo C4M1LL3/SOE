@@ -8,17 +8,20 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 
-namespace SOE.html.executive
+namespace SOE.html.teachers
 {
-    public partial class logine : System.Web.UI.Page
+
+    public partial class logint : System.Web.UI.Page
     {
+
+        string patron = "patron";
+        string teacher = "profesor";
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        string patron = "patron";
-        string student = "directivo";
         protected void Button1_Click(object sender, EventArgs e)
         {
             string conectar = ConfigurationManager.ConnectionStrings["conexion"].ConnectionString;
@@ -31,12 +34,12 @@ namespace SOE.html.executive
             comand.Parameters.Add("@login", SqlDbType.VarChar, 100).Value = TextBox1.Text;
             comand.Parameters.Add("@password", SqlDbType.VarChar, 100).Value = TextBox2.Text;
             comand.Parameters.Add("@patron", SqlDbType.VarChar, 50).Value = patron;
-            comand.Parameters.Add("@name_rol", SqlDbType.VarChar, 100).Value = student;
+            comand.Parameters.Add("@name_rol", SqlDbType.VarChar, 100).Value = teacher;
             SqlDataReader dr = comand.ExecuteReader();
             if (dr.Read())
             {
                 Session["usuariologueado"] = TextBox1.Text;
-                Response.Redirect("homee.aspx");
+                Response.Redirect("homet.aspx");
             }
             else
             {

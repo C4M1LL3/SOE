@@ -70,13 +70,17 @@
     <Content Include="css\styles.css" />
     <Content Include="html\executive\AgCoordinator.aspx" />
     <Content Include="html\executive\AgCourse.aspx" />
+    <Content Include="html\executive\AgFather.aspx" />
     <Content Include="html\executive\AgMatter.aspx" />
+    <Content Include="html\executive\AgMother.aspx" />
     <Content Include="html\executive\AgSecretary.aspx" />
     <Content Include="html\executive\AgStudent.aspx" />
     <Content Include="html\executive\AgSubject.aspx" />
     <Content Include="html\executive\AgTeacher.aspx" />
+    <Content Include="html\executive\AgTutor.aspx" />
     <Content Include="html\executive\AgUser.aspx" />
     <Content Include="html\executive\asignare.aspx" />
+    <Content Include="html\executive\CoPerson.aspx" />
     <Content Include="html\executive\curs.aspx" />
     <Content Include="html\executive\enrollment.aspx" />
     <Content Include="html\executive\homee.aspx" />
@@ -84,6 +88,10 @@
     <Content Include="html\executive\matyasge.aspx" />
     <Content Include="html\executive\usuariose.aspx" />
     <Content Include="html\information\information.aspx" />
+    <Content Include="html\students\homes.aspx" />
+    <Content Include="html\students\logins.aspx" />
+    <Content Include="html\teachers\homet.aspx" />
+    <Content Include="html\teachers\logint.aspx" />
     <Content Include="index.aspx" />
     <Content Include="js\app.js" />
     <Content Include="Web.config" />
@@ -103,12 +111,26 @@
     <Compile Include="html\executive\AgCourse.aspx.designer.cs">
       <DependentUpon>AgCourse.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\executive\AgFather.aspx.cs">
+      <DependentUpon>AgFather.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\AgFather.aspx.designer.cs">
+      <DependentUpon>AgFather.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\executive\AgMatter.aspx.cs">
       <DependentUpon>AgMatter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="html\executive\AgMatter.aspx.designer.cs">
       <DependentUpon>AgMatter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\AgMother.aspx.cs">
+      <DependentUpon>AgMother.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\AgMother.aspx.designer.cs">
+      <DependentUpon>AgMother.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\executive\AgSecretary.aspx.cs">
       <DependentUpon>AgSecretary.aspx</DependentUpon>
@@ -138,6 +160,13 @@
     <Compile Include="html\executive\AgTeacher.aspx.designer.cs">
       <DependentUpon>AgTeacher.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\executive\AgTutor.aspx.cs">
+      <DependentUpon>AgTutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\AgTutor.aspx.designer.cs">
+      <DependentUpon>AgTutor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\executive\AgUser.aspx.cs">
       <DependentUpon>AgUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,6 +180,13 @@
     </Compile>
     <Compile Include="html\executive\asignare.aspx.designer.cs">
       <DependentUpon>asignare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\CoPerson.aspx.cs">
+      <DependentUpon>CoPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoPerson.aspx.designer.cs">
+      <DependentUpon>CoPerson.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\executive\curs.aspx.cs">
       <DependentUpon>curs.aspx</DependentUpon>
@@ -201,6 +237,34 @@
     <Compile Include="html\information\information.aspx.designer.cs">
       <DependentUpon>information.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\students\homes.aspx.cs">
+      <DependentUpon>homes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\homes.aspx.designer.cs">
+      <DependentUpon>homes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\logins.aspx.cs">
+      <DependentUpon>logins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\logins.aspx.designer.cs">
+      <DependentUpon>logins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\homet.aspx.cs">
+      <DependentUpon>homet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\homet.aspx.designer.cs">
+      <DependentUpon>homet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\logint.aspx.cs">
+      <DependentUpon>logint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\logint.aspx.designer.cs">
+      <DependentUpon>logint.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -221,8 +285,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
-    <Folder Include="html\student\" />
-    <Folder Include="html\teacher\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\datos\datos.csproj">

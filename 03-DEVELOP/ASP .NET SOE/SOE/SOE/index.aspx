@@ -34,7 +34,7 @@
     <main class="main">
       <div class="login">
         <div class="login__cont login__cont--student">
-          <a href="html/student/logins.aspx" class="login__link">
+          <a href="html/students/logins.aspx" class="login__link">
             <div class="login__hover">
               <h1 class="login__text">Estudiante</h1>
             </div>

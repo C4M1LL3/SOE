@@ -76,5 +76,6 @@ namespace SOE.html.executive
                 Label1.Text = objGestionDatos.error;
             }
         }
+
     }
 }

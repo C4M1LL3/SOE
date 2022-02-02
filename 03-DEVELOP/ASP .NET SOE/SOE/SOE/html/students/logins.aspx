@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="logine.aspx.cs" Inherits="SOE.html.executive.logine" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="logins.aspx.cs" Inherits="SOE.html.students.logins" %>
 
 <!DOCTYPE html>
 

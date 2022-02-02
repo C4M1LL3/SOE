@@ -8,17 +8,19 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 
-namespace SOE.html.executive
+namespace SOE.html.students
 {
-    public partial class logine : System.Web.UI.Page
+    public partial class logins : System.Web.UI.Page
     {
+
+        string patron = "patron";
+        string student = "estudiante";
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        string patron = "patron";
-        string student = "directivo";
         protected void Button1_Click(object sender, EventArgs e)
         {
             string conectar = ConfigurationManager.ConnectionStrings["conexion"].ConnectionString;
@@ -36,7 +38,7 @@ namespace SOE.html.executive
             if (dr.Read())
             {
                 Session["usuariologueado"] = TextBox1.Text;
-                Response.Redirect("homee.aspx");
+                Response.Redirect("homes.aspx");
             }
             else
             {

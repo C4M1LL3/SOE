@@ -228,5 +228,149 @@ namespace datos
             return agrega;
 
         }
+
+        public bool agregarFather(father unFather)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into father values(@person_id, @number_father, @address_father)";
+            comando.Parameters.AddWithValue("@person_id", unFather.Person_id);
+            comando.Parameters.AddWithValue("@number_father", unFather.Number_father);
+            comando.Parameters.AddWithValue("@address_father", unFather.Address_father);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+
+        }
+
+        public bool agregarMother(mother unaMother)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into mother values(@person_id, @number_mother, @address_mother)";
+            comando.Parameters.AddWithValue("@person_id", unaMother.Person_id);
+            comando.Parameters.AddWithValue("@number_father", unaMother.Number_mother);
+            comando.Parameters.AddWithValue("@address_father", unaMother.Address_mother);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+
+        }
+
+        public bool agregarTutor(tutor unTutor)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into tutor values(@person_id, @number_tutor, @address_tutor)";
+            comando.Parameters.AddWithValue("@person_id", unTutor.Person_id);
+            comando.Parameters.AddWithValue("@number_tutor", unTutor.Number_tutor);
+            comando.Parameters.AddWithValue("@address_tutor", unTutor.Address_tutor);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+
+        }
+
+        public person consultarPerson(string document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select * from person where document_number=@document_number";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unaPersona = new person();
+                unaPersona.Id = registro.GetInt32(0);
+                unaPersona.Document_number = registro.GetInt32(1);
+                unaPersona.Type_document_id = registro.GetInt32(2);
+                unaPersona.First_name = registro.GetString(3);
+                unaPersona.Second_name = registro.GetString(4);
+                unaPersona.First_last_name = registro.GetString(5);
+                unaPersona.Second_last_name = registro.GetString(6);
+                unaPersona.User_id = registro.GetInt32(7);
+                registro.Close();
+                return unaPersona;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public person homePerson(string document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select first_name, second_name, first_last_name, second_last_name from person where document_number=@document_number";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unaPersona = new person();
+                user unUser = new user();
+                unaPersona.First_name = registro.GetString(0);
+                unaPersona.Second_name = registro.GetString(1);
+                unaPersona.First_last_name = registro.GetString(2);
+                unaPersona.Second_last_name = registro.GetString(3);
+                registro.Close();
+                return unaPersona;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public user homeUser(string document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select institutional_email from system_userr where login=@login";
+            comando.Parameters.AddWithValue("@login", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                user unUser = new user();
+                unUser.Institutional_email = registro.GetString(0);
+                registro.Close();
+                return unUser;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
     }
 }

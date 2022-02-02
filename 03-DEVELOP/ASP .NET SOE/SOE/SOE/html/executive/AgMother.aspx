@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgTeacher.aspx.cs" Inherits="SOE.html.executive.AgTeacher" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgMother.aspx.cs" Inherits="SOE.html.executive.AgMother" %>
 
 <!DOCTYPE html>
 
@@ -24,20 +24,17 @@
 <body>
     <div class="log">
     <form id="form1" runat="server" class="form">
-        <h1 class="form__text">Registrar Profesor</h1>
+        <h1 class="form__text">Registrar Madre </h1>
         <div>
             <div class="form_cont">
                 <asp:Label ID="Label2" runat="server" Text="Id de la persona" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el id de la persona" CssClass="input"></asp:TextBox>
-                <asp:Label ID="Label3" runat="server" Text="Nombre de la jornada" CssClass="label"></asp:Label>
-                <asp:DropDownList ID="DropDownList1" runat="server">
-                    <asp:ListItem>mañana</asp:ListItem>
-                    <asp:ListItem>tarde</asp:ListItem>
-                </asp:DropDownList>
-                <asp:Label ID="Label4" runat="server" Text="Id de la materia" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingresa el id de la materia" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label3" runat="server" Text="Número de contacto" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el número de cotacto" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label4" runat="server" Text="Dirreción de residencia" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingresa la dirección de residencia" CssClass="input"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
-                <asp:Label ID="Label1" runat="server" Text="" CssClass="help__link"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
             </div>
         </div>
     </form>
