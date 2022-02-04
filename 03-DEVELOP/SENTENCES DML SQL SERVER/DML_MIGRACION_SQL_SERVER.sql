@@ -267,3 +267,57 @@ create table news
  constraint uk_user_news unique (id_user)
 );
 GO
+
+insert into rol (name_rol)
+	values 
+		('directivo'),
+		('profesor'),
+		('estudiante');
+
+insert into system_userr (login, password, institutional_email)
+    values
+        ('2251585', '2251585', 'master@gmail.com');
+
+insert into rol_user (name_rol,user_id)
+    values
+        ('directivo', '1');
+
+insert into type_document (abbreviation, document_name,document_status)
+    values
+        ('CC', 'cedula', 'activo'),
+        ('TI', 'tarjeta identidad', 'activo'),
+        ('CE', 'cedula extranjeria', 'activo');
+
+insert into person (document_number, type_document_id, first_name, second_name, first_last_name, second_last_name)
+    values
+        ('2251585', '2', 'Master', 'David', 'Rodriguez', 'Rojas');
+
+insert into eps (name_eps)
+	values 
+		('salud total'),
+		('sanitas'),
+		('compensar'),
+		('famisanar');
+
+insert into working_day (name_working_day)
+	values 
+		('mañana'), 
+		('tarde');
+
+insert into cycle (number_cycle)
+	values 
+		('1'),
+		('2'),
+		('3'),
+		('4'),
+		('5');
+
+insert into current_year (number_year)
+	values 
+		('2022');
+
+insert into quarter (number_quarter)
+	values	
+		('1'),
+		('2'),
+		('3');
