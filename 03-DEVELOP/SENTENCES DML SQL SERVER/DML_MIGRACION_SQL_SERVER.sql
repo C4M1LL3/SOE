@@ -12,7 +12,7 @@ create table system_userr
     login               varchar(100) not null,
     password            varchar(100) not null,
     institutional_email varchar(100) not null,
-    image_url           varchar(255),
+    image_url           varchar(max),
     constraint pk_user primary key (id),
     constraint uk_user unique (login, institutional_email)
 
@@ -261,7 +261,7 @@ create table news
  id int IDENTITY(1,1) NOT NULL ,
  id_user int NOT NULL,
  text varchar(225) NOT NULL ,
- image varbinary(2000) NOT NULL,
+ image varchar(max) NOT NULL,
  constraint pk_news primary key (id),
  constraint fk_user_news foreign key (id_user) references system_userr(id),
  constraint uk_user_news unique (id_user)
@@ -321,3 +321,7 @@ insert into quarter (number_quarter)
 		('1'),
 		('2'),
 		('3');
+
+insert into secretary (person_id,name_working_day)
+	values 
+		('1', 'mañana');
