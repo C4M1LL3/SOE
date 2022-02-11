@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -37,17 +37,19 @@
             </ul>
         </nav>
     </div>
-    <header class="header">
-        <a href="homee.aspx" class="header__link--s">
+    <div class="inicio">
+          <a href="homee.aspx" class="header__link--s">
           <img
           src="../../assets/images/Montaña login (1).png"
           alt="Logo SOE"
           class="header__img"
         />
         </a>
+    </div>
+    <header class="header">
     </header>
     <div class="hac__header">
-      <img src="" alt="" class="hac__img">
+      <img src="../../assets/images/Jairo.jpeg" alt="" class="hac__img">
       <div class="hac__toggle">
           <i class="fas fa-sort-down hac__icon"></i>
       </div>
@@ -56,8 +58,8 @@
         <form id="form1" runat="server">
             <div class="hac__main">
             <div class="hac__top">
-                <div class="hac__img">
-                    <img src="" alt="" class="hac__img hac__img--sp">
+                <div class="hac__cont--img">
+                    <img src="../../assets/images/Jairo.jpeg" alt="" class="hac__img hac__img--sp">
                 </div>
                 <asp:Label ID="Label1" runat="server" Text="" CssClass="hac__title"></asp:Label>
                 <asp:Label ID="Label2" runat="server" Text="" CssClass="hac__title"></asp:Label>
@@ -82,7 +84,7 @@
               <input type="radio" name="radio-btn" class="carrusels__radio carrusels__radio--4" id="radio4">
 
                 <div class="carrusel__c carrusel__c--first">
-                    <div class="carrusel__target carrusel__target--1" id="carrusel__item--1"> <a href="#" class="carrusel__link" target="_blank"> <img src="../../assets/images/Matriculas SOE.png" alt="Matriculas" class="carrusel__img"> </a> </div>
+                    <div class="carrusel__target carrusel__target--1" id="carrusel__item--1"> <a href="../../html/information/matricila.aspx" class="carrusel__link" target="_blank"> <img src="../../assets/images/Matriculas SOE.png" alt="Matriculas" class="carrusel__img"> </a> </div>
                 </div>
                 <div class="carrusel__c">
                   <div class="carrusel__target carrusel__target--2 " id="carrusel__item--2"> <a href="https://www.un.org/es/observances/water-day " class="carrusel__link" target="_blank"> <img src="../../assets/images/Dia del agua Soe.png" alt="Dia del agua" class="carrusel__img"> </a>  </div>
@@ -117,8 +119,8 @@
             </section>
             <div class="networks">
               <div class="networks__cont"> 
-                <a href="" class="networks__link"> <i class="fab fa-facebook networks__i"></i> </a>
-                <a href="" class="networks__link"> <i class="fab fa-youtube networks__i"></i> </a> 
+                <a href="https://www.facebook.com/pages/IED%20Ciudadela%20Educativa%20de%20Bosa/397210013707926" class="networks__link"> <i class="fab fa-facebook networks__i"></i> </a>
+                <a href="https://www.youtube.com/channel/UCocZFTGF2fdIfugwHt_7AaQhttps://www.youtube.com/channel/UCocZFTGF2fdIfugwHt_7AaQ" class="networks__link"> <i class="fab fa-youtube networks__i"></i> </a> 
               </div>
             </div>
           </div>
@@ -162,7 +164,7 @@
                 <img src="../../assets/images/camilo.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan Camilo Rojas Rojas </p>
               </div>
-                            <div class="footer__equipo">
+              <div class="footer__equipo">
                 <img src="../../assets/images/justin.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Justin Jarno Garzon Cardenas </p>
               </div>

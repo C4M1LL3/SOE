@@ -18,7 +18,7 @@ namespace SOE.html.teachers
             if (Session["usuariologueado"] != null)
             {
                 string usuariologueado = Session["usuariologueado"].ToString();
-                string document_number = usuariologueado;
+                int document_number = int.Parse(usuariologueado);
                 person unaPersona = objGestionDatos.consultarPerson(document_number);
                 if (unaPersona != null)
                 {
@@ -28,7 +28,7 @@ namespace SOE.html.teachers
                     Label4.Text = unaPersona.Second_last_name;
                 }
 
-                user unUser = objGestionDatos.homeUser(document_number);
+                user unUser = objGestionDatos.ConsultarUser(document_number);
                 if (unUser != null)
                 {
                     Label5.Text = unUser.Institutional_email;

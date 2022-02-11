@@ -56,6 +56,7 @@
     <Compile Include="subject.cs" />
     <Compile Include="teacher.cs" />
     <Compile Include="tutor.cs" />
+    <Compile Include="type_document.cs" />
     <Compile Include="user.cs" />
     <Compile Include="user_rol.cs" />
   </ItemGroup>

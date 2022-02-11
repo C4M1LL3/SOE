@@ -23,7 +23,7 @@ namespace SOE.html.executive
             unStudent.Person_id = int.Parse(TextBox1.Text);
             unStudent.Birth_date = Convert.ToDateTime(TextBox2.Text);
             unStudent.Birth_place = TextBox3.Text;
-            unStudent.Course_id = int.Parse(TextBox3.Text);
+            unStudent.Course_id = int.Parse(TextBox4.Text);
             bool agregado = objGestionDatos.agregarStudent(unStudent);
             if (agregado)
             {

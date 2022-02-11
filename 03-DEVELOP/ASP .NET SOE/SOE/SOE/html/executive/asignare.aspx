@@ -38,35 +38,68 @@
             </ul>
         </nav>
     </div>
-    <header class="header">
-        <a href="homee.aspx" class="header__link--s">
-          <img
-          src="../../assets/images/Montaña login (1).png"
-          alt="Logo SOE"
-          class="header__img"
-        />
-        </a>
-    </header>
+    <header class="header"></header>
     <div class="hac__header">
-      <img src="" alt="" class="hac__img">
+      <img src="../../assets/images/Jairo.jpeg" alt="" class="hac__img" />
       <div class="hac__toggle">
-          <i class="fas fa-sort-down hac__icon"></i>
+        <i class="fas fa-sort-down hac__icon"></i>
       </div>
-  </div>
-    <div id="hac" class="hac">
-        <div class="hac__main">
-            <div class="hac__top">
-                <img src="" alt="" class="hac__img hac__img--sp">
-                <h2 class="hac__title"> Jario </h2>
-                <h3 class="hac__email"> jairo@jairo.com </h3>
-                <button class="hac__button"> Gestionar perfil </button>
-            </div>
-            <div class="hac__down">
-                <button class="hac__button"> Cerrar sesión </button>
-            </div>
-        </div>
     </div>
-
+    <form id="form2" runat="server">
+      <div id="hac" class="hac">
+        <div class="hac__main">
+          <div class="hac__top">
+            <div class="hac__cont--img">
+              <img
+                src="../../assets/images/Jairo.jpeg"
+                alt=""
+                class="hac__img hac__img--sp"
+              />
+            </div>
+            <asp:Label
+              ID="Label1"
+              runat="server"
+              Text=""
+              CssClass="hac__title"
+            ></asp:Label>
+            <asp:Label
+              ID="Label2"
+              runat="server"
+              Text=""
+              CssClass="hac__title"
+            ></asp:Label>
+            <asp:Label
+              ID="Label3"
+              runat="server"
+              Text=""
+              CssClass="hac__title"
+            ></asp:Label>
+            <asp:Label
+              ID="Label4"
+              runat="server"
+              Text=""
+              CssClass="hac__title"
+            ></asp:Label>
+            <asp:Label
+              ID="Label5"
+              runat="server"
+              Text=""
+              CssClass="hac__email"
+            ></asp:Label>
+            <button class="hac__button">Gestionar perfil</button>
+          </div>
+          <div class="hac__down">
+            <asp:Button
+              ID="Button1"
+              runat="server"
+              Text="Cerrar sesión"
+              cssclass="hac__button"
+              OnClick="Button1_Click"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
     <main class="main">
         <div class="userss">
             <div class="userss__cont">
@@ -74,43 +107,43 @@
                     <a href="AgStudent.aspx" class="userss__link"> Registrar estudiante</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar estudiante</a>
+                    <a href="CoStudent.aspx" class="userss__link"> Consultar estudiante</a>
                 </div>
                 <div class="userss__buton">
                     <a href="AgTeacher.aspx" class="userss__link"> Registrar profesor</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar profesor</a>
+                    <a href="CoTeacher.aspx" class="userss__link"> Consultar profesor</a>
                 </div>
                 <div class="userss__buton">
                     <a href="AgCoordinator.aspx" class="userss__link"> Registrar coordinador</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar coordinador</a>
+                    <a href="CoCoordinator.aspx" class="userss__link"> Consultar coordinador</a>
                 </div>
                 <div class="userss__buton">
                     <a href="AgSecretary.aspx" class="userss__link"> Registrar secretario</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar secretario</a>
+                    <a href="CoSecretary.aspx" class="userss__link"> Consultar secretario</a>
                 </div>
                 <div class="userss__buton">
                     <a href="AgFather.aspx" class="userss__link"> Registrar padre</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar padre</a>
+                    <a href="CoFather.aspx" class="userss__link"> Consultar padre</a>
                 </div>
                 <div class="userss__buton">
                     <a href="AgSecretary.aspx" class="userss__link"> Registrar madre </a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar madre</a>
+                    <a href="CoMother.aspx" class="userss__link"> Consultar madre</a>
                 </div>
                 <div class="userss__buton">
                     <a href="AgSecretary.aspx" class="userss__link"> Registrar tutor</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar tutor</a>
+                    <a href="CoTutor.aspx" class="userss__link"> Consultar tutor</a>
                 </div>
             </div>
         </div>

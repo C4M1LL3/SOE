@@ -80,14 +80,23 @@
     <Content Include="html\executive\AgTutor.aspx" />
     <Content Include="html\executive\AgUser.aspx" />
     <Content Include="html\executive\asignare.aspx" />
+    <Content Include="html\executive\CoCoordinator.aspx" />
+    <Content Include="html\executive\CoFather.aspx" />
+    <Content Include="html\executive\CoMother.aspx" />
     <Content Include="html\executive\CoPerson.aspx" />
+    <Content Include="html\executive\CoSecretary.aspx" />
+    <Content Include="html\executive\CoStudent.aspx" />
+    <Content Include="html\executive\CoTeacher.aspx" />
+    <Content Include="html\executive\CoTutor.aspx" />
     <Content Include="html\executive\curs.aspx" />
     <Content Include="html\executive\enrollment.aspx" />
+    <Content Include="html\executive\GsUsuarioe.aspx" />
     <Content Include="html\executive\homee.aspx" />
     <Content Include="html\executive\logine.aspx" />
     <Content Include="html\executive\matyasge.aspx" />
     <Content Include="html\executive\usuariose.aspx" />
     <Content Include="html\information\information.aspx" />
+    <Content Include="html\information\matricila.aspx" />
     <Content Include="html\students\homes.aspx" />
     <Content Include="html\students\logins.aspx" />
     <Content Include="html\teachers\homet.aspx" />
@@ -181,12 +190,61 @@
     <Compile Include="html\executive\asignare.aspx.designer.cs">
       <DependentUpon>asignare.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\executive\CoCoordinator.aspx.cs">
+      <DependentUpon>CoCoordinator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoCoordinator.aspx.designer.cs">
+      <DependentUpon>CoCoordinator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\CoFather.aspx.cs">
+      <DependentUpon>CoFather.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoFather.aspx.designer.cs">
+      <DependentUpon>CoFather.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\CoMother.aspx.cs">
+      <DependentUpon>CoMother.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoMother.aspx.designer.cs">
+      <DependentUpon>CoMother.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\executive\CoPerson.aspx.cs">
       <DependentUpon>CoPerson.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="html\executive\CoPerson.aspx.designer.cs">
       <DependentUpon>CoPerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\CoSecretary.aspx.cs">
+      <DependentUpon>CoSecretary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoSecretary.aspx.designer.cs">
+      <DependentUpon>CoSecretary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\CoStudent.aspx.cs">
+      <DependentUpon>CoStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoStudent.aspx.designer.cs">
+      <DependentUpon>CoStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\CoTeacher.aspx.cs">
+      <DependentUpon>CoTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoTeacher.aspx.designer.cs">
+      <DependentUpon>CoTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\CoTutor.aspx.cs">
+      <DependentUpon>CoTutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoTutor.aspx.designer.cs">
+      <DependentUpon>CoTutor.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\executive\curs.aspx.cs">
       <DependentUpon>curs.aspx</DependentUpon>
@@ -201,6 +259,13 @@
     </Compile>
     <Compile Include="html\executive\enrollment.aspx.designer.cs">
       <DependentUpon>enrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\GsUsuarioe.aspx.cs">
+      <DependentUpon>GsUsuarioe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\GsUsuarioe.aspx.designer.cs">
+      <DependentUpon>GsUsuarioe.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\executive\homee.aspx.cs">
       <DependentUpon>homee.aspx</DependentUpon>
@@ -236,6 +301,13 @@
     </Compile>
     <Compile Include="html\information\information.aspx.designer.cs">
       <DependentUpon>information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\information\matricila.aspx.cs">
+      <DependentUpon>matricila.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\information\matricila.aspx.designer.cs">
+      <DependentUpon>matricila.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\students\homes.aspx.cs">
       <DependentUpon>homes.aspx</DependentUpon>

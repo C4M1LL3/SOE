@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -29,7 +29,7 @@
         class="header__img"
       />
       </a>
-      <a href="html/informacion/informacion.aspx" class="header__link"> <h1 class="header__text">Información</h1> </a>
+      <a href="html/information/information.aspx" class="header__link"> <h1 class="header__text">Información</h1> </a>
     </header>
     <main class="main">
       <div class="login">
@@ -41,7 +41,7 @@
           </a>
         </div>
         <div class="login__cont login__cont--teacher">
-          <a href="html/teacher/logint.aspx" class="login__link">
+          <a href="html/teachers/logint.aspx" class="login__link">
             <div class="login__hover">
               <h1 class="login__text">Profesor</h1>
             </div>

@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="shortcut icon" href="../../assets/images/Montaña login (1).png">
     <title>SOE</title>
+    </head>
 <body>
     <header class="header">
       <a href="../../index.aspx" class="header__link--s">
@@ -38,7 +39,7 @@
               <input type="radio" name="radio-btn" class="carrusels__radio carrusels__radio--4" id="radio4">
 
                 <div class="carrusel__c carrusel__c--first">
-                    <div class="carrusel__target carrusel__target--1" id="carrusel__item--1"> <a href="#" class="carrusel__link" target="_blank"> <img src="../../assets/images/Matriculas SOE.png" alt="Matriculas" class="carrusel__img"> </a> </div>
+                    <div class="carrusel__target carrusel__target--1" id="carrusel__item--1"> <a href="matricila.aspx" class="carrusel__link" target="_blank"> <img src="../../assets/images/Matriculas SOE.png" alt="Matriculas" class="carrusel__img"> </a> </div>
                 </div>
                 <div class="carrusel__c">
                   <div class="carrusel__target carrusel__target--2 " id="carrusel__item--2"> <a href="https://www.un.org/es/observances/water-day " class="carrusel__link" target="_blank"> <img src="../../assets/images/Dia del agua Soe.png" alt="Dia del agua" class="carrusel__img"> </a>  </div>
@@ -116,7 +117,7 @@
             <div class="footer__contact">
               <h2 class="footer__title"> Nuestro equipo </h2>
               <div class="footer__equipo">
-                <img src="" alt="" class="footer__imgeq">
+                <img src="../../assets/images/Jairo.jpeg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Jairo Styp Rodriguez Patiño </p>
               </div>
               <div class="footer__equipo">
