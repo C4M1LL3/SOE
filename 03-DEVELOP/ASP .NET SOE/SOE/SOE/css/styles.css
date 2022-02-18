@@ -181,6 +181,10 @@ body {
     height: 7rem;
 }
 
+.hac__imaggg {
+    border-radius: 50%;
+}
+
 .hac__toggle {
     cursor: pointer;
     transition: .5s;

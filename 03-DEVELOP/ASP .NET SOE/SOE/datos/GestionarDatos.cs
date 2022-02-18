@@ -327,7 +327,7 @@ namespace datos
         {
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "select su.id, su.login, su.password, su.institutional_email, su.image_url from system_userr su inner join person p on su.id = p.user_id where p.document_number=@document_number";
+            comando.CommandText = "select su.id, su.login, su.password, su.institutional_email, su.image from system_userr su inner join person p on su.id = p.user_id where p.document_number=@document_number";
             comando.Parameters.AddWithValue("@document_number", document_number);
             SqlDataReader registro = comando.ExecuteReader();
             if (registro.Read())

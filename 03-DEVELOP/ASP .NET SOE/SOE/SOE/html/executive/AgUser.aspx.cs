@@ -4,6 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.IO;
+using System.Windows;
 using datos;
 
 namespace SOE.html.executive
@@ -12,10 +19,11 @@ namespace SOE.html.executive
     {
 
         GestionarDatos objGestionDatos = new GestionarDatos();
+        public SqlConnection conexion;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.conexion = datos.conexion.getconexion();
         }
 
 
@@ -25,7 +33,19 @@ namespace SOE.html.executive
             unUser.Login = TextBox1.Text;
             unUser.Password = TextBox2.Text;
             unUser.Institutional_email = TextBox3.Text;
-            unUser.Image = TextBox4.Text;
+            string extension = System.IO.Path.GetExtension(FileUpload1.FileName);
+            if (FileUpload1.HasFile)
+            {
+                string str = FileUpload1.FileName;
+                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/ImagesU/" + FileUpload1.FileName));
+                string imgpath = "~/ImagesU/" + str.ToString();
+                Label1.Text = "archivo subido con exito";
+                unUser.Image = imgpath;
+            }
+            else
+            {
+                Label1.Text = "archivo no subido, seleccione un archivo porfavor";
+            }
             bool agregado = objGestionDatos.agregarUser(unUser);
             if (agregado)
             {

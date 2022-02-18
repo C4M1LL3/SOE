@@ -49,7 +49,7 @@
     <header class="header">
     </header>
     <div class="hac__header">
-      <img src="../../assets/images/Jairo.jpeg" alt="" class="hac__img">
+      <asp:Image ID="Image2" runat="server" CssClass="hac__img" />
       <div class="hac__toggle">
           <i class="fas fa-sort-down hac__icon"></i>
       </div>
@@ -59,7 +59,7 @@
             <div class="hac__main">
             <div class="hac__top">
                 <div class="hac__cont--img">
-                    <img src="../../assets/images/Jairo.jpeg" alt="" class="hac__img hac__img--sp">
+                    <asp:Image ID="Image1" runat="server" CssClass="hac__img hac__img--sp" />
                 </div>
                 <asp:Label ID="Label1" runat="server" Text="" CssClass="hac__title"></asp:Label>
                 <asp:Label ID="Label2" runat="server" Text="" CssClass="hac__title"></asp:Label>

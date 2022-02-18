@@ -15,7 +15,7 @@ namespace SOE.html.executive
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["usuariologueado"] != null)
+            if (Session["usuariologueado"] != null)
             {
                 string usuariologueado = Session["usuariologueado"].ToString();
                 int document_number = int.Parse(usuariologueado);
@@ -32,6 +32,12 @@ namespace SOE.html.executive
                 if (unUser != null)
                 {
                     Label5.Text = unUser.Institutional_email;
+                    Image1.ImageUrl = unUser.Image;
+                    Image2.ImageUrl = unUser.Image;
+                }
+
+                else
+                {
                 }
 
             }

@@ -87,13 +87,13 @@ namespace SOE.html.executive
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// Control TextBox4.
+        /// Control FileUpload1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
         /// Control Button1.

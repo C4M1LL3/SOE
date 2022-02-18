@@ -34,7 +34,7 @@
                 <asp:Label ID="Label4" runat="server" Text="Correo institucional" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingresa el correo institucional" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label5" runat="server" Text="Imagen" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox4" runat="server" placeholder="Ingresa la imagen" CssClass="input"></asp:TextBox>
+                <asp:FileUpload ID="FileUpload1" runat="server" />
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
                 <asp:Label ID="Label1" runat="server" Text="" CssClass="help__link"></asp:Label>
             </div>

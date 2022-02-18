@@ -357,6 +357,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
+    <Folder Include="html\ImagesU\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\datos\datos.csproj">
