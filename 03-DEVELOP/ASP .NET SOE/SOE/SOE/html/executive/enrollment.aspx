@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head runat="server">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -19,44 +19,75 @@
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="shortcut icon" href="../../assets/images/Montaña login (1).png">
     <title>SOE</title>
+</head>
 <body>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar__toggle">
+            <i class="fas fa-bars sidebar__icon"></i>
+        </div>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> Usuarios </a> </li>
+                <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materia y Asignatura </a> </li>
+                <li class="nav__li"> <a href="curs.aspx" class="nav__link"> Cursos </a> </li>
+                <li class="nav__li"> <a href="registrar.aspx" class="nav__link"> Matriculas </a> </li>
+                <li class="nav__li"> <a href="#" class="nav__link"> Notas </a> </li>
+                <li class="nav__li"> <a href="#" class="nav__link"> Horario </a> </li>
+                <li class="nav__li"> <a href="#" class="nav__link"> Observador </a> </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="inicio">
+          <a href="homee.aspx" class="header__link--s">
+          <img
+          src="../../assets/images/Montaña login (1).png"
+          alt="Logo SOE"
+          class="header__img"
+        />
+        </a>
+    </div>
     <header class="header">
-      <a href="../../index.aspx" class="header__link--s">
-        <img
-        src="../../assets/images/Montaña login (1).png"
-        alt="Logo SOE"
-        class="header__img"
-      />
-      </a>
-      </header>
-
-      <main class="main">
-          <div class="matr">
-              <div class="matr__cont"> 
-                  <img src="../../assets/images/ni" alt="" class="matr__img">
-                  <h2 class="matr__title"> Algo :) </h2>
-                  <p class="matr__text"> A través de ocho (8) talleres o sesiones de trabajo en línea (Programas Jóvenes en Acción y Familias en Acción) o presencial (Programa Familias en Acción) bajo una metodología de aprendizaje experiencial, los cuales se realizan uno (1) cada semana para un total de 8 semanas de formación. En cada taller se exploran las Habilidades para la Vida como un insumo que impulsa el desarrollo de tu trayectoria de vida </p>
-              </div>
-              <div class="matr__cont"> 
-                <img src="../../ass" alt="" class="matr__img">
-                <h2 class="matr__title"> Algo :) </h2>
-                <p class="matr__text"> El segundo periodo de atención del Módulo de Habilidades para la Vida: Construyendo mi camino, se realizará entre el 13 de septiembre y el 12 de noviembre de 2021, bajo la modalidad en línea para el Programa Jóvenes en Acción y en las modalidades en línea y presencial para el Programa Familias en Acción en las Instituciones Educativas aliadas en los municipios definidos hasta el 20 de noviembre de 2021. </p>
+    </header>
+    <div class="hac__header">
+      <asp:Image ID="Image2" runat="server" CssClass="hac__img" />
+      <div class="hac__toggle">
+          <i class="fas fa-sort-down hac__icon"></i>
+      </div>
+  </div>
+    <div id="hac" class="hac">
+        <form id="form1" runat="server">
+            <div class="hac__main">
+            <div class="hac__top">
+                <div class="hac__cont--img">
+                    <asp:Image ID="Image1" runat="server" CssClass="hac__img hac__img--sp" />
+                </div>
+                <asp:Label ID="Label1" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label3" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label4" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label5" runat="server" Text="" CssClass="hac__email"></asp:Label>
+                <button class="hac__button"> Gestionar perfil </button>
             </div>
-            <div class="matr__cont"> 
-                <img src="#" alt="" class="matr__img">
-                <h2 class="matr__title"> Algo :) </h2>
-                <p class="matr__text"> Regístrate, completa el formulario y selecciona un grupo con el lugar y horario de prefencia
-                    Los participantes de los programas Jóvenes en Acción y Familias en Acción pueden conectarse a los talleres a través del Módulo en línea, desde cualquier lugar del país, solo se requiere que los jóvenes tengan un computador o dispositivo con cámara, micrófono y acceso a internet, a través del cual podrán unirse e interactuar con su grupo una vez a la semana en tiempo real. </p>
+            <div class="hac__down">
+                <asp:Button ID="Button1" runat="server" Text="Cerrar sesión" cssclass="hac__button" OnClick="Button1_Click"/>
             </div>
-          </div>
+        </div>
+        </form>
+    </div>
 
-          <div class="prematr">
-              
-          </div>
-        
-      </main>
-
-      <footer class="footer">
+    <main class="main">
+        <div class="userss">
+            <div class="userss__cont">
+                <div class="userss__buton">
+                    <a href="AgEnrollmentt.aspx" class="userss__link"> Registrar Matriculas </a>
+                </div>
+                <div class="userss__buton">
+                    <a href="CoEnrollmentt.aspx" class="userss__link"> Consultar Matriculas </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
         <div class="footer__conter">
           <div class="footer__element">
             <div class="footer__contact">
@@ -83,7 +114,7 @@
             <div class="footer__contact">
               <h2 class="footer__title"> Nuestro equipo </h2>
               <div class="footer__equipo">
-                <img src="" alt="" class="footer__imgeq">
+                <img src="../../assets/images/Jairo.jpeg" alt="Imagen Jairo" class="footer__imgeq">
                 <p class="footer__text"> Jairo Styp Rodriguez Patiño </p>
               </div>
               <div class="footer__equipo">
@@ -94,7 +125,7 @@
                 <img src="../../assets/images/camilo.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan Camilo Rojas Rojas </p>
               </div>
-                            <div class="footer__equipo">
+              <div class="footer__equipo">
                 <img src="../../assets/images/justin.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Justin Jarno Garzon Cardenas </p>
               </div>
@@ -102,6 +133,8 @@
           </div>
         </div>
       </footer>
+
+    <script src="../../js/app.js"></script>
 
 </body>
 </html>

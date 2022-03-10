@@ -31,8 +31,8 @@
                 <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el nombre de la materia" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label3" runat="server" Text="Nombre de asignatura" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el nombre del area" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label1" CssClass="help__link" runat="server" Text="" ></asp:Label>s
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
-                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
             </div>
         </div>
     </form>

@@ -70,6 +70,7 @@
     <Content Include="css\styles.css" />
     <Content Include="html\executive\AgCoordinator.aspx" />
     <Content Include="html\executive\AgCourse.aspx" />
+    <Content Include="html\executive\AgEnrollmentt.aspx" />
     <Content Include="html\executive\AgFather.aspx" />
     <Content Include="html\executive\AgMatter.aspx" />
     <Content Include="html\executive\AgMother.aspx" />
@@ -81,7 +82,9 @@
     <Content Include="html\executive\AgUser.aspx" />
     <Content Include="html\executive\asignare.aspx" />
     <Content Include="html\executive\CoCoordinator.aspx" />
+    <Content Include="html\executive\CoCourse.aspx" />
     <Content Include="html\executive\CoFather.aspx" />
+    <Content Include="html\executive\CoMatter.aspx" />
     <Content Include="html\executive\CoMother.aspx" />
     <Content Include="html\executive\CoPerson.aspx" />
     <Content Include="html\executive\CoSecretary.aspx" />
@@ -119,6 +122,13 @@
     </Compile>
     <Compile Include="html\executive\AgCourse.aspx.designer.cs">
       <DependentUpon>AgCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\AgEnrollmentt.aspx.cs">
+      <DependentUpon>AgEnrollmentt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\AgEnrollmentt.aspx.designer.cs">
+      <DependentUpon>AgEnrollmentt.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\executive\AgFather.aspx.cs">
       <DependentUpon>AgFather.aspx</DependentUpon>
@@ -197,12 +207,26 @@
     <Compile Include="html\executive\CoCoordinator.aspx.designer.cs">
       <DependentUpon>CoCoordinator.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\executive\CoCourse.aspx.cs">
+      <DependentUpon>CoCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoCourse.aspx.designer.cs">
+      <DependentUpon>CoCourse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\executive\CoFather.aspx.cs">
       <DependentUpon>CoFather.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="html\executive\CoFather.aspx.designer.cs">
       <DependentUpon>CoFather.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\executive\CoMatter.aspx.cs">
+      <DependentUpon>CoMatter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\CoMatter.aspx.designer.cs">
+      <DependentUpon>CoMatter.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\executive\CoMother.aspx.cs">
       <DependentUpon>CoMother.aspx</DependentUpon>

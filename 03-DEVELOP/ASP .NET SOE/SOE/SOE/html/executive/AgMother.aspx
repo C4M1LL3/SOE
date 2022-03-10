@@ -12,13 +12,13 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../css/styles.css" />
-    <link rel="shortcut icon" href="../../assets/images/Montaña login (1).png">
+    <link rel="shortcut icon" href="../../assets/images/Montaña login (1).png"/>
     <title>SOE</title>
 </head>
 <body>

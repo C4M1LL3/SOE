@@ -30,7 +30,7 @@
                 <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> Usuarios </a> </li>
                 <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materia y Asignatura </a> </li>
                 <li class="nav__li"> <a href="curs.aspx" class="nav__link"> Cursos </a> </li>
-                <li class="nav__li"> <a href="registrar.aspx" class="nav__link"> Matriculas </a> </li>
+                <li class="nav__li"> <a href="enrollment.aspx" class="nav__link"> Matriculas </a> </li>
                 <li class="nav__li"> <a href="#" class="nav__link"> Notas </a> </li>
                 <li class="nav__li"> <a href="#" class="nav__link"> Horario </a> </li>
                 <li class="nav__li"> <a href="#" class="nav__link"> Observador </a> </li>

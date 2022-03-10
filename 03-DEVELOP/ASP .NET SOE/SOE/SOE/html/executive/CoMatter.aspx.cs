@@ -6,11 +6,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using datos;
 
-
 namespace SOE.html.executive
 {
-    public partial class matyasge : System.Web.UI.Page
+    public partial class CoMatter : System.Web.UI.Page
     {
+
         GestionarDatos objGestionDatos = new GestionarDatos();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -52,6 +52,22 @@ namespace SOE.html.executive
         {
             Session.Remove("usuariologueado");
             Response.Redirect("../../index.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            string name_matter = TextBox9.Text;
+            matter unMatter = objGestionDatos.ConsultarMatter(name_matter);
+            if (unMatter!= null)
+            {
+                Label6.Text = unMatter.Id.ToString();
+                Label7.Text = unMatter.Name_matter;
+                Label8.Text = unMatter.Name_subject;
+            }
+            else
+            {
+                Label14.Text = "No existe esta materia";
+            }
         }
     }
 }

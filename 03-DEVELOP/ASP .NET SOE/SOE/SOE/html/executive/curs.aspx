@@ -1,9 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="curs.aspx.cs" Inherits="SOE.html.executive.curs" %>
 
 <!DOCTYPE html>
-
 <html lang="es">
-<head renaut="server">
+<head runat="server">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -28,43 +27,52 @@
         </div>
         <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> usuarios </a> </li>
-                <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materias y asignaturas </a> </li>
+                <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> Usuarios </a> </li>
+                <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materia y Asignatura </a> </li>
                 <li class="nav__li"> <a href="curs.aspx" class="nav__link"> Cursos </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Matriculas </a> </li>
+                <li class="nav__li"> <a href="registrar.aspx" class="nav__link"> Matriculas </a> </li>
                 <li class="nav__li"> <a href="#" class="nav__link"> Notas </a> </li>
                 <li class="nav__li"> <a href="#" class="nav__link"> Horario </a> </li>
                 <li class="nav__li"> <a href="#" class="nav__link"> Observador </a> </li>
             </ul>
         </nav>
     </div>
-    <header class="header">
-        <a href="homee.aspx" class="header__link--s">
+    <div class="inicio">
+          <a href="homee.aspx" class="header__link--s">
           <img
           src="../../assets/images/Montaña login (1).png"
           alt="Logo SOE"
           class="header__img"
         />
         </a>
+    </div>
+    <header class="header">
     </header>
     <div class="hac__header">
-      <img src="" alt="" class="hac__img">
+      <asp:Image ID="Image2" runat="server" CssClass="hac__img" />
       <div class="hac__toggle">
           <i class="fas fa-sort-down hac__icon"></i>
       </div>
   </div>
     <div id="hac" class="hac">
-        <div class="hac__main">
+        <form id="form1" runat="server">
+            <div class="hac__main">
             <div class="hac__top">
-                <img src="" alt="" class="hac__img hac__img--sp">
-                <h2 class="hac__title"> Jario </h2>
-                <h3 class="hac__email"> jairo@jairo.com </h3>
+                <div class="hac__cont--img">
+                    <asp:Image ID="Image1" runat="server" CssClass="hac__img hac__img--sp" />
+                </div>
+                <asp:Label ID="Label1" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label3" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label4" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label5" runat="server" Text="" CssClass="hac__email"></asp:Label>
                 <button class="hac__button"> Gestionar perfil </button>
             </div>
             <div class="hac__down">
-                <button class="hac__button"> Cerrar sesión </button>
+                <asp:Button ID="Button1" runat="server" Text="Cerrar sesión" cssclass="hac__button" OnClick="Button1_Click"/>
             </div>
         </div>
+        </form>
     </div>
 
     <main class="main">
@@ -74,7 +82,7 @@
                     <a href="AgCourse.aspx" class="userss__link"> Registrar Curso</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar Curso</a>
+                    <a href="CoCourse.aspx" class="userss__link"> Consultar Curso</a>
                 </div>
             </div>
         </div>
@@ -109,15 +117,16 @@
                 <img src="../../assets/images/Jairo.jpeg" alt="Imagen Jairo" class="footer__imgeq">
                 <p class="footer__text"> Jairo Styp Rodriguez Patiño </p>
               </div>
-                <img src="" alt="" class="footer__imgeq">
+              <div class="footer__equipo">
+                <img src="../../assets/images/mercado.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan David Mercadoo Torres </p>
               </div>
               <div class="footer__equipo">
                 <img src="../../assets/images/camilo.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan Camilo Rojas Rojas </p>
               </div>
-                            <div class="footer__equipo">
-                <img src="" alt="" class="footer__imgeq">
+              <div class="footer__equipo">
+                <img src="../../assets/images/justin.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Justin Jarno Garzon Cardenas </p>
               </div>
             </div>

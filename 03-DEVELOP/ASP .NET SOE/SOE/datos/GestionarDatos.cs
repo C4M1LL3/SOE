@@ -295,6 +295,33 @@ namespace datos
 
         }
 
+        public bool agregarEnrollmentt(enrollmentt unEnrollmentt)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into tutor values(@student_id, @id_eps, @address, @home_number, @state, @father_id, @mother_id, @tutor_id)";
+            comando.Parameters.AddWithValue("@student_id", unEnrollmentt.Student_id);
+            comando.Parameters.AddWithValue("@id_eps", unEnrollmentt.Eps_id);
+            comando.Parameters.AddWithValue("@address", unEnrollmentt.Address);
+            comando.Parameters.AddWithValue("@home_number", unEnrollmentt.Home_number);
+            comando.Parameters.AddWithValue("@state", unEnrollmentt.State);
+            comando.Parameters.AddWithValue("@father_id", unEnrollmentt.Father_id);
+            comando.Parameters.AddWithValue("@mother_id", unEnrollmentt.Mother_id);
+            comando.Parameters.AddWithValue("@tutor_id", unEnrollmentt.Tutor_id);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+
+        }
+
         public person consultarPerson(int document_number)
         {
             SqlCommand comando = new SqlCommand();
@@ -542,6 +569,31 @@ namespace datos
 
         }
 
+        public person ConsultarPersonC(int number_course)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select p.first_name, p.first_last_name, p.second_name, p.second_last_name from course c inner join teacher t on t.id= c.teacher_id inner join person p on p.id = t.person_id  where number_course = @number_course";
+            comando.Parameters.AddWithValue("@number_course", number_course);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unPerson = new person();
+                unPerson.First_name = registro.GetString(0);
+                unPerson.First_last_name = registro.GetString(1);
+                unPerson.Second_name = registro.GetString(2);
+                unPerson.Second_last_name = registro.GetString(3);
+                registro.Close(); 
+                return unPerson;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
         public coordinator ConsultarCoordinator(int document_number)
         {
             SqlCommand comando = new SqlCommand();
@@ -656,6 +708,30 @@ namespace datos
                 unTutor.Person_id = registro.GetInt32(2);
                 registro.Close();
                 return unTutor;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public matter ConsultarMatter(string matter)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select * from matter where name_matter=@name_matter";
+            comando.Parameters.AddWithValue("@name_matter", matter);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                matter unMatter = new matter();
+                unMatter.Id = registro.GetInt32(0);
+                unMatter.Name_matter = registro.GetString(1);
+                unMatter.Name_subject = registro.GetString(2);
+                registro.Close();
+                return unMatter;
             }
             else
             {

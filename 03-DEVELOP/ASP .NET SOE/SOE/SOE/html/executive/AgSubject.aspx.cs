@@ -25,7 +25,7 @@ namespace SOE.html.executive
             bool agregado = objGestionDatos.agregarSubject(unSubject);
             if (agregado)
             {
-                Label1.Text = "Asignatura Agregada con exito";
+                Label1.Text = "Área Agregada con exito";
             }
             else
             {

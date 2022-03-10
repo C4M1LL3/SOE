@@ -41,11 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="annotation.cs" />
+    <Compile Include="annual_final_grade.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="conexion.cs" />
     <Compile Include="coordinator.cs" />
     <Compile Include="course.cs" />
+    <Compile Include="enrollmentt.cs" />
     <Compile Include="father.cs" />
+    <Compile Include="final_quarterly_grade.cs" />
     <Compile Include="GestionarDatos.cs" />
     <Compile Include="matter.cs" />
     <Compile Include="mother.cs" />
@@ -53,8 +57,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="secretary.cs" />
     <Compile Include="student.cs" />
+    <Compile Include="student_history.cs" />
+    <Compile Include="student_history_annotation.cs" />
     <Compile Include="subject.cs" />
     <Compile Include="teacher.cs" />
+    <Compile Include="timetable.cs" />
     <Compile Include="tutor.cs" />
     <Compile Include="type_document.cs" />
     <Compile Include="user.cs" />
