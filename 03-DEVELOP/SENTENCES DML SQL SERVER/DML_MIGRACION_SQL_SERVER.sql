@@ -119,7 +119,6 @@ create table secretary
     name_working_day varchar(50) NOT NULL,
     CONSTRAINT pk_secretary PRIMARY KEY (id),
     CONSTRAINT uk_person_id UNIQUE (person_id),
-    CONSTRAINT uk_name_working_day UNIQUE (name_working_day),
     CONSTRAINT fk_woda_secre FOREIGN KEY (name_working_day) REFERENCES working_day (name_working_day),
     CONSTRAINT fk_per_secre FOREIGN KEY (person_id) REFERENCES person (id)
 );
@@ -135,7 +134,6 @@ create table coordinator
     number_cycle int    NOT NULL,
     CONSTRAINT pk_coordinator PRIMARY KEY (id),
     CONSTRAINT uk_cor_person_id UNIQUE (person_id),
-    CONSTRAINT uk_number_cycle UNIQUE (number_cycle),
     CONSTRAINT fk_per_coor FOREIGN KEY (person_id) REFERENCES person (id),
     CONSTRAINT fk_cycl_coor FOREIGN KEY (number_cycle) REFERENCES cycle (number_cycle)
 );
@@ -264,7 +262,6 @@ create table news
  image varchar(max) NOT NULL,
  constraint pk_news primary key (id),
  constraint fk_user_news foreign key (id_user) references system_userr(id),
- constraint uk_user_news unique (id_user)
 );
 GO
 
