@@ -17,7 +17,6 @@ namespace SOE.html.executive
             if (Session["usuariologueado"] != null)
             {
                 string usuariologueado = Session["usuariologueado"].ToString();
-                int document_number = int.Parse(usuariologueado);
             }
 
             else

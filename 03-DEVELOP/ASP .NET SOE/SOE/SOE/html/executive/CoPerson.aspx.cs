@@ -32,8 +32,13 @@ namespace SOE.html.executive
                 if (unUser != null)
                 {
                     Label5.Text = unUser.Institutional_email;
+                    Image1.ImageUrl = unUser.Image;
+                    Image2.ImageUrl = unUser.Image;
                 }
 
+                else
+                {
+                }
             }
 
             else
@@ -49,6 +54,11 @@ namespace SOE.html.executive
         }
 
         protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("GsUsuarioe.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
         {
             int document_number = int.Parse(TextBox9.Text);
             person unaPersona = objGestionDatos.consultarPerson(document_number);

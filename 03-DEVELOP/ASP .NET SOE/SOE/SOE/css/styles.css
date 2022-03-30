@@ -925,7 +925,7 @@ body {
     display: block;
     position: relative;
     width: 15rem;
-    height: 21rem;
+    height: 18rem;
     border: .15rem solid var(--color-secundario);
 }
 
@@ -978,4 +978,82 @@ body {
     color: var(--color-terciario);
     font-size: 1.2em;
     border-bottom: .1rem solid var(--color-principal);
+}
+
+.timetable__image{
+    position: relative;
+    right: 15vw;
+    width: 200%;
+    height: 30rem;
+}
+
+/* Enrollmentt ----------------------------------------------------- */
+
+.enrollment__cont {
+    margin: 3rem auto 1rem;
+    width: 70vw;
+}
+
+.enrollment__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12rem;
+    border-bottom: .3rem solid rgb(238, 155, 31);
+}
+
+.image__profile {
+    background-color: rgb(238, 155, 31);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.name__profile {
+    font-size: 2.5em;
+    color: rgb(238, 155, 31);
+}
+
+.enrollment__main {
+    padding: 4rem;
+    text-align: center;
+    border-bottom: .1rem solid rgb(209, 203, 193);
+}
+
+.enrollment__campt {
+    display: inline-block;
+    padding: .2rem 1rem;
+    margin: 1rem;
+    border: .2rem solid rgb(238, 155, 31);
+    border-radius: 2.85rem;
+    -webkit-border-radius: 2.85rem;
+    -moz-border-radius: 2.85rem;
+    -ms-border-radius: 2.85rem;
+    -o-border-radius: 2.85rem;
+    color: rgb(209, 203, 193);
+    font-size: 1.1em;
+}
+
+.enrollment__title {
+    position: relative;
+    display: inline-block;
+    color: rgb(238, 155, 31);
+    padding-right: .5rem;
+}
+
+.enrollment__camp {
+    display: inline-block;
+}
+
+.enr__cont{
+    display: inline-block;
+}
+
+.enrollment__camp--sp {
+    display: inline-block;
+    color: rgb(33, 141, 6);
 }

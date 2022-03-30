@@ -19,16 +19,25 @@ namespace SOE.html.executive
                 string usuariologueado = Session["usuariologueado"].ToString();
                 int document_number = int.Parse(usuariologueado);
                 person unaPersona = objGestionDatos.consultarPerson(document_number);
-                user unUser = objGestionDatos.ConsultarUser(document_number);
-                if (unaPersona != null && unUser != null)
+                if (unaPersona != null)
                 {
                     Label1.Text = unaPersona.First_name;
                     Label2.Text = unaPersona.Second_name;
                     Label3.Text = unaPersona.First_last_name;
                     Label4.Text = unaPersona.Second_last_name;
-                    Label5.Text = unUser.Institutional_email;
                 }
 
+                user unUser = objGestionDatos.ConsultarUser(document_number);
+                if (unUser != null)
+                {
+                    Label5.Text = unUser.Institutional_email;
+                    Image1.ImageUrl = unUser.Image;
+                    Image2.ImageUrl = unUser.Image;
+                }
+
+                else
+                {
+                }
             }
 
             else
@@ -44,6 +53,11 @@ namespace SOE.html.executive
         }
 
         protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("GsUsuarioe.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
         {
             int document_number = int.Parse(TextBox9.Text);
             person unaPersona = objGestionDatos.consultarPerson(document_number);

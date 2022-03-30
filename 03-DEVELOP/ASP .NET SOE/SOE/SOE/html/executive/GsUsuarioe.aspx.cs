@@ -34,6 +34,14 @@ namespace SOE.html.executive
                     Label8.Text = unaPersona.First_last_name;
                     Label9.Text = unaPersona.Second_last_name;
                     Label10.Text = unUser.Institutional_email;
+                    Label5.Text = unUser.Institutional_email;
+                    Image1.ImageUrl = unUser.Image;
+                    Image2.ImageUrl = unUser.Image;
+                    Image3.ImageUrl = unUser.Image;
+                }
+
+                else
+                {
                 }
 
             }
@@ -48,6 +56,11 @@ namespace SOE.html.executive
         {
             Session.Remove("usuariologueado");
             Response.Redirect("../../index.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("GsUsuarioe.aspx");
         }
 
     }

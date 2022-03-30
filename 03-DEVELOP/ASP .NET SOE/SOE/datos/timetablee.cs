@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 
 namespace datos
 {
-    public class timetable
+    public class timetablee
     {
         private int id;
         private string archive_timetable;
         private int course_id;
 
-        public timetable()
-        {
 
+        public timetablee()
+        {
         }
 
-        public timetable(int id, string archive_timetable, int course_id)
+        public timetablee(int id, string archive_timetable, int course_id)
         {
             this.id = id;
             this.archive_timetable = archive_timetable;
             this.course_id = course_id;
         }
+
         public int Id
         {
             get { return id; }

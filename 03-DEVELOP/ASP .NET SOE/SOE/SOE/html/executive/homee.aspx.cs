@@ -53,5 +53,39 @@ namespace SOE.html.executive
             Session.Remove("usuariologueado");
             Response.Redirect("../../index.aspx");
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("GsUsuarioe.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            news unNews = new news();
+            unNews.Id_user = int.Parse(TextBox2.Text);
+            unNews.Text = TextBox3.Text;
+            string extension = System.IO.Path.GetExtension(FileUpload1.FileName);
+            if (FileUpload1.HasFile)
+            {
+                string str = FileUpload1.FileName;
+                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/newsU/" + FileUpload1.FileName));
+                string imgpath = "~/newsU/" + str.ToString();
+                Label9.Text = "archivo subido con exito";
+                unNews.Image = imgpath;
+            }
+            else
+            {
+                Label9.Text = "archivo no subido, seleccione un archivo porfavor";
+            }
+            bool agregado = objGestionDatos.agregarNews(unNews);
+            if (agregado)
+            {
+                Label9.Text = "Publicación Agregado con exito";
+            }
+            else
+            {
+                Label9.Text = objGestionDatos.error;
+            }
+        }
     }
 }

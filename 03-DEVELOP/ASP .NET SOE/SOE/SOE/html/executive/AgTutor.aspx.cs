@@ -15,7 +15,15 @@ namespace SOE.html.executive
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["usuariologueado"] != null)
+            {
+                string usuariologueado = Session["usuariologueado"].ToString();
+            }
 
+            else
+            {
+                Response.Redirect("../../index.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

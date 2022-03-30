@@ -24,6 +24,15 @@ namespace SOE.html.executive
         protected void Page_Load(object sender, EventArgs e)
         {
             this.conexion = datos.conexion.getconexion();
+            if (Session["usuariologueado"] != null)
+            {
+                string usuariologueado = Session["usuariologueado"].ToString();
+            }
+
+            else
+            {
+                Response.Redirect("../../index.aspx");
+            }
         }
 
 

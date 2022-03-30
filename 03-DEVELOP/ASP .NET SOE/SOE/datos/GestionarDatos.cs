@@ -172,9 +172,9 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into coordinator values(@person_id, @number_cycle)";
-            comando.Parameters.AddWithValue("@number_course", unCoordinator.Number_cycle);
-            comando.Parameters.AddWithValue("@number_year", unCoordinator.Person_id);
+            comando.CommandText = "insert into coordinator (person_id, number_cycle) values((select id from person where document_number=@document_number),@number_cycle)";
+            comando.Parameters.AddWithValue("@document_number", unCoordinator.Person_id);
+            comando.Parameters.AddWithValue("@number_cycle", unCoordinator.Number_cycle);
             try
             {
                 comando.ExecuteNonQuery();
@@ -258,8 +258,8 @@ namespace datos
             comando.Connection = conexion;
             comando.CommandText = "insert into mother values(@person_id, @number_mother, @address_mother)";
             comando.Parameters.AddWithValue("@person_id", unaMother.Person_id);
-            comando.Parameters.AddWithValue("@number_father", unaMother.Number_mother);
-            comando.Parameters.AddWithValue("@address_father", unaMother.Address_mother);
+            comando.Parameters.AddWithValue("@number_mother", unaMother.Number_mother);
+            comando.Parameters.AddWithValue("@address_mother", unaMother.Address_mother);
             try
             {
                 comando.ExecuteNonQuery();
@@ -300,7 +300,7 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into tutor values(@student_id, @id_eps, @address, @home_number, @state, @father_id, @mother_id, @tutor_id)";
+            comando.CommandText = "insert into enrollment values(@student_id, @id_eps, @address, @home_number, @state, @father_id, @mother_id, @tutor_id)";
             comando.Parameters.AddWithValue("@student_id", unEnrollmentt.Student_id);
             comando.Parameters.AddWithValue("@id_eps", unEnrollmentt.Eps_id);
             comando.Parameters.AddWithValue("@address", unEnrollmentt.Address);
@@ -309,6 +309,152 @@ namespace datos
             comando.Parameters.AddWithValue("@father_id", unEnrollmentt.Father_id);
             comando.Parameters.AddWithValue("@mother_id", unEnrollmentt.Mother_id);
             comando.Parameters.AddWithValue("@tutor_id", unEnrollmentt.Tutor_id);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+
+        }
+
+        public bool agregarNotaTrim(final_quarterly_grade unNoteTrim)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into final_quarterly_grade values (@student_id, @matter_id,@number_quarter, @seventy_percentage, @twenty_percentage, @ten_percentage, @final_grade)";
+            comando.Parameters.AddWithValue("@student_id", unNoteTrim.Student_id);
+            comando.Parameters.AddWithValue("@matter_id", unNoteTrim.Matter_id);
+            comando.Parameters.AddWithValue("@number_quarter", unNoteTrim.Number_quarter);
+            comando.Parameters.AddWithValue("@seventy_percentage", unNoteTrim.Seventy_porcentage);
+            comando.Parameters.AddWithValue("@twenty_percentage", unNoteTrim.Twenty_porcentage);
+            comando.Parameters.AddWithValue("@ten_percentage", unNoteTrim.Ten_porcentage);
+            comando.Parameters.AddWithValue("@final_grade", unNoteTrim.Final_grade);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+        }
+
+        public bool agregarNotaAnual(annual_final_grade unNoteAnnual)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into annual_final_grade values (@final_quarterly_grade_id, @annual_final_grade";
+            comando.Parameters.AddWithValue("@final_quarterly_grade_id", unNoteAnnual.Final_quarterly_grade_id);
+            comando.Parameters.AddWithValue("@annual_final_grade", unNoteAnnual.Annual_final_gradee);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+        }
+
+        public bool agregarTimetable(timetablee unTimetable)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into timetable values(@archive_timetable, @course_id)";
+            comando.Parameters.AddWithValue("@archive_timetable", unTimetable.Archive_timetable);
+            comando.Parameters.AddWithValue("@course_id", unTimetable.Course_id);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+
+        }
+
+        public bool agregarStudentHistory(student_historyy unStudentHistory)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into student_history values((select s.id from student s inner join person p on p.id = s.person_id where p.document_number = @document_number))";
+            comando.Parameters.AddWithValue("@document_number", unStudentHistory.Student_id);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+        }
+
+        public bool agregarStudentHistoryAnnotation(student_history_annotation unStudentHistoryAnnotation)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into student_history_annotation values((select sh.id from student_history sh inner join student s on s.id = sh.student_id inner join person p on p.id = s.person_id where p.document_number = @document_number ), (select id from annotation where id = (select max(id) from annotation)))";
+            comando.Parameters.AddWithValue("@document_number", unStudentHistoryAnnotation.Student_history_id);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+        }
+
+        public bool agregarAnnotation(annotation unAnnotation)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into annotation values (@notation, @notation_date)";
+            comando.Parameters.AddWithValue("@notation", unAnnotation.Notation);
+            comando.Parameters.AddWithValue("@notation_date", unAnnotation.Notation_date);
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
+        }
+
+        public bool agregarNews(news unNews)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "insert into news values(@id_user, @text, @image)";
+            comando.Parameters.AddWithValue("@id_user", unNews.Id_user);
+            comando.Parameters.AddWithValue("@text", unNews.Text);
+            comando.Parameters.AddWithValue("@image", unNews.Image);
             try
             {
                 comando.ExecuteNonQuery();
@@ -454,13 +600,15 @@ namespace datos
         {
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "select c.number_course from course c inner join student s on s.course_id = c.id inner join person p on p.id = s.person_id where p.document_number=@document_number";
+            comando.CommandText = "select c.number_course, c.number_year, c.number_cycle from course c inner join student s on s.course_id = c.id inner join person p on p.id = s.person_id where p.document_number=@document_number";
             comando.Parameters.AddWithValue("@document_number", document_number);
             SqlDataReader registro = comando.ExecuteReader();
             if (registro.Read())
             {
                 course unCourse = new course();
                 unCourse.Number_course = registro.GetInt32(0);
+                unCourse.Number_year = registro.GetInt32(1);
+                unCourse.Number_cycle = registro.GetInt32(2);
                 registro.Close();
                 return unCourse;
             }
@@ -560,6 +708,31 @@ namespace datos
                 unTeacher.Person_id = registro.GetInt32(0);
                 registro.Close();
                 return unTeacher;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public person ConsultarTeacherSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select p.first_name, p.first_last_name, p.second_name, p.second_last_name from course c inner join teacher t on t.id = c.teacher_id inner join person p on p.id = t.person_id where t.id=(select t.id from teacher t inner join course c on c.teacher_id = t.id inner join student s on s.course_id = c.id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unPersonn = new person();
+                unPersonn.First_name = registro.GetString(0);
+                unPersonn.First_last_name = registro.GetString(1);
+                unPersonn.Second_name = registro.GetString(2);
+                unPersonn.Second_last_name = registro.GetString(3);
+                registro.Close();
+                return unPersonn;
             }
             else
             {
@@ -696,7 +869,7 @@ namespace datos
         {
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "select t.id, t.address_tutor, t.number_tutor, t.person_id from tutor t inner join person p on p.id = f.person_id where p.document_number = @document_number";
+            comando.CommandText = "select t.id, t.address_tutor, t.number_tutor, t.person_id from tutor t inner join person p on p.id = t.person_id where p.document_number = @document_number";
             comando.Parameters.AddWithValue("@document_number", document_number);
             SqlDataReader registro = comando.ExecuteReader();
             if (registro.Read())
@@ -732,6 +905,232 @@ namespace datos
                 unMatter.Name_subject = registro.GetString(2);
                 registro.Close();
                 return unMatter;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public enrollmentt ConsultarEnrollment(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select e.address, e.home_number, e.state from enrollment e inner join student s on s.id = e.student_id inner join person p on p.id = s.person_id where p.document_number=@document_number";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                enrollmentt unEnrollmentt = new enrollmentt();
+                unEnrollmentt.Address = registro.GetString(0);
+                unEnrollmentt.Home_number = registro.GetInt32(1);
+                unEnrollmentt.State = registro.GetInt32(2);
+                registro.Close();
+                return unEnrollmentt;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public eps ConsultarEps(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select ep.name_eps from eps ep inner join enrollment e on e.id_eps = ep.id inner join student s on s.id = e.student_id inner join person p on p.id = s.person_id where p.document_number=@document_number";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                eps unaEps = new eps();
+                unaEps.Name_eps = registro.GetString(0);
+                registro.Close();
+                return unaEps;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public final_quarterly_grade ConsultarFinal_quarterly_grade(int document_number, string name_matter, int number_quarter)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "Select f.id, f.number_quarter, f.seventy_percentage, f.twenty_percentage, f.ten_percentage, f.final_grade from final_quarterly_grade f inner join student s on s.id = f.student_id inner join matter m on m.id = f.matter_id inner join quarter q on q.number_quarter = f.number_quarter inner join person p on p.id = s.person_id where p.document_number=@document_number and m.name_matter=@name_matter and q.number_quarter=@number_quarter";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            comando.Parameters.AddWithValue("@name_matter", name_matter);
+            comando.Parameters.AddWithValue("@number_quarter", number_quarter);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                final_quarterly_grade unFinal_quarterly_grade = new final_quarterly_grade();
+                unFinal_quarterly_grade.Id = registro.GetInt32(0);
+                unFinal_quarterly_grade.Number_quarter = registro.GetInt32(1);
+                unFinal_quarterly_grade.Seventy_porcentage = registro.GetInt32(2);
+                unFinal_quarterly_grade.Twenty_porcentage = registro.GetInt32(3);
+                unFinal_quarterly_grade.Ten_porcentage = registro.GetInt32(4);
+                unFinal_quarterly_grade.Final_grade = registro.GetInt32(5);
+                registro.Close();
+                return unFinal_quarterly_grade;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public person ConsultarFinal_quarterly_grade_person(int document_number, string name_matter, int number_quarter)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "Select p.document_number, p.first_name, p.first_last_name, p.second_name, p.second_last_name from final_quarterly_grade f inner join student s on s.id = f.student_id inner join matter m on m.id = f.matter_id inner join quarter q on q.number_quarter = f.number_quarter inner join person p on p.id = s.person_id where p.document_number=@document_number and m.name_matter=@name_matter and q.number_quarter=@number_quarter";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            comando.Parameters.AddWithValue("@name_matter", name_matter);
+            comando.Parameters.AddWithValue("@number_quarter", number_quarter);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unPerson = new person();
+                unPerson.Document_number = registro.GetInt32(0);
+                unPerson.First_name = registro.GetString(1);
+                unPerson.First_last_name = registro.GetString(2);
+                unPerson.Second_name = registro.GetString(3);
+                unPerson.Second_last_name = registro.GetString(4);
+                registro.Close();
+                return unPerson;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public matter ConsultarFinal_quarterly_grade_matter(int document_number, string name_matter, int number_quarter)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "Select m.name_matter from final_quarterly_grade f inner join student s on s.id = f.student_id inner join matter m on m.id = f.matter_id inner join quarter q on q.number_quarter = f.number_quarter inner join person p on p.id = s.person_id where p.document_number=@document_number and m.name_matter=@name_matter and q.number_quarter=@number_quarter";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            comando.Parameters.AddWithValue("@name_matter", name_matter);
+            comando.Parameters.AddWithValue("@number_quarter", number_quarter);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                matter unaMatter = new matter();
+                unaMatter.Name_matter = registro.GetString(0);
+                registro.Close();
+                return unaMatter;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public annual_final_grade ConsultarAnnual_final_grade(int document_number, string name_matter, int number_quarter)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "Select a.id, a.annual_final_grade from annual_final_grade a inner join final_quarterly_grade f on a.final_quarterly_grade_id = f.id inner join student s on s.id = f.student_id inner join matter m on m.id = f.matter_id inner join quarter q on q.number_quarter = f.number_quarter inner join person p on p.id = s.person_id where p.document_number=@document_number and m.name_matter=@name_matter and q.number_quarter=@number_quarter";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            comando.Parameters.AddWithValue("@name_matter", name_matter);
+            comando.Parameters.AddWithValue("@number_quarter", number_quarter);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                annual_final_grade unAnnual_final_grade = new annual_final_grade();
+                unAnnual_final_grade.Id = registro.GetInt32(0);
+                unAnnual_final_grade.Annual_final_gradee = registro.GetInt32(1);
+                registro.Close();
+                return unAnnual_final_grade;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public person ConsultarAnnual_final_grade_person(int document_number, string name_matter, int number_quarter)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "Select p.document_number, p.first_name, p.first_last_name, p.second_name, p.second_last_name from annual_final_grade a inner join final_quarterly_grade f on f.id = a.final_quarterly_grade_id inner join student s on s.id = f.student_id inner join matter m on m.id = f.matter_id inner join quarter q on q.number_quarter = f.number_quarter inner join person p on p.id = s.person_id where p.document_number=@document_number and m.name_matter=@name_matter and q.number_quarter=@number_quarter";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            comando.Parameters.AddWithValue("@name_matter", name_matter);
+            comando.Parameters.AddWithValue("@number_quarter", number_quarter);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unPerson = new person();
+                unPerson.Document_number = registro.GetInt32(0);
+                unPerson.First_name = registro.GetString(1);
+                unPerson.First_last_name = registro.GetString(2);
+                unPerson.Second_name = registro.GetString(3);
+                unPerson.Second_last_name = registro.GetString(4);
+                registro.Close();
+                return unPerson;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public matter ConsultarAnnual_final_grade_matter(int document_number, string name_matter, int number_quarter)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "Select m.name_matter from annual_final_grade a inner join final_quarterly_grade f on f.id = a.final_quarterly_grade_id inner join student s on s.id = f.student_id inner join matter m on m.id = f.matter_id inner join quarter q on q.number_quarter = f.number_quarter inner join person p on p.id = s.person_id where p.document_number=@document_number and m.name_matter=@name_matter and q.number_quarter=@number_quarter";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            comando.Parameters.AddWithValue("@name_matter", name_matter);
+            comando.Parameters.AddWithValue("@number_quarter", number_quarter);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                matter unaMatter = new matter();
+                unaMatter.Name_matter = registro.GetString(0);
+                registro.Close();
+                return unaMatter;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public timetablee ConsultarTimetable(int course)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select t.archive_timetable from timetable t inner join course c on c.id = t.course_id where c.number_course=@number_course";
+            comando.Parameters.AddWithValue("@number_course", course);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                timetablee unTimetable = new timetablee();
+                unTimetable.Archive_timetable = registro.GetString(0);
+                registro.Close();
+                return unTimetable;
             }
             else
             {

@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace datos
 {
-    public class student_history
+    public class student_historyy
     {
         private int id;
         private int student_id;
 
-        public student_history()
+        public student_historyy()
         {
 
         }
 
-        public student_history(int id, int student_id)
+        public student_historyy(int id, int student_id)
         {
             this.id = id;
             this.student_id = student_id;

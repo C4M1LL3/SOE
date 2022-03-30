@@ -31,10 +31,10 @@
                 <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> Usuarios </a> </li>
                 <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materia y Asignatura </a> </li>
                 <li class="nav__li"> <a href="curs.aspx" class="nav__link"> Cursos </a> </li>
-                <li class="nav__li"> <a href="registrar.aspx" class="nav__link"> Matriculas </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Notas </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Horario </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Observador </a> </li>
+                <li class="nav__li"> <a href="enrollment.aspx" class="nav__link"> Matriculas </a> </li>
+                <li class="nav__li"> <a href="note.aspx" class="nav__link"> Notas </a> </li>
+                <li class="nav__li"> <a href="timetable.aspx" class="nav__link"> Horario </a> </li>
+                <li class="nav__li"> <a href="student_history.aspx" class="nav__link"> Observador </a> </li>
             </ul>
         </nav>
     </div>
@@ -66,10 +66,10 @@
                 <asp:Label ID="Label3" runat="server" Text="" CssClass="hac__title"></asp:Label>
                 <asp:Label ID="Label4" runat="server" Text="" CssClass="hac__title"></asp:Label>
                 <asp:Label ID="Label5" runat="server" Text="" CssClass="hac__email"></asp:Label>
-                <button class="hac__button"> Gestionar perfil </button>
+                <asp:Button ID="Button1" runat="server" Text="Gestionar perfil" cssclass="hac__button" OnClick="Button2_Click"/>
             </div>
             <div class="hac__down">
-                <asp:Button ID="Button1" runat="server" Text="Cerrar sesión" cssclass="hac__button" OnClick="Button1_Click"/>
+                <asp:Button ID="Button3" runat="server" Text="Cerrar sesión" cssclass="hac__button" OnClick="Button1_Click"/>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
       <div class="conterPerfil">
              <div class="contener__busqueda"> 
                 <asp:TextBox ID="TextBox9" runat="server" CssClass="busqueda__input" placeholder="Ingresa el nombre de la materia"></asp:TextBox>
-                  <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Buscar" CssClass="cambiar"/>
+                  <asp:Button ID="Button2" runat="server" OnClick="Button3_Click" Text="Buscar" CssClass="cambiar"/>
                   <asp:Label ID="Label14" runat="server" Text="" CssClass="help__link"></asp:Label>
              </div>
       <div class="conterPerfil__cont">
@@ -104,7 +104,6 @@
         </div>
         </div>
       </main>
-    </form>
 
     <footer class="footer">
       <div class="footer__conter">
@@ -179,5 +178,6 @@
     </footer>
 
     <script src="../../js/app.js"></script>
+    </form>
   </body>
 </html>

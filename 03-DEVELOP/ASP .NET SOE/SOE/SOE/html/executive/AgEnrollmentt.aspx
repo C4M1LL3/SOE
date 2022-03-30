@@ -24,13 +24,13 @@
 <body>
     <div class="log">
     <form id="form1" runat="server" class="form">
-        <h1 class="form__text">Registrar usuario</h1>
+        <h1 class="form__text">Registrar Matricula</h1>
         <div>
             <div class="form_cont">
                 <asp:Label ID="Label2" runat="server" Text="Id del estudiante" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el id del estudiante" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label3" runat="server" Text="Id eps" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el id de la eps" CssClass="input" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el id de la eps" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label4" runat="server" Text="Dirección" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingresa la dirección del estudiante" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label7" runat="server" Text="Numero de casa o apartamento" CssClass="label"></asp:Label>

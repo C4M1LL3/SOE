@@ -39,7 +39,6 @@ namespace SOE.html.executive
                 else
                 {
                 }
-
             }
 
             else
@@ -55,6 +54,11 @@ namespace SOE.html.executive
         }
 
         protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("GsUsuarioe.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
         {
             string name_matter = TextBox9.Text;
             matter unMatter = objGestionDatos.ConsultarMatter(name_matter);
