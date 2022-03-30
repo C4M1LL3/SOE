@@ -54,7 +54,7 @@ create table father
 (
     id             int IDENTITY(1,1) not null,
     person_id      int   not null,
-    number_father  bigint,
+    number_father  int,
     address_father varchar(100),
     constraint pk_father primary key (id),
     constraint uk_father unique (person_id),
@@ -64,7 +64,7 @@ create table mother
 (
     id             int IDENTITY(1,1) not null,
     person_id      int   not null,
-    number_mother  bigint,
+    number_mother  int,
     address_mother varchar(100),
     constraint pk_mother primary key (id),
     constraint uk_mother unique (person_id),
@@ -74,7 +74,7 @@ create table tutor
 (
     id            int IDENTITY(1,1)       not null,
     person_id     int         not null,
-    number_tutor  bigint         not null,
+    number_tutor  int         not null,
     address_tutor varchar(100) not null,
     constraint pk_tutor primary key (id),
     constraint uk_tutor unique (person_id),
