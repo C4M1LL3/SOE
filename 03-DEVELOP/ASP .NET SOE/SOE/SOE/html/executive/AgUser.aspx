@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -34,9 +34,9 @@
                 <asp:Label ID="Label4" runat="server" Text="Correo institucional" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingresa el correo institucional" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label5" runat="server" Text="Imagen" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox4" runat="server" placeholder="Ingresa la imagen" CssClass="input"></asp:TextBox>
+                <asp:FileUpload ID="FileUpload1" runat="server" />
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
-                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="" CssClass="help__link"></asp:Label>
             </div>
             <div class="form_cont">
                 <asp:Label ID="Label6" runat="server" Text="Rol de usuario" CssClass="label"></asp:Label>

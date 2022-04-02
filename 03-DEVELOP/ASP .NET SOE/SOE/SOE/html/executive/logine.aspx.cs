@@ -35,6 +35,7 @@ namespace SOE.html.executive
             SqlDataReader dr = comand.ExecuteReader();
             if (dr.Read())
             {
+                Session["usuariologueado"] = TextBox1.Text;
                 Response.Redirect("homee.aspx");
             }
             else

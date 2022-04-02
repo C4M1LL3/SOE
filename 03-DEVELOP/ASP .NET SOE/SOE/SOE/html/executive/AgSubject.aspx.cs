@@ -15,7 +15,15 @@ namespace SOE.html.executive
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["usuariologueado"] != null)
+            {
+                string usuariologueado = Session["usuariologueado"].ToString();
+            }
 
+            else
+            {
+                Response.Redirect("../../index.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -25,7 +33,7 @@ namespace SOE.html.executive
             bool agregado = objGestionDatos.agregarSubject(unSubject);
             if (agregado)
             {
-                Label1.Text = "Asignatura Agregada con exito";
+                Label1.Text = "Área Agregada con exito";
             }
             else
             {

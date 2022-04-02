@@ -12,9 +12,18 @@ namespace SOE.html.executive
     {
 
         GestionarDatos objGestionDatos = new GestionarDatos();
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["usuariologueado"] != null)
+            {
+                string usuariologueado = Session["usuariologueado"].ToString();
+            }
 
+            else
+            {
+                Response.Redirect("../../index.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -23,7 +32,7 @@ namespace SOE.html.executive
             unStudent.Person_id = int.Parse(TextBox1.Text);
             unStudent.Birth_date = Convert.ToDateTime(TextBox2.Text);
             unStudent.Birth_place = TextBox3.Text;
-            unStudent.Course_id = int.Parse(TextBox3.Text);
+            unStudent.Course_id = int.Parse(TextBox4.Text);
             bool agregado = objGestionDatos.agregarStudent(unStudent);
             if (agregado)
             {

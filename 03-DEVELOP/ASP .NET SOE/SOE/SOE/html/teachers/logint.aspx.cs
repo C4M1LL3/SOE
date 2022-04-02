@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
+
+namespace SOE.html.teachers
+{
+
+    public partial class logint : System.Web.UI.Page
+    {
+
+        string patron = "patron";
+        string teacher = "profesor";
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string conectar = ConfigurationManager.ConnectionStrings["conexion"].ConnectionString;
+            SqlConnection conn = new SqlConnection(conectar);
+            SqlCommand comand = new SqlCommand("Validar", conn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            comand.Connection.Open();
+            comand.Parameters.Add("@login", SqlDbType.VarChar, 100).Value = TextBox1.Text;
+            comand.Parameters.Add("@password", SqlDbType.VarChar, 100).Value = TextBox2.Text;
+            comand.Parameters.Add("@patron", SqlDbType.VarChar, 50).Value = patron;
+            comand.Parameters.Add("@name_rol", SqlDbType.VarChar, 100).Value = teacher;
+            SqlDataReader dr = comand.ExecuteReader();
+            if (dr.Read())
+            {
+                Session["usuariologueado"] = TextBox1.Text;
+                Response.Redirect("homet.aspx");
+            }
+            else
+            {
+                Label1.Text = "Datos registrados incorrectos";
+            }
+            comand.Connection.Close();
+        }
+    }
+}

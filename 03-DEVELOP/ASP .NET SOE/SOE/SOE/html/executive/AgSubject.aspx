@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -27,10 +27,10 @@
         <h1 class="form__text">Registrar área </h1>
         <div>
             <div class="form_cont">
-                <asp:Label ID="Label2" runat="server" Text="Nombre de asignatura" CssClass="label"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Nombre del área" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el nombre del área" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label1" CssClass="help__link" runat="server" Text="" ></asp:Label>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
-                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
             </div>
         </div>
     </form>

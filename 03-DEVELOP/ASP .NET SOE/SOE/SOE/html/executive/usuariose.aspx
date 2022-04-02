@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -22,51 +22,58 @@
     <title>SOE</title>
 </head>
 <body>
+    <form id="form1" runat="server">
     <div id="sidebar" class="sidebar">
         <div class="sidebar__toggle">
             <i class="fas fa-bars sidebar__icon"></i>
         </div>
         <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> usuarios </a> </li>
-                <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materias y asignaturas </a> </li>
+                <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> Usuarios </a> </li>
+                <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materia y Asignatura </a> </li>
                 <li class="nav__li"> <a href="curs.aspx" class="nav__link"> Cursos </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Matriculas </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Notas </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Horario </a> </li>
-                <li class="nav__li"> <a href="#" class="nav__link"> Observador </a> </li>
+                <li class="nav__li"> <a href="enrollment.aspx" class="nav__link"> Matriculas </a> </li>
+                <li class="nav__li"> <a href="note.aspx" class="nav__link"> Notas </a> </li>
+                <li class="nav__li"> <a href="timetable.aspx" class="nav__link"> Horario </a> </li>
+                <li class="nav__li"> <a href="student_history.aspx" class="nav__link"> Observador </a> </li>
             </ul>
         </nav>
     </div>
-    <header class="header">
-        <a href="homee.aspx" class="header__link--s">
+    <div class="inicio">
+          <a href="homee.aspx" class="header__link--s">
           <img
           src="../../assets/images/Montaña login (1).png"
           alt="Logo SOE"
           class="header__img"
         />
         </a>
+    </div>
+    <header class="header">
     </header>
     <div class="hac__header">
-      <img src="" alt="" class="hac__img">
+      <asp:Image ID="Image2" runat="server" CssClass="hac__img" />
       <div class="hac__toggle">
           <i class="fas fa-sort-down hac__icon"></i>
       </div>
   </div>
     <div id="hac" class="hac">
-        <div class="hac__main">
+            <div class="hac__main">
             <div class="hac__top">
-                <img src="" alt="" class="hac__img hac__img--sp">
-                <h2 class="hac__title"> Jario </h2>
-                <h3 class="hac__email"> jairo@jairo.com </h3>
-                <button class="hac__button"> Gestionar perfil </button>
+                <div class="hac__cont--img">
+                    <asp:Image ID="Image1" runat="server" CssClass="hac__img hac__img--sp" />
+                </div>
+                <asp:Label ID="Label1" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label3" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label4" runat="server" Text="" CssClass="hac__title"></asp:Label>
+                <asp:Label ID="Label5" runat="server" Text="" CssClass="hac__email"></asp:Label>
+                <asp:Button ID="Button2" runat="server" Text="Gestionar perfil" cssclass="hac__button" OnClick="Button2_Click"/>
             </div>
             <div class="hac__down">
-                <button class="hac__button"> Cerrar sesión </button>
+                <asp:Button ID="Button1" runat="server" Text="Cerrar sesión" cssclass="hac__button" OnClick="Button1_Click"/>
             </div>
         </div>
     </div>
-
     <main class="main">
         <div class="userss">
             <div class="userss__cont">
@@ -74,7 +81,7 @@
                     <a href="AgUser.aspx" class="userss__link"> Registrar usuarios</a>
                 </div>
                 <div class="userss__buton">
-                    <a href="" class="userss__link"> Consultar usuarios</a>
+                    <a href="CoPerson.aspx" class="userss__link"> Consultar usuarios</a>
                 </div>
                 <div class="userss__buton">
                     <a href="asignare.aspx" class="userss__link"> Asignar usuarios</a>
@@ -113,15 +120,15 @@
                 <p class="footer__text"> Jairo Styp Rodriguez Patiño </p>
               </div>
               <div class="footer__equipo">
-                <img src="" alt="" class="footer__imgeq">
+                <img src="../../assets/images/mercado.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan David Mercadoo Torres </p>
               </div>
               <div class="footer__equipo">
                 <img src="../../assets/images/camilo.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Juan Camilo Rojas Rojas </p>
               </div>
-                            <div class="footer__equipo">
-                <img src="" alt="" class="footer__imgeq">
+              <div class="footer__equipo">
+                <img src="../../assets/images/justin.jpg" alt="" class="footer__imgeq">
                 <p class="footer__text"> Justin Jarno Garzon Cardenas </p>
               </div>
             </div>
@@ -131,5 +138,6 @@
 
     <script src="../../js/app.js"></script>
 
+    </form>
 </body>
 </html>

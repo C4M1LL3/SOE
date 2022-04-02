@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -27,8 +27,8 @@
         <h1 class="form__text">Registrar Coordinador </h1>
         <div>
             <div class="form_cont">
-                <asp:Label ID="Label2" runat="server" Text="Id de la persona" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el id de la persona" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label2" runat="server" Text="Número de documento" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el número de documento de la persona" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label3" runat="server" Text="Número de ciclo" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el número de ciclo" CssClass="input"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace datos
 {
-    class conexion
+    public class conexion
     {
         private static SqlConnection objconexion;
         private static string error;

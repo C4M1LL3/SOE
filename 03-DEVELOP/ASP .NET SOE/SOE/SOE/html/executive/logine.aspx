@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
@@ -22,24 +22,19 @@
   </head>
 <body>
     <div class="log">
-    <form id="form1" runat="server" class="form">
-        <h1 class="form__text">Bienvenido</h1>
-        <div>
-            <div class="form__cont">
-          <label for="target" class="label"> Numeró de documento </label>
-            <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa tu número de documento"  CssClass="input"></asp:TextBox>
-          <label for="password" class="label"> contraseña </label>
-            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" placeholder="Ingresa tu contraseña" CssClass="input"></asp:TextBox>
-            <asp:Label ID="Label1" CssClass="help__link" runat="server" Text="" ></asp:Label>
-            <div class="btn">
+        <form id="form1" runat="server" class="form">
+            <h1 class="form__text">Bienvenido</h1>
+            <div class="form_cont">
+              <label for="target" class="label"> Numeró de documento </label>
+                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa tu número de documento"  CssClass="input"></asp:TextBox>
+              <label for="password" class="label"> contraseña </label>
+                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" placeholder="Ingresa tu contraseña" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label1" CssClass="help__link" runat="server" Text="" ></asp:Label>
+                <div>
+                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" CssClass="button" />
+                </div>
             </div>
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" CssClass="button" />
-            </div>
-            <div class="help">
-              <a href="#" class="help__link--sp"> ¿Olvidaste tu contraseña?</a>
-            </div>
-        </div>
-    </form>
-    <</div>
+        </form>
+    </div>
 </body>
 </html>
