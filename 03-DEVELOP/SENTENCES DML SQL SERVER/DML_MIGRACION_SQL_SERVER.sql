@@ -258,12 +258,36 @@ create table news
 (
  id int IDENTITY(1,1) NOT NULL ,
  id_user int NOT NULL,
- text varchar(225) NOT NULL ,
- image varchar(max) NOT NULL,
+ text varchar(1000) NOT NULL ,
  constraint pk_news primary key (id),
  constraint fk_user_news foreign key (id_user) references system_userr(id),
 );
 GO
+
+create procedure RSU
+@login varchar(100),
+@password varchar(100),
+@patron varchar(50),
+@institutional_email varchar(100),
+@image varchar(max)
+as
+begin
+insert into system_userr values(@login, ENCRYPTBYPASSPHRASE(@patron, @password), @institutional_email, @image)
+end
+
+create procedure Validar
+@login varchar(100),
+@password varchar(100),
+@patron varchar(50),
+@name_rol varchar(100)
+as
+begin
+select * from system_userr u
+inner join rol_user ru on u.id = ru.user_id
+inner join rol r on r.name_rol = ru.name_rol
+where u.login=@login and CONVERT(varchar(100), DECRYPTBYPASSPHRASE(@patron, u.password))=@password and ru.name_rol=@name_rol
+end
+
 
 insert into rol (name_rol)
 	values 
@@ -271,9 +295,8 @@ insert into rol (name_rol)
 		('profesor'),
 		('estudiante');
 
-insert into system_userr (login, password, institutional_email)
-    values
-        ('2251585', '2251585', 'master@gmail.com');
+
+RSU '2251585', '2251585', 'patron', 'master@gmail.com', '~/ImagesU/master.jpg'
 
 insert into rol_user (name_rol,user_id)
     values
@@ -287,7 +310,7 @@ insert into type_document (abbreviation, document_name,document_status)
 
 insert into person (document_number, type_document_id, first_name, second_name, first_last_name, second_last_name)
     values
-        ('2251585', '2', 'Master', 'David', 'Rodriguez', 'Rojas');
+        ('2251585', '2', 'Justin', 'David', 'Rodriguez', 'Rojas');
 
 insert into eps (name_eps)
 	values 
@@ -311,7 +334,15 @@ insert into cycle (number_cycle)
 
 insert into current_year (number_year)
 	values 
-		('2022');
+		('2022'),
+		('2023'),
+		('2024'),
+		('2025'),
+		('2026'),
+		('2027'),
+		('2028'),
+		('2029'),
+		('2030');
 
 insert into quarter (number_quarter)
 	values	
