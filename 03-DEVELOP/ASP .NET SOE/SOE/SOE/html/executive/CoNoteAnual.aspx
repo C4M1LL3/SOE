@@ -105,10 +105,6 @@
                      <div class="datos__user">
                      <asp:Label ID="Label12" runat="server" Text=""></asp:Label>  
                      </div>
-                       <h1 class="datos__title "> trimestre </h1>
-                     <div class="datos__user">
-                     <asp:Label ID="Label11" runat="server" Text=""></asp:Label>  
-                     </div>
                  </div>
              </div>
              <div class="datosPerfil">

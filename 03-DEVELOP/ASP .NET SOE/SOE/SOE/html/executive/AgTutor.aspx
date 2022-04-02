@@ -27,8 +27,8 @@
         <h1 class="form__text">Registrar tutor </h1>
         <div>
             <div class="form_cont">
-                <asp:Label ID="Label2" runat="server" Text="Id de la persona" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el id de la persona" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label2" runat="server" Text="Número de documento de la persona" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el número de documento id de la persona" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label3" runat="server" Text="Número de contacto" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el número de cotacto" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label4" runat="server" Text="Dirreción de residencia" CssClass="label"></asp:Label>

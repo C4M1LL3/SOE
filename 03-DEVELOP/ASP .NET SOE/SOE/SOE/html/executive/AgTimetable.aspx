@@ -30,7 +30,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Archivo" CssClass="label"></asp:Label>
                 <asp:FileUpload ID="FileUpload1" runat="server" />
                 <asp:Label ID="Label3" runat="server" Text="Id curso" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el id del curso" CssClass="input"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el número del curso" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label1" CssClass="help__link" runat="server" Text="" ></asp:Label>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
             </div>

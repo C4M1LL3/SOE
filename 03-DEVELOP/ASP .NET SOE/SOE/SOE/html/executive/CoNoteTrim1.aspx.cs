@@ -62,18 +62,18 @@ namespace SOE.html.executive
             int number_quarter = 1;
             int document_number = int.Parse(TextBox9.Text);
             string name_matter = TextBox1.Text;
-            person unaPersona = objGestionDatos.ConsultarAnnual_final_grade_person(document_number, name_matter, number_quarter);
+            person unPerson = objGestionDatos.ConsultarAnnual_final_grade_person(document_number, name_matter, number_quarter);
             matter unaMatter = objGestionDatos.ConsultarFinal_quarterly_grade_matter(document_number, name_matter, number_quarter);
             final_quarterly_grade unFinal_quarterly_grade = objGestionDatos.ConsultarFinal_quarterly_grade(document_number, name_matter, number_quarter);
 
-            if (unaPersona != null && unaMatter != null && unFinal_quarterly_grade != null)
+            if (unPerson != null && unaMatter != null && unFinal_quarterly_grade != null)
             {
                 Label12.Text = unFinal_quarterly_grade.Id.ToString();
-                Label13.Text = unaPersona.Document_number.ToString();
-                Label6.Text = unaPersona.First_name;
-                Label7.Text = unaPersona.Second_name;
-                Label8.Text = unaPersona.First_last_name;
-                Label9.Text = unaPersona.Second_last_name;
+                Label13.Text = unPerson.Document_number.ToString();
+                Label6.Text = unPerson.First_name;
+                Label7.Text = unPerson.Second_name;
+                Label8.Text = unPerson.First_last_name;
+                Label9.Text = unPerson.Second_last_name;
                 Label11.Text = unFinal_quarterly_grade.Number_quarter.ToString();
                 Label18.Text = unaMatter.Name_matter;
                 Label10.Text = unFinal_quarterly_grade.Seventy_porcentage.ToString();

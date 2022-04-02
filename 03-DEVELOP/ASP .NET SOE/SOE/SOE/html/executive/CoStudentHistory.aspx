@@ -304,6 +304,13 @@
                   ></asp:Label>
                 </div>
               </div>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="newss" GridLines="None"> 
+            <Columns>
+                <asp:BoundField DataField="id" HeaderText="Id" />
+                <asp:BoundField DataField="notation_date" HeaderText="Fecha"/>
+                <asp:BoundField DataField="notation" HeaderText="Anotación"/>
+            </Columns>
+            </asp:GridView>
             </div>
           </div>
         </div>
@@ -377,6 +384,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </footer>
 

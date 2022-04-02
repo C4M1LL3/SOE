@@ -51,8 +51,8 @@
                     <asp:ListItem>4</asp:ListItem>
                     <asp:ListItem>5</asp:ListItem>
                 </asp:DropDownList>
-                <asp:Label ID="Label5" runat="server" Text="Id del profesor" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el id del profesor" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label5" runat="server" Text="Número de documento del profesor" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el número de documento del profesor" CssClass="input"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
             </div>

@@ -101,7 +101,7 @@
                      <asp:Label ID="Label10" runat="server" Text=""></asp:Label>
                      </div>
               </div>
-                    <button class="cambiar"> Cambiar contraseña </button>
+                 <asp:Button ID="Button3" runat="server" Text="Cambiar contraseña" OnClick="Button3_Click" cssclass="hac__button"/>
         </div>
         </div>
       </div>

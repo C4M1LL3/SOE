@@ -27,8 +27,8 @@
         <h1 class="form__text">Registrar notas</h1>
         <div>
             <div class="form_cont">
-                <asp:Label ID="Label2" runat="server" Text="Id studiante" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el id del estudiante" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label2" runat="server" Text="Número de documento del estudiante" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el número de documento del estudiante" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label3" runat="server" Text="Id materia" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el id de la materia" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label4" runat="server" Text="Número de trimestre" CssClass="label"></asp:Label>

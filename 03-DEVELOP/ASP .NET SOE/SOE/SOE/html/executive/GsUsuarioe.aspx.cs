@@ -63,5 +63,10 @@ namespace SOE.html.executive
             Response.Redirect("GsUsuarioe.aspx");
         }
 
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("upPassworde.aspx");
+        }
+
     }
 }

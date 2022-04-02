@@ -113,7 +113,7 @@
                      <div class="datos__user">
                      <asp:Label ID="Label11" runat="server" Text=""></asp:Label>  
                      </div>
-                     <h1 class="datos__title "> Número de documento del padre </h1>
+                     <h1 class="datos__title "> Número de contacto del padre </h1>
                      <div class="datos__user">
                      <asp:Label ID="Label15" runat="server" Text=""></asp:Label>  
                      </div>

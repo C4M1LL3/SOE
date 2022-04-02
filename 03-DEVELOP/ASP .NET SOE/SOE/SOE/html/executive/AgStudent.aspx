@@ -27,14 +27,14 @@
         <h1 class="form__text">Registrar Estudiante </h1>
         <div>
             <div class="form_cont">
-                <asp:Label ID="Label2" runat="server" Text="Id de la persona" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el id de la persona" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label2" runat="server" Text="Número de documento de la persona" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el número de documento de la persona" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label3" runat="server" Text="Fecha de nacimiento" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa la fecha de nacimiento" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label4" runat="server" Text="Lugar de nacimiento" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingresa el lugar de nacimiento" CssClass="input"></asp:TextBox>
-                <asp:Label ID="Label5" runat="server" Text="Id del curso" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox4" runat="server" placeholder="Ingresa el id del curso" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label5" runat="server" Text="Número del curso" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox4" runat="server" placeholder="Ingresa el número del curso" CssClass="input"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
             </div>

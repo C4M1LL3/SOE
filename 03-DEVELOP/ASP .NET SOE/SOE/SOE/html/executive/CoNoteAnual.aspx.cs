@@ -75,7 +75,7 @@ namespace SOE.html.executive
                 Label8.Text = unaPersona.First_last_name;
                 Label9.Text = unaPersona.Second_last_name;
                 Label18.Text = unaMatter.Name_matter;
-                Label17.Text = unAnnual_final_grade.Final_quarterly_grade_id.ToString();
+                Label17.Text = unAnnual_final_grade.Annual_final_gradee.ToString();
             }
             else
             {

@@ -108,19 +108,23 @@
           <div class="news">
             <section class="publication">
               <h1 class="publication__title">
-                Publicaciónes
+                Publicaciones
               </h1>
               <div class="publication__cont">
                 <div class="publication__up">
-                    <asp:Label ID="Label6" runat="server" Text="Id Usuario" CssClass="label"></asp:Label>
-                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa tu id de usuario" CssClass="input" TextMode="Password"></asp:TextBox>
                     <asp:Label ID="Label7" runat="server" Text="Ingresa el asunto" CssClass="label"></asp:Label>
                     <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingresa el asunto" CssClass="input"></asp:TextBox>
-                    <asp:Label ID="Label8" runat="server" Text="Imagen" CssClass="label"></asp:Label>
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
                     <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Agregar" CssClass="button" />
                     <asp:Label ID="Label9" runat="server" Text="" CssClass="help__link"></asp:Label>
                 </div>
+                  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="newss" GridLines="None"> 
+            <Columns>
+                <asp:BoundField DataField="id" HeaderText="Id" />
+                <asp:BoundField DataField="first_name" HeaderText="Usuario"/>
+                <asp:BoundField DataField="text" HeaderText="Anotación"/>
+                
+            </Columns>
+            </asp:GridView>
               </div>
             </section>
             <div class="networks">

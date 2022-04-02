@@ -129,8 +129,8 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into teacher values(@person_id, @name_working_day, @matter_id)";
-            comando.Parameters.AddWithValue("@person_id", unTeacher.Person_id);
+            comando.CommandText = "insert into teacher values((select p.id from person p where p.document_number=@document_number), @name_working_day, @matter_id)";
+            comando.Parameters.AddWithValue("@document_number", unTeacher.Person_id);
             comando.Parameters.AddWithValue("@name_working_day", unTeacher.Name_working_day);
             comando.Parameters.AddWithValue("@matter_id", unTeacher.Matter_id);
             try
@@ -150,11 +150,11 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into course values(@number_course, @number_year, @number_cycle, @teacher_id)";
+            comando.CommandText = "insert into course values(@number_course, @number_year, @number_cycle, (select t.id from teacher t inner join person p on p.id = t.person_id where p.document_number=@document_number))";
             comando.Parameters.AddWithValue("@number_course", unCourse.Number_course);
             comando.Parameters.AddWithValue("@number_year", unCourse.Number_year);
             comando.Parameters.AddWithValue("@number_cycle", unCourse.Number_cycle);
-            comando.Parameters.AddWithValue("@teacher_id", unCourse.Teacher_id);
+            comando.Parameters.AddWithValue("@document_number", unCourse.Teacher_id);
             try
             {
                 comando.ExecuteNonQuery();
@@ -192,8 +192,8 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into secretary values(@person_id, @name_working_day)";
-            comando.Parameters.AddWithValue("@person_id", unSecretary.Person_id);
+            comando.CommandText = "insert into secretary values((select p.id from person p where p.document_number=@document_number), @name_working_day)";
+            comando.Parameters.AddWithValue("@document_number", unSecretary.Person_id);
             comando.Parameters.AddWithValue("@name_working_day", unSecretary.Name_working_day);
             try
             {
@@ -211,11 +211,11 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into student values(@person_id, @birth_date, @birth_place, @course_id )";
-            comando.Parameters.AddWithValue("@person_id", unStudent.Person_id);
+            comando.CommandText = "insert into student values((select p.id from person p where p.document_number=@document_number), @birth_date, @birth_place, (select c.id from course c where c.number_course = @number_course))";
+            comando.Parameters.AddWithValue("@document_number", unStudent.Person_id);
             comando.Parameters.AddWithValue("@Birth_date", unStudent.Birth_date);
             comando.Parameters.AddWithValue("@Birth_place", unStudent.Birth_place);
-            comando.Parameters.AddWithValue("@Course_id", unStudent.Course_id);
+            comando.Parameters.AddWithValue("@number_course", unStudent.Course_id);
             try
             {
                 comando.ExecuteNonQuery();
@@ -234,8 +234,8 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into father values(@person_id, @number_father, @address_father)";
-            comando.Parameters.AddWithValue("@person_id", unFather.Person_id);
+            comando.CommandText = "insert into father values((select p.id from person p where p.document_number=@document_number), @number_father, @address_father)";
+            comando.Parameters.AddWithValue("@document_number", unFather.Person_id);
             comando.Parameters.AddWithValue("@number_father", unFather.Number_father);
             comando.Parameters.AddWithValue("@address_father", unFather.Address_father);
             try
@@ -256,8 +256,8 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into mother values(@person_id, @number_mother, @address_mother)";
-            comando.Parameters.AddWithValue("@person_id", unaMother.Person_id);
+            comando.CommandText = "insert into mother values((select p.id from person p where p.document_number=@document_number), @number_mother, @address_mother)";
+            comando.Parameters.AddWithValue("@document_number", unaMother.Person_id);
             comando.Parameters.AddWithValue("@number_mother", unaMother.Number_mother);
             comando.Parameters.AddWithValue("@address_mother", unaMother.Address_mother);
             try
@@ -278,8 +278,8 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into tutor values(@person_id, @number_tutor, @address_tutor)";
-            comando.Parameters.AddWithValue("@person_id", unTutor.Person_id);
+            comando.CommandText = "insert into tutor values((select p.id from person p where p.document_number=@document_number), @number_tutor, @address_tutor)";
+            comando.Parameters.AddWithValue("@document_number", unTutor.Person_id);
             comando.Parameters.AddWithValue("@number_tutor", unTutor.Number_tutor);
             comando.Parameters.AddWithValue("@address_tutor", unTutor.Address_tutor);
             try
@@ -300,15 +300,15 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into enrollment values(@student_id, @id_eps, @address, @home_number, @state, @father_id, @mother_id, @tutor_id)";
-            comando.Parameters.AddWithValue("@student_id", unEnrollmentt.Student_id);
-            comando.Parameters.AddWithValue("@id_eps", unEnrollmentt.Eps_id);
+            comando.CommandText = "insert into enrollment values((select s.id from student s inner join person p on p.id = s.person_id where p.document_number=@student_document), @eps_id, @address, @home_number, @state, (select f.id from father f inner join person p on p.id = f.person_id where p.document_number=@father_document), (select m.id from mother m inner join person p on p.id = m.person_id where p.document_number=@mother_document), (select t.id from tutor t inner join person p on p.id = t.person_id where p.document_number=@tutor_document))";
+            comando.Parameters.AddWithValue("@student_document", unEnrollmentt.Student_id);
+            comando.Parameters.AddWithValue("@eps_id", unEnrollmentt.Eps_id);
             comando.Parameters.AddWithValue("@address", unEnrollmentt.Address);
             comando.Parameters.AddWithValue("@home_number", unEnrollmentt.Home_number);
             comando.Parameters.AddWithValue("@state", unEnrollmentt.State);
-            comando.Parameters.AddWithValue("@father_id", unEnrollmentt.Father_id);
-            comando.Parameters.AddWithValue("@mother_id", unEnrollmentt.Mother_id);
-            comando.Parameters.AddWithValue("@tutor_id", unEnrollmentt.Tutor_id);
+            comando.Parameters.AddWithValue("@father_document", unEnrollmentt.Father_id);
+            comando.Parameters.AddWithValue("@mother_document", unEnrollmentt.Mother_id);
+            comando.Parameters.AddWithValue("@tutor_document", unEnrollmentt.Tutor_id);
             try
             {
                 comando.ExecuteNonQuery();
@@ -327,8 +327,8 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into final_quarterly_grade values (@student_id, @matter_id,@number_quarter, @seventy_percentage, @twenty_percentage, @ten_percentage, @final_grade)";
-            comando.Parameters.AddWithValue("@student_id", unNoteTrim.Student_id);
+            comando.CommandText = "insert into final_quarterly_grade values ((select s.id from student s inner join person p on p.id = s.person_id where p.document_number=@student_document), @matter_id,@number_quarter, @seventy_percentage, @twenty_percentage, @ten_percentage, @final_grade)";
+            comando.Parameters.AddWithValue("@student_document", unNoteTrim.Student_id);
             comando.Parameters.AddWithValue("@matter_id", unNoteTrim.Matter_id);
             comando.Parameters.AddWithValue("@number_quarter", unNoteTrim.Number_quarter);
             comando.Parameters.AddWithValue("@seventy_percentage", unNoteTrim.Seventy_porcentage);
@@ -352,7 +352,7 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into annual_final_grade values (@final_quarterly_grade_id, @annual_final_grade";
+            comando.CommandText = "insert into annual_final_grade values (@final_quarterly_grade_id, @annual_final_grade)";
             comando.Parameters.AddWithValue("@final_quarterly_grade_id", unNoteAnnual.Final_quarterly_grade_id);
             comando.Parameters.AddWithValue("@annual_final_grade", unNoteAnnual.Annual_final_gradee);
             try
@@ -372,9 +372,9 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into timetable values(@archive_timetable, @course_id)";
+            comando.CommandText = "insert into timetable values(@archive_timetable, (select c.id from course c where c.number_course=@number_course))";
             comando.Parameters.AddWithValue("@archive_timetable", unTimetable.Archive_timetable);
-            comando.Parameters.AddWithValue("@course_id", unTimetable.Course_id);
+            comando.Parameters.AddWithValue("@number_course", unTimetable.Course_id);
             try
             {
                 comando.ExecuteNonQuery();
@@ -412,7 +412,7 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into student_history_annotation values((select sh.id from student_history sh inner join student s on s.id = sh.student_id inner join person p on p.id = s.person_id where p.document_number = @document_number ), (select id from annotation where id = (select max(id) from annotation)))";
+            comando.CommandText = "insert into student_history_annotation values((select sh.id from student_history sh inner join student s on s.id = sh.student_id inner join person p on p.id = s.person_id where p.document_number = @document_number), (select id from annotation where id = (select max(id) from annotation)))";
             comando.Parameters.AddWithValue("@document_number", unStudentHistoryAnnotation.Student_history_id);
             try
             {
@@ -451,10 +451,9 @@ namespace datos
             bool agrega = false;
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            comando.CommandText = "insert into news values(@id_user, @text, @image)";
-            comando.Parameters.AddWithValue("@id_user", unNews.Id_user);
+            comando.CommandText = "insert into news values((select su.id from system_userr su where su.login = @login), @text)";
+            comando.Parameters.AddWithValue("@login", unNews.Id_user);
             comando.Parameters.AddWithValue("@text", unNews.Text);
-            comando.Parameters.AddWithValue("@image", unNews.Image);
             try
             {
                 comando.ExecuteNonQuery();
@@ -742,6 +741,219 @@ namespace datos
 
         }
 
+        public person ConsultarFatherSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select p.document_number, p.first_name, p.first_last_name, p.second_name, p.second_last_name from father f inner join person p on p.id = f.person_id where f.id=(select f.id from father f inner join enrollment e on e.father_id = f.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unPersonf = new person();
+                unPersonf.Document_number = registro.GetInt32(0);
+                unPersonf.First_name = registro.GetString(1);
+                unPersonf.First_last_name = registro.GetString(2);
+                unPersonf.Second_name = registro.GetString(3);
+                unPersonf.Second_last_name = registro.GetString(4);
+                registro.Close();
+                return unPersonf;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public type_document ConsultarFatherTdSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select td.abbreviation from father f inner join person p on p.id = f.person_id inner join type_document td on td.id = p.type_document_id where f.id=(select f.id from father f inner join enrollment e on e.tutor_id = f.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                type_document unTypedocumentF = new type_document();
+                unTypedocumentF.Abbrevation = registro.GetString(0);
+                registro.Close();
+                return unTypedocumentF;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public father ConsultarFatherFSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select f.number_father, f.address_father from father f where f.id=(select f.id from father f inner join enrollment e on e.tutor_id = f.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                father unFatherF = new father();
+                unFatherF.Number_father = registro.GetInt32(0);
+                unFatherF.Address_father = registro.GetString(1);
+                registro.Close();
+                return unFatherF;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public person ConsultarMotherSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select p.document_number, p.first_name, p.first_last_name, p.second_name, p.second_last_name from mother m inner join person p on p.id = m.person_id where m.id=(select m.id from mother m inner join enrollment e on e.mother_id = m.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unPersonm = new person();
+                unPersonm.Document_number = registro.GetInt32(0);
+                unPersonm.First_name = registro.GetString(1);
+                unPersonm.First_last_name = registro.GetString(2);
+                unPersonm.Second_name = registro.GetString(3);
+                unPersonm.Second_last_name = registro.GetString(4);
+                registro.Close();
+                return unPersonm;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public type_document ConsultarMotherTdSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select td.abbreviation from mother m inner join person p on p.id = m.person_id inner join type_document td on td.id = p.type_document_id where m.id=(select m.id from mother m inner join enrollment e on e.tutor_id = m.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                type_document unTypedocumentM = new type_document();
+                unTypedocumentM.Abbrevation = registro.GetString(0);
+                registro.Close();
+                return unTypedocumentM;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public mother ConsultarMotherMSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select m.number_mother, m.address_mother from mother m where m.id=(select m.id from mother m inner join enrollment e on e.mother_id = m.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                mother unaMotherM = new mother();
+                unaMotherM.Number_mother = registro.GetInt32(0);
+                unaMotherM.Address_mother = registro.GetString(1);
+                registro.Close();
+                return unaMotherM;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public person ConsultarTutorSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select p.document_number, p.first_name, p.first_last_name, p.second_name, p.second_last_name from tutor t inner join person p on p.id = t.person_id where t.id=(select t.id from tutor t inner join enrollment e on e.tutor_id = t.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                person unPersont = new person();
+                unPersont.Document_number = registro.GetInt32(0);
+                unPersont.First_name = registro.GetString(1);
+                unPersont.First_last_name = registro.GetString(2);
+                unPersont.Second_name = registro.GetString(3);
+                unPersont.Second_last_name = registro.GetString(4);
+                registro.Close();
+                return unPersont;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public type_document ConsultarTutorTdSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select td.abbreviation from tutor t inner join person p on p.id = t.person_id inner join type_document td on td.id = p.type_document_id where t.id=(select t.id from tutor t inner join enrollment e on e.tutor_id = t.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                type_document unTypedocumentT = new type_document();
+                unTypedocumentT.Abbrevation = registro.GetString(0);
+                registro.Close();
+                return unTypedocumentT;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
+        public tutor ConsultarTutorTSt(int document_number)
+        {
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "select t.number_tutor, t.address_tutor from tutor t where t.id=(select t.id from tutor t inner join enrollment e on e.tutor_id = t.id inner join student s on s.id = e.student_id inner join person ps on ps.id = s.person_id where ps.document_number = @document_number)";
+            comando.Parameters.AddWithValue("@document_number", document_number);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                tutor unTutorT = new tutor();
+                unTutorT.Number_tutor = registro.GetInt32(0);
+                unTutorT.Address_tutor = registro.GetString(1);
+                registro.Close();
+                return unTutorT;
+            }
+            else
+            {
+                registro.Close();
+                return null;
+            }
+
+        }
+
         public person ConsultarPersonC(int number_course)
         {
             SqlCommand comando = new SqlCommand();
@@ -968,7 +1180,7 @@ namespace datos
             comando.Parameters.AddWithValue("@document_number", document_number);
             comando.Parameters.AddWithValue("@name_matter", name_matter);
             comando.Parameters.AddWithValue("@number_quarter", number_quarter);
-            SqlDataReader registro = comando.ExecuteReader();
+            SqlDataReader registro = comando.ExecuteReader();       
             if (registro.Read())
             {
                 final_quarterly_grade unFinal_quarterly_grade = new final_quarterly_grade();
@@ -1137,6 +1349,28 @@ namespace datos
                 registro.Close();
                 return null;
             }
+
+        }
+
+        public bool updatePass(user unUser)
+        {
+            bool agrega = false;
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandText = "update system_userr set password=ENCRYPTBYPASSPHRASE(@patron, @password) where login=@login";
+            comando.Parameters.AddWithValue("@password", unUser.Password);
+            comando.Parameters.AddWithValue("@login", unUser.Login);
+            comando.Parameters.AddWithValue("@patron", unUser).Value = "patron";
+            try
+            {
+                comando.ExecuteNonQuery();
+                agrega = true;
+            }
+            catch (SqlException ex)
+            {
+                this.error = ex.Message;
+            }
+            return agrega;
 
         }
 

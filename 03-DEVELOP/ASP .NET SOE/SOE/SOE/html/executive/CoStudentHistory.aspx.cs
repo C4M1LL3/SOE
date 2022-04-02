@@ -5,12 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using datos;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace SOE.html.executive
 {
     public partial class CoStudentHistory : System.Web.UI.Page
     {
         GestionarDatos objGestionDatos = new GestionarDatos();
+        string connectionString = @"Data Source=LAPTOP-H4OQ11HQ; Initial catalog = SOE; Integrated Security = True;";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -90,6 +93,18 @@ namespace SOE.html.executive
             {
                 Label14.Text = "No existe este estudiante";
             }
+
+            using (SqlConnection sqlcon = new SqlConnection(connectionString))
+            {
+                sqlcon.Open();
+                SqlDataAdapter sqlda = new SqlDataAdapter("select a.id, a.notation_date, a.notation from annotation a inner join student_history_annotation sta on sta.annotation_id = a.id inner join student_history st on st.id =sta.student_history_id inner join student s on s.id = st.student_id inner join person p on p.id = s.person_id where p.document_number = @document_number", sqlcon);
+                sqlda.SelectCommand.Parameters.AddWithValue("@document_number", TextBox9.Text);
+                DataTable dtbl = new DataTable();
+                sqlda.Fill(dtbl);
+                GridView1.DataSource = dtbl;
+                GridView1.DataBind();
+            }
+
         }
     }
 }

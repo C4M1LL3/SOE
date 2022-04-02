@@ -67,6 +67,15 @@ namespace SOE.html.executive
             course unCourse = objGestionDatos.ConsultarCourseS(document_number);
             eps unaEps = objGestionDatos.ConsultarEps(document_number);
             enrollmentt unEnrolmentt = objGestionDatos.ConsultarEnrollment(document_number);
+            person unPersonf = objGestionDatos.ConsultarFatherSt(document_number);
+            person unPersonm = objGestionDatos.ConsultarMotherSt(document_number);
+            person unPersont = objGestionDatos.ConsultarTutorSt(document_number);
+            type_document unTypedocumentF = objGestionDatos.ConsultarFatherTdSt(document_number);
+            type_document unTypedocumentM = objGestionDatos.ConsultarMotherTdSt(document_number);
+            type_document unTypedocumentT = objGestionDatos.ConsultarTutorTdSt(document_number);
+            father unFatherF = objGestionDatos.ConsultarFatherFSt(document_number);
+            mother unaMotherM = objGestionDatos.ConsultarMotherMSt(document_number);
+            tutor unTutorT = objGestionDatos.ConsultarTutorTSt(document_number);
             if (unPerson != null && unUser != null && unTypeDocument != null && unStudent != null && unCourse != null && unaEps != null && unEnrolmentt != null)
             {
                 Image4.ImageUrl = unUser.Image;
@@ -84,7 +93,42 @@ namespace SOE.html.executive
                 Label19.Text = unaEps.Name_eps;
                 Label20.Text = unEnrolmentt.Address;
                 Label21.Text = unEnrolmentt.Home_number.ToString();
-                Label22.Text = unEnrolmentt.State.ToString();
+                if (unEnrolmentt.State != 0 )
+                {
+                    Label22.Text = "Activo";
+                    Label22.CssClass = "enrollment__camp--green";
+                }
+                else
+                {
+                    Label22.Text = "Inactivo";
+                    Label22.CssClass = "enrollment__camp--red";
+                }
+                Label24.Text = unPersonf.First_name;
+                Label25.Text = unPersonf.Second_name;
+                Label26.Text = unPersonf.First_last_name;
+                Label27.Text = unPersonf.Second_last_name;
+                Label28.Text = unTypedocumentF.Abbrevation;
+                Label29.Text = unPersonf.Document_number.ToString();
+                Label30.Text = unFatherF.Number_father.ToString();
+                Label31.Text = unFatherF.Address_father;
+
+                Label33.Text = unPersonm.First_name;
+                Label34.Text = unPersonm.Second_name;
+                Label35.Text = unPersonm.First_last_name;
+                Label36.Text = unPersonm.Second_last_name;
+                Label37.Text = unTypedocumentM.Abbrevation;
+                Label38.Text = unPersonm.Document_number.ToString();
+                Label39.Text = unaMotherM.Number_mother.ToString();
+                Label40.Text = unaMotherM.Address_mother;
+
+                Label42.Text = unPersont.First_name;
+                Label43.Text = unPersont.Second_name;
+                Label44.Text = unPersont.First_last_name;
+                Label45.Text = unPersont.Second_last_name;
+                Label46.Text = unTypedocumentT.Abbrevation;
+                Label47.Text = unPersont.Document_number.ToString();
+                Label48.Text = unTutorT.Number_tutor.ToString();
+                Label49.Text = unTutorT.Address_tutor;
             }
             else
             {

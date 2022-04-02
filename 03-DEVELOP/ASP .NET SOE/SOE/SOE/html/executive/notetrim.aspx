@@ -28,12 +28,10 @@
         </div>
         <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__li"> <a href="usuariose.aspx" class="nav__link"> Usuarios </a> </li>
-                <li class="nav__li"> <a href="matyasge.aspx" class="nav__link"> Materia y Asignatura </a> </li>
-                <li class="nav__li"> <a href="curs.aspx" class="nav__link"> Cursos </a> </li>
-                <li class="nav__li"> <a href="enrollment.aspx" class="nav__link"> Matriculas </a> </li>
+                <li class="nav__li"> <a href="CoMatter.aspx" class="nav__link"> Consultar materias </a> </li>
+                <li class="nav__li"> <a href="CoCourse.aspx" class="nav__link"> Conusltar cursos </a> </li>
                 <li class="nav__li"> <a href="note.aspx" class="nav__link"> Notas </a> </li>
-                <li class="nav__li"> <a href="timetable.aspx" class="nav__link"> Horario </a> </li>
+                <li class="nav__li"> <a href="CoTimetable.aspx" class="nav__link"> Consultar horarios </a> </li>
                 <li class="nav__li"> <a href="student_history.aspx" class="nav__link"> Observador </a> </li>
             </ul>
         </nav>

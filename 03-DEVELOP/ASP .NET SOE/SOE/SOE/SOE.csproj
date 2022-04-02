@@ -113,13 +113,41 @@
     <Content Include="html\executive\notetrim.aspx" />
     <Content Include="html\executive\student_history.aspx" />
     <Content Include="html\executive\timetable.aspx" />
+    <Content Include="html\executive\upPassworde.aspx" />
     <Content Include="html\executive\usuariose.aspx" />
     <Content Include="html\information\information.aspx" />
     <Content Include="html\information\matricila.aspx" />
+    <Content Include="html\students\CoEnrollment.aspx" />
+    <Content Include="html\students\CoMatter.aspx" />
+    <Content Include="html\students\CoNoteAnual.aspx" />
+    <Content Include="html\students\CoNoteTrim1.aspx" />
+    <Content Include="html\students\CoNoteTrim2.aspx" />
+    <Content Include="html\students\CoNoteTrim3.aspx" />
+    <Content Include="html\students\CoStudentHistory.aspx" />
+    <Content Include="html\students\CoTimetable.aspx" />
+    <Content Include="html\students\GsUsuarioe.aspx" />
     <Content Include="html\students\homes.aspx" />
     <Content Include="html\students\logins.aspx" />
+    <Content Include="html\students\note.aspx" />
+    <Content Include="html\students\UpPassworde.aspx" />
+    <Content Include="html\teachers\AgAnotation.aspx" />
+    <Content Include="html\teachers\AgNotaAnual.aspx" />
+    <Content Include="html\teachers\AgNotaTrim.aspx" />
+    <Content Include="html\teachers\CoCourse.aspx" />
+    <Content Include="html\teachers\CoMatter.aspx" />
+    <Content Include="html\teachers\CoNoteAnual.aspx" />
+    <Content Include="html\teachers\CoNoteTrim1.aspx" />
+    <Content Include="html\teachers\CoNoteTrim2.aspx" />
+    <Content Include="html\teachers\CoNoteTrim3.aspx" />
+    <Content Include="html\teachers\CoStudentHistory.aspx" />
+    <Content Include="html\teachers\CoTimetable.aspx" />
+    <Content Include="html\teachers\GsUsuarioe.aspx" />
     <Content Include="html\teachers\homet.aspx" />
     <Content Include="html\teachers\logint.aspx" />
+    <Content Include="html\teachers\note.aspx" />
+    <Content Include="html\teachers\notetrim.aspx" />
+    <Content Include="html\teachers\student_history.aspx" />
+    <Content Include="html\teachers\UpPassworde.aspx" />
     <Content Include="index.aspx" />
     <Content Include="js\app.js" />
     <Content Include="Web.config" />
@@ -440,6 +468,13 @@
     <Compile Include="html\executive\timetable.aspx.designer.cs">
       <DependentUpon>timetable.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\executive\upPassworde.aspx.cs">
+      <DependentUpon>upPassworde.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\executive\upPassworde.aspx.designer.cs">
+      <DependentUpon>upPassworde.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\executive\usuariose.aspx.cs">
       <DependentUpon>usuariose.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -461,6 +496,69 @@
     <Compile Include="html\information\matricila.aspx.designer.cs">
       <DependentUpon>matricila.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\students\CoEnrollment.aspx.cs">
+      <DependentUpon>CoEnrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\CoEnrollment.aspx.designer.cs">
+      <DependentUpon>CoEnrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\CoMatter.aspx.cs">
+      <DependentUpon>CoMatter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\CoMatter.aspx.designer.cs">
+      <DependentUpon>CoMatter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\CoNoteAnual.aspx.cs">
+      <DependentUpon>CoNoteAnual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\CoNoteAnual.aspx.designer.cs">
+      <DependentUpon>CoNoteAnual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\CoNoteTrim1.aspx.cs">
+      <DependentUpon>CoNoteTrim1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\CoNoteTrim1.aspx.designer.cs">
+      <DependentUpon>CoNoteTrim1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\CoNoteTrim2.aspx.cs">
+      <DependentUpon>CoNoteTrim2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\CoNoteTrim2.aspx.designer.cs">
+      <DependentUpon>CoNoteTrim2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\CoNoteTrim3.aspx.cs">
+      <DependentUpon>CoNoteTrim3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\CoNoteTrim3.aspx.designer.cs">
+      <DependentUpon>CoNoteTrim3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\CoStudentHistory.aspx.cs">
+      <DependentUpon>CoStudentHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\CoStudentHistory.aspx.designer.cs">
+      <DependentUpon>CoStudentHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\CoTimetable.aspx.cs">
+      <DependentUpon>CoTimetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\CoTimetable.aspx.designer.cs">
+      <DependentUpon>CoTimetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\GsUsuarioe.aspx.cs">
+      <DependentUpon>GsUsuarioe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\GsUsuarioe.aspx.designer.cs">
+      <DependentUpon>GsUsuarioe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\students\homes.aspx.cs">
       <DependentUpon>homes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -475,6 +573,104 @@
     <Compile Include="html\students\logins.aspx.designer.cs">
       <DependentUpon>logins.aspx</DependentUpon>
     </Compile>
+    <Compile Include="html\students\note.aspx.cs">
+      <DependentUpon>note.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\note.aspx.designer.cs">
+      <DependentUpon>note.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\students\UpPassworde.aspx.cs">
+      <DependentUpon>UpPassworde.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\students\UpPassworde.aspx.designer.cs">
+      <DependentUpon>UpPassworde.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\AgAnotation.aspx.cs">
+      <DependentUpon>AgAnotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\AgAnotation.aspx.designer.cs">
+      <DependentUpon>AgAnotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\AgNotaAnual.aspx.cs">
+      <DependentUpon>AgNotaAnual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\AgNotaAnual.aspx.designer.cs">
+      <DependentUpon>AgNotaAnual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\AgNotaTrim.aspx.cs">
+      <DependentUpon>AgNotaTrim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\AgNotaTrim.aspx.designer.cs">
+      <DependentUpon>AgNotaTrim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\CoCourse.aspx.cs">
+      <DependentUpon>CoCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\CoCourse.aspx.designer.cs">
+      <DependentUpon>CoCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\CoMatter.aspx.cs">
+      <DependentUpon>CoMatter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\CoMatter.aspx.designer.cs">
+      <DependentUpon>CoMatter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\CoNoteAnual.aspx.cs">
+      <DependentUpon>CoNoteAnual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\CoNoteAnual.aspx.designer.cs">
+      <DependentUpon>CoNoteAnual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\CoNoteTrim1.aspx.cs">
+      <DependentUpon>CoNoteTrim1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\CoNoteTrim1.aspx.designer.cs">
+      <DependentUpon>CoNoteTrim1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\CoNoteTrim2.aspx.cs">
+      <DependentUpon>CoNoteTrim2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\CoNoteTrim2.aspx.designer.cs">
+      <DependentUpon>CoNoteTrim2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\CoNoteTrim3.aspx.cs">
+      <DependentUpon>CoNoteTrim3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\CoNoteTrim3.aspx.designer.cs">
+      <DependentUpon>CoNoteTrim3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\CoStudentHistory.aspx.cs">
+      <DependentUpon>CoStudentHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\CoStudentHistory.aspx.designer.cs">
+      <DependentUpon>CoStudentHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\CoTimetable.aspx.cs">
+      <DependentUpon>CoTimetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\CoTimetable.aspx.designer.cs">
+      <DependentUpon>CoTimetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\GsUsuarioe.aspx.cs">
+      <DependentUpon>GsUsuarioe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\GsUsuarioe.aspx.designer.cs">
+      <DependentUpon>GsUsuarioe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="html\teachers\homet.aspx.cs">
       <DependentUpon>homet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -488,6 +684,34 @@
     </Compile>
     <Compile Include="html\teachers\logint.aspx.designer.cs">
       <DependentUpon>logint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\note.aspx.cs">
+      <DependentUpon>note.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\note.aspx.designer.cs">
+      <DependentUpon>note.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\notetrim.aspx.cs">
+      <DependentUpon>notetrim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\notetrim.aspx.designer.cs">
+      <DependentUpon>notetrim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\student_history.aspx.cs">
+      <DependentUpon>student_history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\student_history.aspx.designer.cs">
+      <DependentUpon>student_history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\teachers\UpPassworde.aspx.cs">
+      <DependentUpon>UpPassworde.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\teachers\UpPassworde.aspx.designer.cs">
+      <DependentUpon>UpPassworde.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

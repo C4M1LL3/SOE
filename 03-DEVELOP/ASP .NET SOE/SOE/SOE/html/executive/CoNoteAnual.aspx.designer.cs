@@ -195,15 +195,6 @@ namespace SOE.html.executive
         protected global::System.Web.UI.WebControls.Label Label12;
 
         /// <summary>
-        /// Control Label11.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label11;
-
-        /// <summary>
         /// Control Label18.
         /// </summary>
         /// <remarks>

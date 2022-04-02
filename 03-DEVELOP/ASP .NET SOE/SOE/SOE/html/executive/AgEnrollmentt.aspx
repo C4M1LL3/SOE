@@ -27,10 +27,10 @@
         <h1 class="form__text">Registrar Matricula</h1>
         <div>
             <div class="form_cont">
-                <asp:Label ID="Label2" runat="server" Text="Id del estudiante" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el id del estudiante" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label2" runat="server" Text="Número de documento del estudiante" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el número de documento del estudiante" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label3" runat="server" Text="Id eps" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa el id de la eps" CssClass="input"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingresa id de la eps" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label4" runat="server" Text="Dirección" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingresa la dirección del estudiante" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label7" runat="server" Text="Numero de casa o apartamento" CssClass="label"></asp:Label>
@@ -40,12 +40,12 @@
                     <asp:ListItem>0</asp:ListItem>
                     <asp:ListItem>1</asp:ListItem>
                 </asp:DropDownList>
-                <asp:Label ID="Label1" runat="server" Text="Id del padre del estudiante" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox5" runat="server" placeholder="Ingresa el id del padre del estudiante" CssClass="input"></asp:TextBox>
-                <asp:Label ID="Label8" runat="server" Text="Id de la madre del estudiante" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox6" runat="server" placeholder="Ingresa el id de la madre del estudiante" CssClass="input"></asp:TextBox>
-                <asp:Label ID="Label9" runat="server" Text="Id del tutor del estudiante" CssClass="label"></asp:Label>
-                <asp:TextBox ID="TextBox7" runat="server" placeholder="Ingresa el id del tutor del estudiante" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label1" runat="server" Text="Número de documento del padre del estudiante" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox5" runat="server" placeholder="Ingresa el número de documento del padre del estudiante" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label8" runat="server" Text="Número de documento de la madre del estudiante" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox6" runat="server" placeholder="Ingresa el número de documento de la madre del estudiante" CssClass="input"></asp:TextBox>
+                <asp:Label ID="Label9" runat="server" Text="Número de documento del tutor del estudiante" CssClass="label"></asp:Label>
+                <asp:TextBox ID="TextBox7" runat="server" placeholder="Ingresa el número de documento del tutor del estudiante" CssClass="input"></asp:TextBox>
                 <asp:Label ID="Label5" runat="server" Text="" CssClass="help__link"></asp:Label>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
             </div>

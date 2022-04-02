@@ -27,7 +27,7 @@
         <h1 class="form__text">Registrar Observador </h1>
         <div>
             <div class="form_cont">
-                <asp:Label ID="Label2" runat="server" Text="Número de documento" CssClass="label"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Número de documento del estudiante" CssClass="label"></asp:Label>
                 <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingresa el número de documento del estudiante" CssClass="input"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar" CssClass="button" />
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label>

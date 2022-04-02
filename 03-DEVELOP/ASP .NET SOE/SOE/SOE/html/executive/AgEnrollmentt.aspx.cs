@@ -39,11 +39,11 @@ namespace SOE.html.executive
             bool agregado = objGestionDatos.agregarEnrollmentt(unEnrollmentt);
             if (agregado)
             {
-                Label1.Text = "Matricula Agregada con exito";
+                Label5.Text = "Matricula Agregada con exito";
             }
             else
             {
-                Label1.Text = objGestionDatos.error;
+                Label5.Text = objGestionDatos.error;
             }
         }
 
